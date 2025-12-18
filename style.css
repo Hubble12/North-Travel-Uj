@@ -1,5 +1,6 @@
 body{
     background-color: grey;
+    margin: auto;
 }
 header{
     background-color: #3B3955;
@@ -26,9 +27,71 @@ header{
     
 }
 .card1{
+    margin-top: 25px;
     box-shadow: 0 4px 8px 0;
     transition: 0.3s;
+    font-size: 50px;
+    width: 723.63px;
+    text-align: center;
+    height: 412px;
+    color: white;
+    
+    background-color: #3B3955;
+    margin-left: 50px;
+    border-radius: 13px;
+    
 }
 .card1:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.0);
+    color: black;
+}
+.alszoveg{
+    font-size: 65px;
+
+}
+.szoveg{
+    margin-top: 5px;
+}
+.felsoresz{
+    display: flex;
+}
+.card2{
+    margin-top: 25px;
+    box-shadow: 0 4px 8px 0;
+    transition: 0.3s;
+    width: 688.63px;
+    text-align: center;
+    height: 417px;
+    margin-left: 230px;
+    border-radius: 13px;
+}
+.kep{
+    width: 688.63px;
+    text-align: center;
+    height: 417px;
+    border-radius: 13px;
+}
+.alsoresz{
+    background-color: #3B3955;
+    height: 100%;
+    width: 100%;
+
+
+}
+.alsoreszcim{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+.card3kep{
+    width:  384px;
+    height: 359px;
+}
+.card3{
+    width: 384px;
+    height: 359px;
+    margin-left: 15px;
+    
+    padding-bottom: 25px;
+
 }
