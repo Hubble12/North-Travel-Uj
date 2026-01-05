@@ -12,6 +12,11 @@ header{
     padding: 0px 0px;
    
 }
+#cim
+{
+    font-size:48px;
+    margin-left:350px;
+}
 .logo{
     width: 120px;
     height: 120px;
@@ -26,6 +31,11 @@ header{
     padding-right: 40px;
    
 }
+#bemutato
+{
+    display: flex;
+}
+
 .card1{
     margin-top: 25px;
     box-shadow: 0 4px 8px 0;
@@ -55,9 +65,9 @@ header{
 }
 .card2
 {
-height: 211.96px;
+height: 411.96px;
 width:660.16px;
-margin-left: 500px;
+
 
 
 
@@ -65,8 +75,59 @@ margin-left: 500px;
 }
 #oslo
 {
+    margin-top: 25px;
     height: 411.96px;
     width:660.16px;
-    
+    margin-left: 300px;
+    box-shadow: 0 4px 8px 0;
+    transition: 0.3s;
+    border-radius: 13px;
+}
+.footer
+{
+    background-color: #3B3955;
+}
+#tovabbi
+{
+    margin-top:40px;
+    background-color: #3B3955;
+    display:flex;
+}
+#legkeresetebb
+{
+    font-size:50px;
+    color:white;
+    text-align: center;
+}
 
+.card3
+{
+    background-color: grey;
+    width:344.91px;
+    height: 359px;
+    margin-left:80px;
+
+}
+#grand
+{
+    width:374.91px;
+    height: 359px;
+    
+    
+}
+#alcim1
+{
+    
+    margin-left:100px;
+    width:200.15px;
+    font-size:35px;
+    margin-top:10px;
+   
+
+}
+
+#amer
+{
+    width:374.91px;
+    height: 359px;
 }
