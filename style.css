@@ -1,6 +1,6 @@
 body{
     background-color: grey;
-    margin:auto;
+    margin: auto;
 }
 header{
     background-color: #3B3955;
@@ -40,24 +40,27 @@ header{
     margin-top: 25px;
     box-shadow: 0 4px 8px 0;
     transition: 0.3s;
+
+    font-size: 50px;
+
     font-size: 55px;
+
     width: 723.63px;
     text-align: center;
     height: 412px;
     color: white;
-   display: flex;
+    
     background-color: #3B3955;
     margin-left: 50px;
     border-radius: 13px;
+    
 }
 .card1:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.0);
     color: black;
 }
 .alszoveg{
-    float:left;
-    font-size: 40px;
-
+    font-size: 65px;
 
 }
 .szoveg{
@@ -65,9 +68,9 @@ header{
 }
 .card2
 {
-height: 411.96px;
+height: 211.96px;
 width:660.16px;
-
+margin-left: 500px;
 
 
 
@@ -75,59 +78,8 @@ width:660.16px;
 }
 #oslo
 {
-    margin-top: 25px;
     height: 411.96px;
     width:660.16px;
-    margin-left: 300px;
-    box-shadow: 0 4px 8px 0;
-    transition: 0.3s;
-    border-radius: 13px;
-}
-.footer
-{
-    background-color: #3B3955;
-}
-#tovabbi
-{
-    margin-top:40px;
-    background-color: #3B3955;
-    display:flex;
-}
-#legkeresetebb
-{
-    font-size:50px;
-    color:white;
-    text-align: center;
-}
-
-.card3
-{
-    background-color: grey;
-    width:344.91px;
-    height: 359px;
-    margin-left:80px;
-
-}
-#grand
-{
-    width:374.91px;
-    height: 359px;
     
-    
-}
-#alcim1
-{
-    
-    margin-left:100px;
-    width:200.15px;
-    font-size:35px;
-    margin-top:10px;
-   
 
-}
-
-#amer
-{
-    width:374.91px;
-    height: 359px;
 }
