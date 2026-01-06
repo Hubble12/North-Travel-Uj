@@ -66,20 +66,46 @@ header{
 .szoveg{
     margin-top: 5px;
 }
-.card2
-{
-height: 211.96px;
-width:660.16px;
-margin-left: 500px;
-
-
+.felsoresz{
+    display: flex;
+}
+.card2{
+    margin-top: 25px;
+    box-shadow: 0 4px 8px 0;
+    transition: 0.3s;
+    width: 688.63px;
+    text-align: center;
+    height: 417px;
+    margin-left: 230px;
+    border-radius: 13px;
+}
+.kep{
+    width: 688.63px;
+    text-align: center;
+    height: 417px;
+    border-radius: 13px;
+}
+.alsoresz{
+    background-color: #3B3955;
+    height: 100%;
+    width: 100%;
 
 
 }
-#oslo
-{
-    height: 411.96px;
-    width:660.16px;
+.alsoreszcim{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+.card3kep{
+    width:  384px;
+    height: 359px;
+}
+.card3{
+    width: 384px;
+    height: 359px;
+    margin-left: 15px;
     
+    padding-bottom: 25px;
 
 }
