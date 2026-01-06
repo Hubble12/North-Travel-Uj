@@ -25,6 +25,13 @@ header{
     text-align: center;
    
 }
+#telefon
+{
+    width: 100px;
+    height: 100px;
+    float: right;
+
+}
 .telefonszam{
     color: white;
     margin: 0;                    
@@ -86,7 +93,7 @@ header{
 }
 .alsoresz{
     background-color: #3B3955;
-    height: 560px;
+    height: 100%;
     width: 100%;
     
     
@@ -114,6 +121,9 @@ header{
     width: 384px;
     height: 359px;
     margin-left: 15px;
+    
+    padding-bottom: 25px;
+
 }
 .card4kep{
     width:  384px;
@@ -131,16 +141,12 @@ header{
 .card5kep{
     width:  384px;
     height: 359px;
-
     border-radius: 13px;
-    margin-bottom: 0%;
-
 }
 .card5{
     width: 384px;
     height: 359px;
     margin-left: 15px;
-
     
     padding-bottom: 25px;
 
@@ -148,26 +154,7 @@ header{
 .card6kep{
     width:  384px;
     height: 359px;
-
-    margin-right: 15px;
     border-radius: 13px;
-}
-.kepeklent{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 40px;
-    margin: 0%;
-}
-.kepszoveg{
-    text-align: left;
-    background-color: grey;
-    height: 35px;
-    padding-top: 0%;
-    padding: 10px;
-    border-radius: 13px;
-    
-
-
 }
 .card6{
     width: 384px;
@@ -176,8 +163,4 @@ header{
     
     padding-bottom: 25px;
 
-
-
-
 }
-
