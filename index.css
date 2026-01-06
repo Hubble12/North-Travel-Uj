@@ -25,6 +25,13 @@ header{
     text-align: center;
    
 }
+#telefon
+{
+    width: 100px;
+    height: 100px;
+    float: right;
+
+}
 .telefonszam{
     color: white;
     margin: 0;                    
@@ -108,6 +115,7 @@ header{
 .card3kep{
     width:  384px;
     height: 359px;
+    border-radius: 13px;
 }
 .card3{
     width: 384px;
@@ -120,6 +128,7 @@ header{
 .card4kep{
     width:  384px;
     height: 359px;
+    border-radius: 13px;
 }
 .card4{
     width: 384px;
@@ -132,6 +141,7 @@ header{
 .card5kep{
     width:  384px;
     height: 359px;
+    border-radius: 13px;
 }
 .card5{
     width: 384px;
@@ -144,6 +154,7 @@ header{
 .card6kep{
     width:  384px;
     height: 359px;
+    border-radius: 13px;
 }
 .card6{
     width: 384px;
