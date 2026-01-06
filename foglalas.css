@@ -28,36 +28,31 @@ body{
 }
 
 #oldal_bal{
-    background-color: aquamarine;
+    background-color: #D9D9D9;
     border-width: 2px;
     border: black;
     border-color: black;
-    width: 28%;
+    width: 40%;
     height: 700px;
     display: inline-block;
     float: left;
+    margin-left: 3%;
+    margin-top: 5%;
 }
 
-#oldal_kozep{
-    background-color: aquamarine;
-    border-width: 2px;
-    border: black;
-    border-color: black;
-    width: 28%;
-    height: 700px;
-    display: inline-block;
-    margin-left: 140px;
-}
+
 
 #oldal_jobb{
-    background-color: aquamarine;
+    background-color: #D9D9D9;
     border-width: 2px;
     border: black;
     border-color: black;
-    width: 28%;
+    width: 30%;
     height: 700px;
     display: inline-block;
     float: right;
+    margin-right: 10%;
+    margin-top: 5%;
 }
 
 
@@ -145,7 +140,7 @@ body{
 #kepirat_kozep{
     background-color: #D9D9D9;
     width: 100%;
-    height: 20%;
+    height: 30%;
     display: block;
 
     text-align: center;
@@ -195,6 +190,38 @@ body{
 }
 
 #oldal_bal_lenn{
-    width: 100%;
+    width: 120%;
     height: 70%;
+    background-image: url(kepek2/Grand\ Hotel\ Oslo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+h1{
+    margin-left: 30%;
+}
+
+h2{
+    margin-right: 10px;
+}
+
+button{
+    width: 200px;
+    height: 60px;
+    color: white;
+    background-color: #3B3955;
+    border-radius: 5%;
+    border-radius: 20%;
+    float: right;
+    margin-top: 10px;
+}
+
+input{
+    background-color: #3B3955;
+    color: white;
+    height: 20px;
+}
+
+table{
+    float: right;
 }
