@@ -94,6 +94,28 @@ body{
     bottom: 0;
 }
 
+#lablec_bal:hover{
+    height: 71%;
+    width: 21%;
+}
+
+#lablec_kozep:hover{
+    height: 71%;
+    width: 21%;
+}
+
+#lablec_jobb:hover{
+    height: 71%;
+    width: 21%;
+}
+
+
+
+
+
+
+
+
 
 #kep_bal{
     background-image: url(kepek2/amerikalinjen.png);
@@ -195,10 +217,14 @@ body{
     background-image: url(kepek2/Grand\ Hotel\ Oslo.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    border-radius: 7%;
 }
 
+
 h1{
-    margin-left: 30%;
+    margin-left: 10%;
+    margin-right: auto;
+    text-align: center;
 }
 
 h2{
@@ -216,6 +242,10 @@ button{
     margin-top: 10px;
 }
 
+button:hover{
+    background-color: #28273b;
+}
+
 input{
     background-color: #3B3955;
     color: white;
@@ -225,3 +255,48 @@ input{
 table{
     float: right;
 }
+
+
+
+
+
+
+/*fejléc*/
+
+header{
+    background-color: #3B3955;
+    height: 117px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+   
+}
+
+.logo{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+   
+}
+#telefon
+{
+    width: 100px;
+    height: 100px;
+    float: right;
+
+}
+
+.telefonszam{
+    color: white;
+    margin: 0;                    
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 40px;
+   
+}
+
+
+
+
