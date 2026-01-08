@@ -77,9 +77,10 @@ header{
 }
 .alsoresz{
     background-color: #3B3955;
-    height: 480px;
+
     width: 100%;
     margin-top: 150px;
+    height: 550px;
     
 }
 .alsoreszcim{
@@ -120,4 +121,11 @@ header{
     display: flex;
     justify-content: space-between;
 }
+.szurkedoboz{
+    background-color: #bdbdbd; /* szürke */
+    border-radius: 10px;
+    height: 50px;
+    text-align: center;
+    font-size: x-large;
 
+}
