@@ -1,0 +1,208 @@
+
+body{
+    background-color: grey;
+    margin: auto;
+}
+header{
+    background-color: #3B3955;
+    height: 117px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+   
+}
+#fooldal
+{
+    margin-left:0px;
+    margin-top:0px;
+    background-color: #3B3955;
+    color:white;
+    border: none;
+    width:148px;
+    height: 45px;
+    font:30px;
+    
+    border-bottom-right-radius: 13px;
+
+}
+#rolunk
+{
+    margin-left:0px;
+    margin-top:0px;
+    background-color: #3B3955;
+    color:white;
+    border: none;
+    width:148px;
+    height: 45px;
+    font:30px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+#cim
+{
+    font-size:48px;
+    margin-left:350px;
+    color: white;
+}
+.logo{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+   
+}
+#telefon
+{
+    width: 93px;
+    height: 93px;
+    margin-right:-1500px;
+
+}
+.telefonszam{
+    color: white;
+    margin: 0;                    
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 40px;
+   
+}
+
+
+.card1{
+    margin-top: 25px;
+    box-shadow: 0 4px 8px 0;
+    transition: 0.3s;
+    font-size: 50px;
+    width: 723.63px;
+    text-align: center;
+    height: 412px;
+    color: white;
+    background-color: #3B3955;
+    margin-left: 50px;
+    border-radius: 13px;
+    
+}
+.card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.0);
+    color: black;
+}
+.alszoveg{
+    font-size: 40px;
+
+}
+.szoveg{
+    margin-top: 5px;
+}
+.felsoresz{
+    display: flex;
+}
+.card2{
+    margin-top: 25px;
+    box-shadow: 0 4px 8px 0;
+    transition: 0.3s;
+    width: 688.63px;
+    text-align: center;
+    height: 417px;
+    margin-left: 230px;
+    border-radius: 13px;
+}
+.kep{
+    width: 688.63px;
+    text-align: center;
+    height: 417px;
+    border-radius: 13px;
+}
+#vissza
+{
+    margin-left:120px;
+    margin-top:30px;
+    background-color: #3B3955;
+    color:white;
+    border: none;
+    width:148px;
+    height: 45px;
+    font:30px;
+    border-radius: 13px;
+}
+.alsoresz{
+    background-color: #3B3955;
+    height: 100%;
+    width: 100%;
+    
+    
+
+
+}
+#alsoreszcim{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    background-color: #3B3955;
+}
+.kepeklent
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card3kep{
+    width:  384px;
+    height: 359px;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px 0;
+    transition: 0.3s;
+}
+.card3{
+    width: 384px;
+    height: 359px;
+    margin-left: 15px;
+    
+    padding-bottom: 25px;
+
+}
+.card4kep{
+    width:  384px;
+    height: 359px;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px 0;
+    transition: 0.3s;
+}
+.card4{
+    width: 384px;
+    height: 359px;
+    margin-left: 15px;
+    
+    padding-bottom: 25px;
+
+}
+.card5kep{
+    width:  384px;
+    height: 359px;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px 0;
+    transition: 0.3s;
+}
+.card5{
+    width: 384px;
+    height: 359px;
+    margin-left: 15px;
+    
+    padding-bottom: 25px;
+
+}
+.card6kep{
+    width:  384px;
+    height: 359px;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px 0;
+    transition: 0.3s;
+}
+.card6{
+    width: 384px;
+    height: 359px;
+    margin-left: 15px;
+    
+    padding-bottom: 25px;
+
+}

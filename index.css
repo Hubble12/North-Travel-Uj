@@ -113,6 +113,18 @@ header{
     height: 417px;
     border-radius: 13px;
 }
+#vissza
+{
+    margin-left:120px;
+    margin-top:30px;
+    background-color: #3B3955;
+    color:white;
+    border: none;
+    width:148px;
+    height: 45px;
+    font:30px;
+    border-radius: 13px;
+}
 .alsoresz{
     background-color: #3B3955;
     height: 100%;
@@ -194,3 +206,22 @@ header{
     padding-bottom: 25px;
 
 }
+.szurkedoboz{
+    background-color: #bdbdbd; /* szürke */
+    height: 50px;
+    
+    font-size: x-large;
+    margin-top: -33px;
+    width: 384px;
+    position: absolute;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0px ;
+    border-top-left-radius: 0px;
+}
+.szurkedoboz p {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 35px;
+        
+  }
