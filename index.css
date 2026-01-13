@@ -13,6 +13,33 @@ header{
     padding: 0px 0px;
    
 }
+#fooldal
+{
+    margin-left:0px;
+    margin-top:0px;
+    background-color: #3B3955;
+    color:white;
+    border: none;
+    width:148px;
+    height: 45px;
+    font:30px;
+    
+    border-bottom-right-radius: 13px;
+
+}
+#rolunk
+{
+    margin-left:0px;
+    margin-top:0px;
+    background-color: #3B3955;
+    color:white;
+    border: none;
+    width:148px;
+    height: 45px;
+    font:30px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
 #cim
 {
     font-size:48px;
@@ -27,9 +54,9 @@ header{
 }
 #telefon
 {
-    width: 100px;
-    height: 100px;
-    float: right;
+    width: 93px;
+    height: 93px;
+    margin-right:-1500px;
 
 }
 .telefonszam{
@@ -46,16 +73,11 @@ header{
     margin-top: 25px;
     box-shadow: 0 4px 8px 0;
     transition: 0.3s;
-
     font-size: 50px;
-
-    font-size: 55px;
-
     width: 723.63px;
     text-align: center;
     height: 412px;
     color: white;
-    
     background-color: #3B3955;
     margin-left: 50px;
     border-radius: 13px;
@@ -116,6 +138,8 @@ header{
     width:  384px;
     height: 359px;
     border-radius: 13px;
+    box-shadow: 0 4px 8px 0;
+    transition: 0.3s;
 }
 .card3{
     width: 384px;
@@ -129,6 +153,8 @@ header{
     width:  384px;
     height: 359px;
     border-radius: 13px;
+    box-shadow: 0 4px 8px 0;
+    transition: 0.3s;
 }
 .card4{
     width: 384px;
@@ -142,6 +168,8 @@ header{
     width:  384px;
     height: 359px;
     border-radius: 13px;
+    box-shadow: 0 4px 8px 0;
+    transition: 0.3s;
 }
 .card5{
     width: 384px;
@@ -155,6 +183,8 @@ header{
     width:  384px;
     height: 359px;
     border-radius: 13px;
+    box-shadow: 0 4px 8px 0;
+    transition: 0.3s;
 }
 .card6{
     width: 384px;
