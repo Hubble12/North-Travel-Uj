@@ -113,6 +113,18 @@ header{
     height: 417px;
     border-radius: 13px;
 }
+#vissza
+{
+    margin-left:120px;
+    margin-top:30px;
+    background-color: #3B3955;
+    color:white;
+    border: none;
+    width:148px;
+    height: 45px;
+    font:30px;
+    border-radius: 13px;
+}
 .alsoresz{
     background-color: #3B3955;
     height: 100%;
