@@ -13,6 +13,33 @@ header{
     padding: 0px 0px;
    
 }
+#fooldal
+{
+    margin-left:0px;
+    margin-top:0px;
+    background-color: #3B3955;
+    color:white;
+    border: none;
+    width:148px;
+    height: 45px;
+    font:30px;
+    
+    border-bottom-right-radius: 13px;
+
+}
+#rolunk
+{
+    margin-left:0px;
+    margin-top:0px;
+    background-color: #3B3955;
+    color:white;
+    border: none;
+    width:148px;
+    height: 45px;
+    font:30px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
 #cim
 {
     font-size:48px;
