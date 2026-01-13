@@ -206,3 +206,22 @@ header{
     padding-bottom: 25px;
 
 }
+.szurkedoboz{
+    background-color: #bdbdbd; /* szürke */
+    height: 50px;
+    
+    font-size: x-large;
+    margin-top: -33px;
+    width: 384px;
+    position: absolute;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0px ;
+    border-top-left-radius: 0px;
+}
+.szurkedoboz p {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 35px;
+        
+  }
