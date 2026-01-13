@@ -100,7 +100,7 @@ body{
 }
 
 #lablec_kozep:hover{
-    height: 71%;
+    height: 70%;
     width: 21%;
 }
 
@@ -118,13 +118,14 @@ body{
 
 
 #kep_bal{
-    background-image: url(kepek2/amerikalinjen.png);
-    background-position: 60%;
+    background-image: url(kepek2/Grand\ Hotel\ Oslo.png);
+    background-position-x: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
     height: 80%;
     display: block;
+    background-size: 120%;
 
     border-top-left-radius: 30px;   
     border-top-right-radius: 30px;  
@@ -147,7 +148,7 @@ body{
 
 
 #kep_kozep{
-    background-image: url(kepek2/Holmenkollen\ Park\ Hotel.png);
+    background-image: url(kepek2/amerikalinjen.png);
     background-position: 60%;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -214,10 +215,11 @@ body{
 #oldal_bal_lenn{
     width: 120%;
     height: 70%;
-    background-image: url(kepek2/Grand\ Hotel\ Oslo.png);
+    background-image: url(kepek2/Holmenkollen\ Park\ Hotel.png);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 7%;
+    background-position: 80%;
 }
 
 
@@ -300,3 +302,7 @@ header{
 a{
     color: black;
 }
+
+
+
+
