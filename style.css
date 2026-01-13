@@ -96,25 +96,25 @@ header{
 }
 
 .card3{
-    width: 384px;
-    height: 359px;
+    width: 388px;
+    height: 350px;
     margin-left: 15px;
     
     padding-bottom: 25px;
 
 }
 .card4kep{
-    width:  384px;
-    height: 359px;
+    width:  380px;
+    height: 350px;
 }
 .card5kep{
-    width:  384px;
-    height: 359px;
+    width:  380px;
+    height: 350px;
     
 }
 .card6kep{
-    width:  384px;
-    height: 359px;
+    width:  380px;
+    height: 350px;
     margin-right: 15px;
 }
 .kepeklent{
@@ -123,9 +123,20 @@ header{
 }
 .szurkedoboz{
     background-color: #bdbdbd; /* szürke */
-    border-radius: 10px;
     height: 50px;
-    text-align: center;
+    
     font-size: x-large;
-
+    margin-top: -33px;
+    width: 384px;
+    position: absolute;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0px ;
+    border-top-left-radius: 0px;
 }
+.szurkedoboz p {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 35px;
+        
+  }
