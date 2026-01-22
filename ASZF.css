@@ -361,4 +361,35 @@ a{
 
 
 
+.logok{
+    max-height: 150px;
+    margin: 20px;
+}
 
+#logoktabla{
+    float: right;
+    margin-left: 20%;
+}
+
+#logocenter{
+    margin-left: 400px;
+}
+
+#logoright{
+    margin-left: 400px;
+}
+
+#tb1{
+    color: white;
+    font-size: 300%;
+}
+
+#tb2{
+    color: white;
+    font-size: 300%;
+}
+
+#tb3{
+    color: white;
+    font-size: 100%;
+}
