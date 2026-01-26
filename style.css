@@ -10,6 +10,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0px 0px;
+    flex-wrap: wrap;
    
 }
 .logo{
@@ -25,6 +26,12 @@ header{
     font-weight: bold;
     padding-right: 40px;
    
+}
+@media(max-width:768px){
+    .telefonszam{
+        padding-right: 0;
+        margin-top: 10px;
+    }
 }
 .card1{
     margin-top: 25px;
@@ -84,16 +91,19 @@ header{
 }
 .alsoresz{
     background-color: #3B3955;
-
     width: 100%;
     margin-top: 150px;
     height: 550px;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+
     
 }
 .alsoreszcim{
     text-align: center;
     color: white;
     margin-top: 50px;
+    
     
     
 }
@@ -200,6 +210,7 @@ header{
     font-size: 24px;
     padding: 12px 0;
   }
+
   @media(max-width:768px)
   {
     .card1,
@@ -214,3 +225,12 @@ header{
         font-size: 28px;
     }
   }
+  .alsoresz{
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(32, 5vw);
+  }
+  .card3{
+    grid-column-start: 3 ;
+    grid-column-end: 11;
+  }
+  
