@@ -30,19 +30,19 @@ header{
     margin-top: 25px;
     box-shadow: 0 4px 8px 0;
     transition: 0.3s;
-
     font-size: 50px;
-
     font-size: 55px;
 
-    width: 723.63px;
     text-align: center;
     height: 412px;
     color: white;
-    
     background-color: #3B3955;
-    margin-left: 50px;
+ 
     border-radius: 13px;
+    grid-column: span 6;
+    margin: 0;
+    width: 100%;
+    height: auto;
     
 }
 .card1:hover {
@@ -57,17 +57,24 @@ header{
     margin-top: 5px;
 }
 .felsoresz{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px;
 }
 .card2{
     margin-top: 25px;
     box-shadow: 0 4px 8px 0;
     transition: 0.3s;
-    width: 688.63px;
     text-align: center;
     height: 417px;
-    margin-left: 230px;
     border-radius: 13px;
+    grid-column: span 6;
+    margin: 0;
+    width: 100%;
+    height: auto;
 }
 .kep{
     width: 688.63px;
@@ -118,8 +125,11 @@ header{
     margin-right: 15px;
 }
 .kepeklent{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 .szurkedoboz{
     background-color: #bdbdbd; /* szürke */
@@ -189,4 +199,18 @@ header{
     text-align: center;
     font-size: 24px;
     padding: 12px 0;
+  }
+  @media(max-width:768px)
+  {
+    .card1,
+    .card2{
+        grid-column: span 12;
+    }
+    .card1{
+        font-size: 32px;
+        height: auto;
+    }
+    .alszoveg{
+        font-size: 28px;
+    }
   }
