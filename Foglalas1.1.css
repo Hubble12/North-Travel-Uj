@@ -118,7 +118,7 @@ body{
 
 
 #kep_bal{
-    background-image: url(Képek/Stockholm\ hotelek/Grand\Hotel\.St.png);
+   
     background-position: 60%;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -147,7 +147,7 @@ body{
 
 
 #kep_kozep{
-    background-image: url(kepek2/Holmenkollen\ Park\ Hotel.png);
+   
     background-position: 60%;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -177,7 +177,7 @@ body{
 
 
 #kep_jobb{
-    background-image: url(kepek2/clarion-hotel.png);
+   
     background-position: 60%;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -209,17 +209,44 @@ body{
 #oldal_bal_fenn{
     width: 100%;
     height: 20%;
+
 }
 
 #oldal_bal_lenn{
-    width: 120%;
-    height: 70%;
-    background-image: url(kepek2/Grand\ Hotel\ Oslo.png);
+   
+   
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 7%;
 }
-
+.kep
+{
+    width: 648px;
+    height: 490px;
+    border-radius: 13px;
+}
+.kep1
+{
+    width: 100%;
+    height: 224px;
+    
+    border-top-left-radius:13px ;
+    border-top-right-radius:13px ;
+   
+}
+.kep2{
+    width: 100%;
+    height: 224px;
+    border-top-left-radius:13px ;
+    border-top-right-radius:13px ;
+}
+.kep3
+{
+    width: 100%;
+    height: 224px;
+    border-top-left-radius:13px ;
+    border-top-right-radius:13px ;
+}
 
 h1{
     margin-left: 10%;
