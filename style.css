@@ -93,8 +93,7 @@ header{
     background-color: #3B3955;
     width: 100%;
     margin-top: 150px;
-    height: 550px;
-    grid-template-columns: repeat(12, 1fr);
+    height: 700px;
     gap: 24px;
 
     
@@ -136,11 +135,29 @@ header{
 }
 .kepeklent{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 24px;
-    max-width: 1400px;
-    margin: 0 auto;
+    grid-template-columns: repeat(4,350px);
+    justify-content: center;
+    gap: 40px;
+    margin: 0 auto ;
+    display: flex;
+  
+
 }
+@media  screen and (max-width: 1660px) {
+    .kepeklent{
+        grid-template-columns: repeat(4,300px);
+        gap: 20px;
+    }
+    @media screen and(max-width:1600px) {
+        .kepeklent{
+            grid-template-columns: repeat(4,300px);
+            gap: 20px;
+        }
+        
+    }
+    
+}
+
 .szurkedoboz{
     background-color: #bdbdbd; /* szürke */
     height: 50px;
@@ -225,12 +242,7 @@ header{
         font-size: 28px;
     }
   }
-  .alsoresz{
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(32, 5vw);
+  .grid-container{
+    display: flex;
+    flex-direction: column;
   }
-  .card3{
-    grid-column-start: 3 ;
-    grid-column-end: 11;
-  }
-  
