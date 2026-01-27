@@ -110,6 +110,21 @@ body{
 }
 
 
+#fooldal
+{
+    border-radius: 0%;
+    margin-left:0px;
+    margin-top:0px;
+    background-color: #3B3955;
+    color:white;
+    border: none;
+    width:148px;
+    height: 45px;
+    font:30px;
+
+    border-bottom-right-radius: 13px;
+    float: left;
+}
 
 
 
