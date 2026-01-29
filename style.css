@@ -34,6 +34,20 @@ header{
     padding-right: 40px;
    
 }
+
+#rolunk{
+    width: 200px;
+    height: 60px;
+    color: white;
+    background-color: #3B3955;
+    border-bottom-right-radius: 20%;
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    display: block;
+    margin-right: -10%;
+}
+
 @media(max-width:768px){
     .telefonszam{
         padding-right: 0;
@@ -102,9 +116,14 @@ header{
     margin-top: 150px;
     height: 700px;
     gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
 
     
 }
+
+
 .alsoreszcim{
     text-align: center;
     color: white;
@@ -122,8 +141,9 @@ header{
     width: 388px;
     height: 350px;
     margin-left: 15px;
-    
     padding-bottom: 25px;
+    
+
 
 }
 .card4kep{
@@ -142,7 +162,9 @@ header{
 }
 .kepeklent{
     display: grid;
-    grid-template-columns: repeat(4,350px);
+    grid-template-columns: 1fr; /* Egyetlen teljes szélességű oszlop */
+    gap: 20px; /* Távolság a kártyák között */
+    padding: 10px;
     justify-content: center;
     gap: 40px;
     margin: 0 auto ;
@@ -150,21 +172,39 @@ header{
   
 
 }
-@media  screen and (max-width: 1660px) {
+@media(max-width: 1600px)
+{
     .kepeklent{
-        grid-template-columns: repeat(4,300px);
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        max-width: 1200px;
+        margin: 0 auto;
         gap: 20px;
+
     }
-    @media screen and(max-width:1600px) {
-        .kepeklent{
-            grid-template-columns: repeat(4,300px);
-            gap: 20px;
-        }
+    .kepeklent img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .card3, .card4, .card5, .card6 {
+        /* Töröld az eredeti fix 'width' beállításokat, ha vannak */
+        width: auto; 
+        /* Vagy használd ezt, hogy biztosan kitöltse a grid cellát */
+        max-width: 100%; 
+
+
         
+    }
+    .kepeklent img {
+        width: 100%; /* Ez a legfontosabb, hogy a kép kitöltse a konténerét */
+        height: 250px; /* Fix magasság, hogy egyformák legyenek */
+        object-fit: cover; /* Megtartja az arányokat */
+        display: block;
+        border-radius: 8px;
     }
     
 }
-
 .szurkedoboz{
     background-color: #bdbdbd; /* szürke */
     height: 50px;
