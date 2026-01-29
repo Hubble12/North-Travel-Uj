@@ -40,7 +40,14 @@ body{
     margin-top: 5%;
 }
 
-
+.telefonszam{
+    color: white;
+    margin: 0;                    
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 40px;
+   
+}
 
 #oldal_jobb{
     background-color: #D9D9D9;
