@@ -19,6 +19,13 @@ header{
     text-align: center;
    
 }
+#telefon
+{
+    width: 93px;
+    height: 93px;
+    margin-right:-1500px;
+
+}
 .telefonszam{
     color: white;
     margin: 0;                    
