@@ -19,6 +19,13 @@ header{
     text-align: center;
    
 }
+#telefon
+{
+    width: 93px;
+    height: 93px;
+    margin-right:-1500px;
+
+}
 .telefonszam{
     color: white;
     margin: 0;                    
@@ -27,6 +34,20 @@ header{
     padding-right: 40px;
    
 }
+
+#rolunk{
+    width: 200px;
+    height: 60px;
+    color: white;
+    background-color: #3B3955;
+    border-bottom-right-radius: 20%;
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    display: block;
+    margin-right: -10%;
+}
+
 @media(max-width:768px){
     .telefonszam{
         padding-right: 0;
