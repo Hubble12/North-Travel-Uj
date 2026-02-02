@@ -43,12 +43,12 @@
 
     <div id="oldal_jobb" class="oldalsavok">
         <table>
-            <tr><td><h2>Személyek száma:</h2></td><td><input type="number"></td></tr>
-            <tr><td><h2>Indulás:</h2></td><td><input type="text"></td></tr>
-            <tr><td><h2>Hazatérés:</h2></td><td><input type="text"></td></tr>
-            <tr><td><h2>Szobák száma:</h2></td><td><input type="number"></td></tr>
-            <tr><td><h2>E-Mail:</h2></td><td><input type="text"></td></tr> 
-            <tr><td></td><td><button>Tovább a fizetéshez</button></td></tr>
+            <tr><td><h2>Személyek száma:</h2></td><td><input type="number" id="input1"></td></tr>
+            <tr><td><h2>Indulás:</h2></td><td><input type="text" id="input2"></td></tr>
+            <tr><td><h2>Hazatérés:</h2></td><td><input type="text" id="input3"></td></tr>
+            <tr><td><h2>Szobák száma:</h2></td><td><input type="number" id="input4"></td></tr>
+            <tr><td><h2>E-Mail:</h2></td><td><input type="text" id="input5"></td></tr> 
+            <tr><td></td><td><button onclick="fizetes()">Tovább a fizetéshez</button></td></tr>
             <tr><td></td><td><a href="fooldal.html"><button>Vissza</button></a></td></tr>
         </table>
     </div>
@@ -96,5 +96,7 @@
             
         </div>
     </footer>
+
+    <script src="buy.js"></script>
 </body>
 </html>
