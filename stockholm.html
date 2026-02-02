@@ -35,72 +35,68 @@
 
         </div>
         <div class="card2">
-            <div class="card2">
-                <div class="slider">
-                    
-                    <img src="Képek/Sved varosok/Stockholm.jpg" class="slide" data-city="Stockholm">        
-                    <img src="Képek/Sved varosok/Malmö.jpg "class="slide" data-city="Malmö">              
-                    <img src="Képek/Sved varosok/Lund.jpg" class="slide" data-city="Lund">
-                    <img src="Képek/Sved varosok/Uppsala.jpg" class="slide" data-city="Uppsala">
-                    <div class="caption">Üdvözlünk</div>
-                    
+            <div class="slider">
+                <img src="Képek//Sved varosok/images.jpg" class="slide active" data-city="Üdvözlünk">
+                <img src="Képek/Sved varosok/Stockholm.jpg" class="slide" data-city="Stockholm">        
+                <img src="Képek/Sved varosok/Göteborg.jpg "class="slide" data-city="Göteborg">              
+                <img src="Képek/Sved varosok/Lund.jpg" class="slide" data-city="Lund">
+                <img src="Képek/Sved varosok/Malmö.jpg" class="slide" data-city="Malmö">
+                <div class="caption">Üdvözlünk</div>
+                
+              
+                <button class="nav prev">❮</button>
+                <button class="nav next">❯</button>
+              </div>
+
+              <script>
+                const slides = document.querySelectorAll('.slide');
+                const caption = document.querySelector('.caption');
+              
+                const captions = [
+                  "Üdvözlünk",
+                  "Stockholm",
+                  "Göteborg",
+                  "Lund",
+                  "Malmö",
                   
-                    <button class="nav prev">❮</button>
-                    <button class="nav next">❯</button>
-                  </div>
-    
-                  <script>
-                    const slides = document.querySelectorAll('.slide');
-                    const caption = document.querySelector('.caption');
-                  
-                    const captions = [
-                      "Üdvözlünk",
-                      "Stockholm",
-                      "Malmö",
-                      "Lund",
-                      "Uppsala",
-                      
-                    ];
-                  
-                    let index = 0;
-                  
-                    document.querySelector('.next').onclick = () => {
-                      slides[index].classList.remove('active');
-                      index = (index + 1) % slides.length;
-                      slides[index].classList.add('active');
-                      caption.textContent = captions[index];
-                    };
-                  
-                    document.querySelector('.prev').onclick = () => {
-                      slides[index].classList.remove('active');
-                      index = (index - 1 + slides.length) % slides.length;
-                      slides[index].classList.add('active');
-                      caption.textContent = captions[index];
-                    };
-    
-    
-    
-      function updateSlide(newIndex) {
-        slides[index].classList.remove('active');
-        index = newIndex;
-        slides[index].classList.add('active');
-        caption.textContent = slides[index].dataset.city;
-      }
-    
-      document.querySelector('.next').onclick = () => {
-        updateSlide((index + 1) % slides.length);
-      };
-    
-      document.querySelector('.prev').onclick = () => {
-        updateSlide((index - 1 + slides.length) % slides.length);
-      };
-                  </script>
-    
-            </div>
-        </div>
-        </div>
+                ];
+              
+                let index = 0;
+              
+                document.querySelector('.next').onclick = () => {
+                  slides[index].classList.remove('active');
+                  index = (index + 1) % slides.length;
+                  slides[index].classList.add('active');
+                  caption.textContent = captions[index];
+                };
+              
+                document.querySelector('.prev').onclick = () => {
+                  slides[index].classList.remove('active');
+                  index = (index - 1 + slides.length) % slides.length;
+                  slides[index].classList.add('active');
+                  caption.textContent = captions[index];
+                };
+
+
+
+  function updateSlide(newIndex) {
+    slides[index].classList.remove('active');
+    index = newIndex;
+    slides[index].classList.add('active');
+    caption.textContent = slides[index].dataset.city;
+  }
+
+  document.querySelector('.next').onclick = () => {
+    updateSlide((index + 1) % slides.length);
+  };
+
+  document.querySelector('.prev').onclick = () => {
+    updateSlide((index - 1 + slides.length) % slides.length);
+  };
+              </script>
 
         </div>
+    </div>
     </div>
     <a href="fooldal.html">
         <button id="vissza">Vissza</button>
