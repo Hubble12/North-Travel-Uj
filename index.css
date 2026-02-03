@@ -45,7 +45,7 @@ header{
 {
     font-size:48px;
     margin-left:350px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .logo{
     width: 120px;
@@ -276,3 +276,25 @@ header{
     font-size: 35px;
         
   }
+/*Responzivitás*/
+
+
+
+@media only screen and (max-width: 1700px)
+{
+   /*Fejléc*/
+    #header
+    {
+        width:70%;
+    }
+   #telefon
+   {
+    margin: 70%;
+   }
+   .telefonszam
+   {
+    margin:70%;
+   }
+
+
+}
