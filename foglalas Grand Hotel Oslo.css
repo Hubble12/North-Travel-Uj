@@ -297,9 +297,10 @@ header{
 }
 #telefon
 {
-    width: 93px;
-    height: 93px;
-    margin-right:-1500px;
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin-right: -1500px;;
 
 }
 
