@@ -204,26 +204,94 @@ header{
         border-radius: 8px;
     }
     
-}
-.szurkedoboz{
-    background-color: #bdbdbd; /* szürke */
-    height: 50px;
     
+   
+}
+@media(max-width: 1690px)
+{
+    .kepeklent{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 20px;
+
+    }
+    .kepeklent img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .card3, .card4, .card5, .card6 {
+        /* Töröld az eredeti fix 'width' beállításokat, ha vannak */
+        width: auto; 
+        /* Vagy használd ezt, hogy biztosan kitöltse a grid cellát */
+        max-width: 100%; 
+
+
+        
+    }
+    .kepeklent img {
+        width: 100%; /* Ez a legfontosabb, hogy a kép kitöltse a konténerét */
+        height: 250px; /* Fix magasság, hogy egyformák legyenek */
+        object-fit: cover; /* Megtartja az arányokat */
+        display: block;
+        border-radius: 8px;
+    }
+    
+    
+   
+}
+@media(max-width: 1500px)
+{
+    .kepeklent{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 20px;
+
+    }
+    .kepeklent img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .card3, .card4, .card5, .card6 {
+        /* Töröld az eredeti fix 'width' beállításokat, ha vannak */
+        width: auto; 
+        /* Vagy használd ezt, hogy biztosan kitöltse a grid cellát */
+        max-width: 100%; 
+
+
+        
+    }
+    .kepeklent img {
+        width: 100%; /* Ez a legfontosabb, hogy a kép kitöltse a konténerét */
+        height: 250px; /* Fix magasság, hogy egyformák legyenek */
+        object-fit: cover; /* Megtartja az arányokat */
+        display: block;
+        border-radius: 8px;
+    }
+    
+    
+   
+}
+
+.szurkedoboz{
+    background-color: #bdbdbd;
+    width: 100%;            /* Fontos: 100% széles, így követi a képet! */
+    height: auto;
+    padding: 10px 0;
     font-size: x-large;
-    margin-top: -33px;
-    width: 384px;
-    position: absolute;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    border-top-right-radius: 0px ;
-    border-top-left-radius: 0px;
 }
 .szurkedoboz p {
-    margin-top: 10px;
-    margin-left: 15px;
-    font-size: 35px;
-
-  }
+    margin: 0;
+    text-align: center;
+    font-size: 28px;
+}
   .slider {
     position: relative;
     width: 100%;
