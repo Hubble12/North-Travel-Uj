@@ -1,8 +1,8 @@
-body{
+body {
     background-color: #D9D9D9;
     overflow-x: hidden;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 #cim
@@ -39,7 +39,6 @@ color:black;
     border-color: black;
     width: 40%;
     height: 700px;
-    display: inline-block;
     float: left;
     margin-left: 3%;
     margin-top: 5%;
@@ -54,9 +53,10 @@ color:black;
     border-color: black;
     width: 30%;
     height: 700px;
-    display: inline-block;
     float: right;
     margin-right: 10%;
+    position: relative;
+    bottom: 0;
     margin-top: 5%;
 }
 
@@ -95,150 +95,50 @@ color:black;
    
 }
 
-#lablec_al{
-    width: 93%;
+#lablec_al {
+    background-color: #3B3955;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#lablec_bal, #lablec_kozep, #lablec_jobb {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+#lablec_bal:hover, #lablec_kozep:hover, #lablec_jobb:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#kep_bal, #kep_kozep, #kep_jobb {
+    width: 100%;
     height: 100%;
-    float: right;
+    object-fit: cover;
 }
 
-#lablec_bal{
-    margin: 5%;
-    height: 70%;
-    width: 20%;
-    margin-bottom: 0%;
-    display: inline-block;
-    background-color: #3B3955;
+#kepirat_bal, #kepirat_kozep, #kepirat_jobb {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    height: 50px;
+    font-size: 16px;
+    position: absolute;
     bottom: 0;
-}
-
-#lablec_kozep{
-    margin: 5%;
-    height: 70%;
-    width: 20%;
-    margin-bottom: 0%;
-    display: inline-block;
-    background-color: #3B3955;
-    bottom: 0;
-}
-
-#lablec_jobb{
-    margin: 5%;
-    height: 70%;
-    width: 20%;
-    margin-bottom: 0%;
-    display: inline-block;
-    background-color: #3B3955;
-    bottom: 0;
-}
-
-#lablec_bal:hover{
-    height: 71%;
-    width: 21%;
-}
-
-#lablec_kozep:hover{
-    height: 71%;
-    width: 21%;
-}
-
-#lablec_jobb:hover{
-    height: 71%;
-    width: 21%;
-}
-
-
-
-
-
-
-
-
-
-#kep_bal{
-   
-    background-position: 60%;
-    background-size: 100%;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 80%;
-    display: block;
-
-    border-top-left-radius: 30px;   
-    border-top-right-radius: 30px;  
-}
-
-#kepirat_bal{
-    background-color: #D9D9D9;
-    width: 100%;
-    height: 20%;
-    display: block;
-
     text-align: center;
-    font-size: xx-large;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
-
-
-
-
-
-#kep_kozep{
-   
-    background-position: 60%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 80%;
-    display: block;
-
-    border-top-left-radius: 30px;   
-    border-top-right-radius: 30px;
-}
-
-#kepirat_kozep{
-    background-color: #D9D9D9;
-    width: 100%;
-    height: 30%;
-    display: block;
-
-    text-align: center;
-    font-size: xx-large;
-
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
-
-
-
-
-
-#kep_jobb{
-   
-    background-position: 60%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 80%;
-    display: block;
-
-    border-top-left-radius: 30px;   
-    border-top-right-radius: 30px;
-
-    
-}
-
-#kepirat_jobb{
-    background-color: #D9D9D9;
-    width: 100%;
-    height: 20%;
-    display: block;
-
-    text-align: center;
-    font-size: xx-large;
-
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    padding: 10px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 

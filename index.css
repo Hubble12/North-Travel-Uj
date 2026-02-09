@@ -281,10 +281,11 @@ header {
     .kepeklent {
         flex-direction: column;
         align-items: center;
+        width:100%;
     }
 
     .card3, .card4, .card5, .card6 {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
 }
