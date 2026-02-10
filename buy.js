@@ -3,6 +3,11 @@ let indulas;
 let hazateres;
 let szobak;
 let email;
+let fizetendo;
+
+function GrandHotel (){  //Minden hotelra függvény
+  fizetendo = 30000
+}
 
 function fizetes (){
     //adatbeolvasás
@@ -11,6 +16,9 @@ function fizetes (){
     hazateres = document.getElementById("input3").value
     szobak = Number(document.getElementById("input4").value)
     email = document.getElementById("input5").value
+
+    hotel = document.getElementById("oldal_bal_fel").value
+    console.log(hotel)
 
 
     let tartozkodas1 = 0
@@ -404,7 +412,7 @@ function fizetes (){
       eltoltottnapok = tartozkodas2 -tartozkodas1
       //alert(eltoltottnapok) //eltöltött napok száma
   
-      let fizetendo = 30000
+      //let fizetendo = 30000
       fizetendo = fizetendo*eltoltottnapok*szemelyekszama*szobak
   
       alert("Fizetendő összeg: " + fizetendo + "Ft\nNapok száma: " + eltoltottnapok)
@@ -417,5 +425,4 @@ function fizetes (){
 
 
 }
-
 
