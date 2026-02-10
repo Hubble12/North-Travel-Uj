@@ -3,6 +3,11 @@ let indulas;
 let hazateres;
 let szobak;
 let email;
+let fizetendo;
+
+function GrandHotel (){  //Minden hotelra függvény
+  fizetendo = 30000
+}
 
 function fizetes (){
     //adatbeolvasás
@@ -11,6 +16,9 @@ function fizetes (){
     hazateres = document.getElementById("input3").value
     szobak = Number(document.getElementById("input4").value)
     email = document.getElementById("input5").value
+
+    hotel = document.getElementById("oldal_bal_fel").value
+    console.log(hotel)
 
 
     let tartozkodas1 = 0
@@ -32,9 +40,112 @@ function fizetes (){
     console.log("-----------------------------------------")
     console.log("")
 
-    if (honap1 < 1 || honap1 > 12 || honap2 < 1 || honap2 > 12){  //ELLENŐRIZNI ADATOK HELYESSÉGÉT, HELYES-E VÁLTOZÓ LÉTREHOZÁSA
 
+    let check1 = 1
+
+    if (honap1 < 1 || honap1 > 12 || honap2 < 1 || honap2 > 12){  //ELLENŐRIZNI ADATOK HELYESSÉGÉT, HELYES-E VÁLTOZÓ LÉTREHOZÁSA
+      check1 = 0
     }
+
+    if (nap1 < 1 || nap1 > 31 || nap2 < 1 || nap2 > 31){
+      check1 = 0
+    }
+
+    //hónapok napszámai
+    if (honap1 == 1 && nap1 > 31){
+      check1 = 0
+    }
+    if (honap1 == 2 && nap1 > 29){
+      check1 = 0
+    }
+    if (honap1 == 3 && nap1 > 31){
+      check1 = 0
+    }
+    if (honap1 == 4 && nap1 > 30){
+      check1 = 0
+    }
+    if (honap1 == 5 && nap1 > 31){
+      check1 = 0
+    }
+    if (honap1 == 6 && nap1 > 30){
+      check1 = 0
+    }
+    if (honap1 == 7 && nap1 > 31){
+      check1 = 0
+    }
+    if (honap1 == 8 && nap1 > 31){
+      check1 = 0
+    }
+    if (honap1 == 9 && nap1 > 30){
+      check1 = 0
+    }
+    if (honap1 == 10 && nap1 > 31){
+      check1 = 0
+    }
+    if (honap1 == 11 && nap1 > 30){
+      check1 = 0
+    }
+    if (honap1 == 12 && nap1 > 31){
+      check1 = 0
+    }
+
+
+
+
+    if (honap2 == 1 && nap2 > 31){
+      check1 = 0
+    }
+    if (honap2 == 2 && nap2 > 29){
+      check1 = 0
+    }
+    if (honap2 == 3 && nap2 > 31){
+      check1 = 0
+    }
+    if (honap2 == 4 && nap2 > 30){
+      check1 = 0
+    }
+    if (honap2 == 5 && nap2 > 31){
+      check1 = 0
+    }
+    if (honap2 == 6 && nap2 > 30){
+      check1 = 0
+    }
+    if (honap2 == 7 && nap2 > 31){
+      check1 = 0
+    }
+    if (honap2 == 8 && nap2 > 31){
+      check1 = 0
+    }
+    if (honap2 == 9 && nap2 > 30){
+      check1 = 0
+    }
+    if (honap2 == 10 && nap2 > 31){
+      check1 = 0
+    }
+    if (honap2 == 11 && nap2 > 30){
+      check1 = 0
+    }
+    if (honap2 == 12 && nap2 > 31){
+      check1 = 0
+    }
+
+
+    if (nap1 > nap2 || honap1 > honap2){
+      check1 = 0
+    }
+
+    if (szemelyekszama == "" || szemelyekszama < 1){
+      check1 = 0
+    }
+
+    if (email == "" || email.includes("@") == false || email.substr(email.length - 1) == "@"){
+      check1 = 0
+    }
+
+    if (szobak < 1){
+      check1 = 0
+    }
+
 
 
     //-------------------------------------------------------------------------------------
@@ -297,16 +408,21 @@ function fizetes (){
 
 
 
+    if (check1 == 1){
+      eltoltottnapok = tartozkodas2 -tartozkodas1
+      //alert(eltoltottnapok) //eltöltött napok száma
+  
+      //let fizetendo = 30000
+      fizetendo = fizetendo*eltoltottnapok*szemelyekszama*szobak
+  
+      alert("Fizetendő összeg: " + fizetendo + "Ft\nNapok száma: " + eltoltottnapok)
+    }
+    else{
+      alert("Hibás adatok lettek megadva!")
+    }
 
-    eltoltottnapok = tartozkodas2 -tartozkodas1
-    alert(eltoltottnapok) //eltöltött napok száma
 
-    let fizetendo = 30000
-    fizetendo = fizetendo*eltoltottnapok*szemelyekszama*szobak
-
-    alert("Fizetendő összeg: " + fizetendo + "Ft")
 
 
 }
-
 
