@@ -265,85 +265,12 @@ a{
     color: black;
 }
 
+@media (max-width:1400px)
+{
+.kep{
+margin-left:-40px;
 
-
-@media (max-width: 1024px) {
-    header {
-        flex-wrap: wrap;
-        justify-content: center;
-        height: auto;
-        padding: 15px;
-        gap: 10px;
-    }
-
-    .logo {
-        width: 80px;
-    }
-
-    #telefon {
-        width: 40px;
-        height: 40px;
-    }
-
-    .telefonszam {
-        font-size: 14px;
-    }
-
-    #fooldal, #rolunk {
-        width: 100px;
-        height: 35px;
-        font-size: 14px;
-    }
-
-    #cim {
-        font-size: 28px;
-        margin: 10px 0;
-    }
-
-    .card1, .card2 {
-        width: 95%;
-    }
 }
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding: 10px;
-    }
 
-    .logo {
-        width: 60px;
-    }
 
-    #telefon {
-        width: 30px;
-        height: 30px;
-    }
-
-    .telefonszam {
-        font-size: 12px;
-    }
-
-    #fooldal, #rolunk {
-        width: 80px;
-        height: 30px;
-        font-size: 12px;
-    }
-
-    #cim {
-        font-size: 20px;
-    }
-
-    .card1, .card2 {
-        width: 100%;
-    }
-
-    .kepeklent {
-        flex-direction: column;
-        align-items: center;
-        width:100%;
-    }
-
-    
 }
