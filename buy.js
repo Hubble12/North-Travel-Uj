@@ -5,11 +5,35 @@ let szobak;
 let email;
 let fizetendo;
 
-function GrandHotel (){  //Minden hotelra függvény
+function GrandHotel(){  //Minden hotelra függvény
   fizetendo = 30000
 }
 
-function fizetes (){
+function Amerikalinjen(){
+  fizetendo = 20000
+}
+
+function Holmenkollen(){
+  fizetendo = 33000
+}
+
+function Clarion(){
+  fizetendo = 36000
+}
+
+
+
+
+
+
+
+
+
+function fizetes(){
+
+  if (fizetendo == ""){
+    fizetendo = 30000
+  }
     //adatbeolvasás
     szemelyekszama = Number(document.getElementById("input1").value)
     indulas = document.getElementById("input2").value
@@ -34,6 +58,26 @@ function fizetes (){
     let nap1 = indulasarray[1]
     let nap2 = hazateresarray[1]
 
+    if (honap1.substr[0] == "0"){
+      honap1 = honap1.substr[1]
+      console.log("Hónap1:--- " + honap1)
+    }
+
+    if (honap2.substr[0] == "0"){
+      honap2 = honap2.substr[1]
+      console.log("Hónap2:--- " + honap2)
+    }
+
+    
+    if (nap1.substr[0] == "0"){
+      nap1 = nap1.substr[1]
+      console.log("Nap1:--- " + nap1)
+    }
+
+    if (nap2.substr[0] == "0"){
+      nap2 = nap2.substr[1]
+      console.log("Nap2:--- " + nap2)
+    }
 
     console.log(honap1, nap1)
     console.log(honap2, nap2)
@@ -146,6 +190,19 @@ function fizetes (){
       check1 = 0
     }
 
+
+
+    if (szemelyekszama >10){
+      check1 = 3
+    }
+
+    if (szobak > 5){
+      check1 = 4
+    }
+
+    if (szemelyekszama > 10 && szobak > 5){
+      check1 = 5
+    }
 
 
     //-------------------------------------------------------------------------------------
@@ -414,8 +471,18 @@ function fizetes (){
   
       //let fizetendo = 30000
       fizetendo = fizetendo*eltoltottnapok*szemelyekszama*szobak
+      fizetendo = Number(fizetendo)
   
-      alert("Fizetendő összeg: " + fizetendo + "Ft\nNapok száma: " + eltoltottnapok)
+      alert("Fizetendő összeg: " + fizetendo + "Ft\nNapok száma: " + eltoltottnapok + "\nA megadott email címre küldtük a fizetési jóváhagyást. Ha nem érkezett email, ellenőrizze az email címét!")
+    }
+    else if (check1 == 3){
+      alert(szemelyekszama + " személyre nem tudunk utat szervezni. 10 főre tudunk legfeljebb foglalni.")
+    }
+    else if (check1 == 4){
+      alert("Legfeljebb 5 szobát tudunk foglalni.")
+    }
+    else if (check1 == 5){
+      alert("Legfeljebb 10 személyt és 5 szobát tudunk feldolgozni.")
     }
     else{
       alert("Hibás adatok lettek megadva!")
