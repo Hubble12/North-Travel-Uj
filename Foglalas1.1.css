@@ -267,107 +267,44 @@ a{
 
 
 
-@media (max-width: 600px) {
-    body {
-        font-size: 14px;
-        overflow-x: hidden;
-    }
-
-    #oldalterulet {
-        height: auto;
-    }
-
-    #lablec {
-        height: auto;
-        padding: 20px;
-    }
-
-    .oldalsavok {
-        width: 100%;
-        height: auto;
-    }
-
-    #oldal_bal, #oldal_jobb {
-        width: 100%;
-        height: auto;
-        margin: 0;
-        float: none;
-    }
-
-    #fooldal {
-        width: 100%;
-        height: auto;
-        font-size: 20px;
-    }
-
-    #telefon {
-        width: 50px;
-        height: 50px;
-        margin-right: 0;
-        float: none;
-    }
-
-    .telefonszam {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    #lablec_bal, #lablec_kozep, #lablec_jobb {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    #kep_bal, #kep_kozep, #kep_jobb {
-        height: 200px;
-    }
-
-    h1 {
-        font-size: 20px;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    h2 {
-        font-size: 16px;
-        margin-right: 5%;
-    }
-
-    button {
-        width: 100%;
-        height: auto;
-        font-size: 16px;
-        margin-top: 10px;
-    }
-
-    input {
-        width: 100%;
-        height: auto;
-        font-size: 14px;
-    }
-
+@media (max-width: 1024px) {
     header {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
         height: auto;
-        padding: 10px 0;
+        padding: 15px;
+        gap: 10px;
     }
 
     .logo {
         width: 80px;
-        height: 80px;
     }
 
-    table {
-        width: 100%;
-        float: none;
+    #telefon {
+        width: 40px;
+        height: 40px;
     }
 
-    a {
+    .telefonszam {
         font-size: 14px;
     }
+
+    #fooldal, #rolunk {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    #cim {
+        font-size: 28px;
+        margin: 10px 0;
+    }
+
+    .card1, .card2 {
+        width: 95%;
+    }
 }
-@media (max-width: 650px) {
+@media (max-width: 768px) {
     header {
         flex-direction: column;
         align-items: center;
@@ -388,52 +325,25 @@ a{
         font-size: 12px;
     }
 
-    #fooldal {
+    #fooldal, #rolunk {
         width: 80px;
         height: 30px;
         font-size: 12px;
     }
 
-    h1 {
+    #cim {
         font-size: 20px;
     }
 
-    h2 {
-        font-size: 16px;
-    }
-
-    button {
+    .card1, .card2 {
         width: 100%;
-        height: auto;
-        font-size: 16px;
-        margin-top: 10px;
     }
 
-    input {
-        width: 100%;
-        height: auto;
-        font-size: 14px;
+    .kepeklent {
+        flex-direction: column;
+        align-items: center;
+        width:100%;
     }
 
-    .oldalsavok {
-        width: 100%;
-        height: auto;
-    }
-
-    #oldal_bal, #oldal_jobb {
-        width: 100%;
-        height: auto;
-        margin: 0;
-        float: none;
-    }
-
-    #lablec_bal, #lablec_kozep, #lablec_jobb {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    #kep_bal, #kep_kozep, #kep_jobb {
-        height: 200px;
-    }
+    
 }
