@@ -21,9 +21,59 @@ function Clarion(){
   fizetendo = 36000
 }
 
+function GrandHotel2(){
+  fizetendo = 40000
+}
+
+function EttHem(){
+  fizetendo = 18000
+}
+
+function atSix(){
+  fizetendo = 38000
+}
+
+function DenHotel(){
+  fizetendo = 28000
+}
 
 
 
+function Villa(){
+  fizetendo = 30000
+}
+
+function AcHotel(){
+  fizetendo = 40000
+}
+
+function BigHotel(){
+  fizetendo = 30000
+}
+
+function Postmaster(){
+  fizetendo = 18000
+}
+
+
+
+
+
+function Appuka(){
+  fizetendo = 25000
+}
+
+function Aito(){
+  fizetendo = 24000
+}
+
+function Santa(){
+  fizetendo = 30000
+}
+
+function Arctic(){
+  fizetendo = 27000
+}
 
 
 
@@ -205,7 +255,7 @@ function fizetes(){
     }
 
 
-    //-------------------------------------------------------------------------------------
+    //༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ
     if (honap1 == 1){
       tartozkodas1 += 0
       console.log("if 1")
