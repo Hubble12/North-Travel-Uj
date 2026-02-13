@@ -33,6 +33,17 @@ body{
     font-weight: bold;
     padding-right: 40px;
    
+    
+}
+#fooldal, #rolunk, #vissza {
+    background-color: #3B3955;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 #oldal_bal{
     background-color: #D9D9D9;
