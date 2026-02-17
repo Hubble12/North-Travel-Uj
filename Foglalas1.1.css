@@ -60,51 +60,9 @@ color:black;
     bottom: 0;
     margin-top: 5%;
 }
-ul {
-    list-style-type: none;
-   
-    padding: 0;
-    overflow: hidden;
-    background-color: #3B3955;
-  }
-  
-  ul li {
-    float: left;
-    margin-right:40px;
-    
-  }
-  
-  ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    align-items: center;
-  }
-  
-  ul li a:hover {
-    background-color: #28273b;
-  }
 
 
-#telefon
-{
-    width: 100px;
-    height: 100px;
-    float: right;
-    margin-right: -1500px;;
 
-}
-
-.telefonszam{
-    color: white;
-    margin: 0;                     
-    font-size: 18px;
-    font-weight: bold;
-    padding-right: 40px;
-   
-}
 
 #lablec_al {
     background-color: #3B3955;
@@ -217,6 +175,7 @@ button{
     margin-top: 10px;
 }
 
+
 button:hover{
     background-color: #28273b;
 }
@@ -238,41 +197,60 @@ table{
 
 /*fejléc*/
 
-header{
+header {
     background-color: #3B3955;
     height: 117px;
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 0px 0px;
-    
+    justify-content: space-between;
    
 }
-.logo{
-    width: 120px;
-    height: 120px;
-    text-align: center;
-   
-}
-#telefon
-{
-    width: 100px;
+
+.logo {
     height: 100px;
-    float: right;
-    margin-right: -1500px;;
-
+    width: auto;
 }
 
-.telefonszam{
+.jobb-oldal {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#telefon {
+    width: 70px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.telefonszam {
     color: white;
-    margin: 0;                    
     font-size: 18px;
     font-weight: bold;
-    padding-right: 40px;
+}
+#phone
+{
+    display:flex;
+}
+ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
    
+    background-color: #3B3955;
 }
 
-a{
-    color: black;
+ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #28273b;
 }
 
