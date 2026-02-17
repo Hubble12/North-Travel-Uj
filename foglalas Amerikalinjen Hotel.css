@@ -297,44 +297,63 @@ table{
 
 /*fejléc*/
 
-header{
+header {
     background-color: #3B3955;
     height: 117px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 0px;
    
 }
 
-.logo{
-    width: 120px;
-    height: 120px;
-    text-align: center;
-   
-}
-#telefon
-{
-    width: 100px;
+.logo {
     height: 100px;
-    float: right;
-    margin-right: -1500px;;
-
+    width: auto;
 }
 
-.telefonszam{
+.jobb-oldal {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#telefon {
+    width: 70px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.telefonszam {
     color: white;
-    margin: 0;                    
     font-size: 18px;
     font-weight: bold;
-    padding-right: 40px;
+}
+#phone
+{
+    display:flex;
+}
+ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
    
+    background-color: #3B3955;
 }
 
-a{
-    color: black;
+ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+    text-decoration: none;
 }
+
+ul li a:hover {
+    background-color: #28273b;
+}
+
 
 
 @media only screen and (max-width: 890px){
