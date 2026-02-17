@@ -60,22 +60,32 @@ color:black;
     bottom: 0;
     margin-top: 5%;
 }
-
-#fooldal, #rolunk, #vissza {
+ul {
+    list-style-type: none;
+   
+    padding: 0;
+    overflow: hidden;
     background-color: #3B3955;
+  }
+  
+  ul li {
+    float: left;
+    margin-right:40px;
+    
+  }
+  
+  ul li a {
+    display: block;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-left:-800px;
-}
-
-#fooldal:hover, #rolunk:hover, #vissza:hover {
-    background-color: #57547A;
-}
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    align-items: center;
+  }
+  
+  ul li a:hover {
+    background-color: #28273b;
+  }
 
 
 #telefon
@@ -89,7 +99,7 @@ color:black;
 
 .telefonszam{
     color: white;
-    margin: 0;                    
+    margin: 0;                     
     font-size: 18px;
     font-weight: bold;
     padding-right: 40px;
@@ -234,8 +244,8 @@ header{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 0px 0px;
+    
    
 }
 .logo{
