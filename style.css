@@ -1,4 +1,4 @@
- 
+
 body{
     background-color: #D9D9D9;
     margin: auto;
@@ -8,34 +8,31 @@ body{
 }
 header{
     background-color: #3B3955;
-    height: 117px;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 0px;
+    padding: 0px 20px;
     flex-wrap: wrap;
 
 }
 .logo{
-    width: 120px;
-    height: 120px;
-    text-align: center;
+    width: 90px;
+    height: auto;
+    
 
 }
 #telefon
 {
-    width: 93px;
-    height: 93px;
-    margin-right:-1500px;
+    width: 40px;
+    height: auto;
+    
 
 }
 .telefonszam{
-    color: white;
-    margin: 0;                    
-    font-size: 18px;
+    color: white;                  
+    font-size: 16px;
     font-weight: bold;
-    padding-right: 40px;
+    margin-left: 10px;
 
 }
 
@@ -52,77 +49,52 @@ header{
     margin-right: -10%;
 }
 
-@media(max-width:768px){
+/*@media(max-width:768px){
     .telefonszam{
         padding-right: 0;
         margin-top: 10px;
     }
 }
+    */
 .card1{
-    margin-top: 25px;
-    box-shadow: 0 4px 8px 0;
-    transition: 0.3s;
-    font-size: 50px;
-    font-size: 55px;
-
-    text-align: center;
-    height: 412px;
-    color: white;
     background-color: #3B3955;
-
+    color: white;
     border-radius: 13px;
-    grid-column: span 6;
-    margin: 0;
-    width: 100%;
-    height: auto;
-
+    padding: 40px 20px;
+    text-align: center;
 }
 .card1:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.0);
     color: black;
 }
 .alszoveg{
-    font-size: 65px;
+    font-size: clamp(18px, 3vw, 32px);
 
 }
 .szoveg{
-    margin-top: 5px;
+    font-size: clamp(32px,5vw,60px);
 }
 .felsoresz{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 24px;
     max-width: 1400px;
     margin: 0 auto;
     padding: 24px;
 }
 .card2{
-    margin-top: 25px;
-    box-shadow: 0 4px 8px 0;
-    transition: 0.3s;
-    text-align: center;
-    height: 417px;
     border-radius: 13px;
-    grid-column: span 6;
-    margin: 0;
-    width: 100%;
-    height: auto;
+    overflow: hidden;
 }
 .kep{
     width: 688.63px;
     text-align: center;
-    height: 417px;
     border-radius: 13px;
 }
 .alsoresz{
     background-color: #3B3955;
-    width: 100%;
-    margin-top: 150px;
-    height: 700px;
-    gap: 24px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
+   padding: 60px 20px;
+
 
 
 }
@@ -132,51 +104,69 @@ header{
     text-align: center;
     color: white;
     margin-top: 50px;
-
-
-
 }
-.card3kep{
-    width:  384px;
-    height: 359px;
-}
+
 
 .card3{
-    width: 388px;
-    height: 350px;
+
     margin-left: 15px;
     padding-bottom: 25px;
 
-
-
 }
-.card4kep{
-    width:  380px;
-    height: 350px;
-}
-.card5kep{
-    width:  380px;
-    height: 350px;
-
-}
+.card3kep,
+.card4kep,
+.card5kep,
 .card6kep{
-    width:  380px;
-    height: 350px;
-    margin-right: 15px;
+    width: 100%;
+    aspect-ratio: 1/1;   /* MIND EGYFORMA ARÁNY */
+    object-fit: cover;   /* Levágja ami kilóg */
+    display: block;
 }
 .kepeklent{
     display: grid;
-    grid-template-columns: 1fr; /* Egyetlen teljes szélességű oszlop */
-    gap: 20px; /* Távolság a kártyák között */
-    padding: 10px;
-    justify-content: center;
-    gap: 40px;
-    margin: 0 auto ;
-    display: flex;
-
-
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
-@media(max-width:1600px) 
+
+@media (max-width: 1200px){
+    .kepeklent{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .kepeklent{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .kepeklent{
+        grid-template-columns: 1fr;
+    }
+}
+.kepeklent >div{
+ 
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.kepeklent >div:hover
+{
+    transform: scale(1.03);
+}
+.kepeklent> img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.kepeklent > div{
+    width: 100%;
+    min-width: 0;   /* EZ engedi összemenni */
+}
+/*@media(max-width:1600px) 
 {
     .felsoresz{
         display: grid;
@@ -214,19 +204,10 @@ header{
     .alszoveg{
         font-size: 50px;
     }
-    .kepeklent{
-        display: grid;
-        flex-direction: row;
-        grid-template-columns: repeat(20,4fr);
-        grid-template-rows: repeat(5,4vw);
-        gap: 20px;
-        max-width: auto;
-    }
-    .card3{
-
-    }
+    
 }
 
+*/
 .szurkedoboz{
     background-color: #bdbdbd;
     width: 100%;            /* Fontos: 100% széles, így követi a képet! */
@@ -244,11 +225,8 @@ header{
   .slider {
     position: relative;
     width: 100%;
-    max-width: 900px;
-    height: 100%;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 15px;
+   aspect-ratio: 16/9;
+   overflow: hidden;
 
   }
 
@@ -311,4 +289,115 @@ header{
     display: flex;
     flex-direction: column;
   }
+  @media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    #rolunk{
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .alsoreszcim{
+        font-size: 24px;
+    }
+}
+@media (max-width: 768px){
+
+    .kepeklent{
+        grid-template-columns: 1fr;  /* egymás alatt */
+    }
+
+    .card3kep,
+    .card4kep,
+    .card5kep,
+    .card6kep{
+        aspect-ratio: 16/9;   /* fekvő téglalap */
+    }
+
+    .szurkedoboz p{
+        font-size: 20px;
+    }
+
+    .felsoresz{
+        grid-template-columns: 1fr;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    /* Szöveges kártya */
+    .card1{
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .szoveg{
+        font-size: 32px;
+    }
+
+    .alszoveg{
+        font-size: 18px;
+    }
+
+    /* Slider kártya */
+    .card2{
+        width: 100%;
+    }
+
+    .slider{
+        aspect-ratio: 16/9;  /* mobil fekvő téglalap */
+    }
+
+    /* Slider caption kisebb */
+    .caption{
+        font-size: 18px;
+        padding: 8px 0;
+    }
+
+    /* Nyilak kisebbek mobilon */
+    .nav{
+        font-size: 22px;
+        padding: 6px 10px;
+    }
+
+    /* Rólunk gomb ne lógjon ki */
+    #rolunk{
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 10px;
+    }
+
+    /* Header szépen egymás alatt */
+    header{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1200px){
+
+    .kepeklent{
+        grid-template-columns: 1fr;   /* egymás alatt */
+        justify-content: center;
+    }
+
+    .card3kep,
+    .card4kep,
+    .card5kep,
+    .card6kep{
+        aspect-ratio: 16/9;   /* fekvő téglalap */
+        object-fit: cover;
+    }
+    .kepeklent > div{
+        width: 100%;
+        max-width: 600px;
+    }
+
+}
 
