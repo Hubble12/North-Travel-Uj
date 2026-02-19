@@ -8,69 +8,48 @@ let fizetendo;
 function GrandHotel(){  //Minden hotelra függvény
   fizetendo = 30000
 }
-
 function Amerikalinjen(){
   fizetendo = 20000
 }
-
 function Holmenkollen(){
   fizetendo = 33000
 }
-
 function Clarion(){
   fizetendo = 36000
 }
-
 function GrandHotel2(){
   fizetendo = 40000
 }
-
 function EttHem(){
   fizetendo = 18000
 }
-
 function atSix(){
   fizetendo = 38000
 }
-
 function DenHotel(){
   fizetendo = 28000
 }
-
-
-
 function Villa(){
   fizetendo = 30000
 }
-
 function AcHotel(){
   fizetendo = 40000
 }
-
 function BigHotel(){
   fizetendo = 30000
 }
-
 function Postmaster(){
   fizetendo = 18000
 }
-
-
-
-
-
 function Appuka(){
   fizetendo = 25000
 }
-
 function Aito(){
   fizetendo = 24000
 }
-
 function Santa(){
   fizetendo = 30000
 }
-
 function Arctic(){
   fizetendo = 27000
 }
@@ -267,107 +246,52 @@ function fizetes(){
       console.log(tartozkodas1)
     }
     if (honap1 == 3){
-      tartozkodas1 += 31
-      tartozkodas1 += 28
+      tartozkodas1 += 59
       console.log("if 3")
       console.log(tartozkodas1)
     }
     if (honap1 == 4){
-      tartozkodas1 += 31
-      tartozkodas1 += 28
-      tartozkodas1 += 31
+      tartozkodas1 += 90
       console.log("if 4")
       console.log(tartozkodas1)
     }
     if (honap1 == 5){
-      tartozkodas1 += 31
-      tartozkodas1 += 28
-      tartozkodas1 += 31
-      tartozkodas1 += 30
+      tartozkodas1 += 120
       console.log("if 5")
       console.log(tartozkodas1)
     }
     if (honap1 == 6){
-      tartozkodas1 += 31
-      tartozkodas1 += 28
-      tartozkodas1 += 31
-      tartozkodas1 += 30
-      tartozkodas1 += 31
+      tartozkodas1 += 151
       console.log("if 6")
       console.log(tartozkodas1)
     }
     if (honap1 == 7){
-      tartozkodas1 += 31
-      tartozkodas1 += 28
-      tartozkodas1 += 31
-      tartozkodas1 += 30
-      tartozkodas1 += 31
-      tartozkodas1 += 30
+      tartozkodas1 += 181
       console.log("if 7")
       console.log(tartozkodas1)
     }
     if (honap1 == 8){
-      tartozkodas1 += 31
-      tartozkodas1 += 31
-      tartozkodas1 += 28
-      tartozkodas1 += 31
-      tartozkodas1 += 30
-      tartozkodas1 += 31
-      tartozkodas1 += 30
+      tartozkodas1 += 212
       console.log("if 8")
       console.log(tartozkodas1)
     }
     if (honap1 == 9){
-      tartozkodas1 += 31
-      tartozkodas1 += 31
-      tartozkodas1 += 28
-      tartozkodas1 += 31
-      tartozkodas1 += 30
-      tartozkodas1 += 31
-      tartozkodas1 += 30
-      tartozkodas1 += 31
+      tartozkodas1 += 243
       console.log("if 9")
       console.log(tartozkodas1)
     }
     if (honap1 == 10){
-      tartozkodas1 += 31
-      tartozkodas1 += 31
-      tartozkodas1 += 28
-      tartozkodas1 += 31
-      tartozkodas1 += 30
-      tartozkodas1 += 31
-      tartozkodas1 += 30
-      tartozkodas1 += 31
-      tartozkodas1 += 30
+      tartozkodas1 += 273
       console.log("if 10")
       console.log(tartozkodas1)
     }
     if (honap1 == 11){
-      tartozkodas1 += 31
-      tartozkodas1 += 31
-      tartozkodas1 += 28
-      tartozkodas1 += 31
-      tartozkodas1 += 30
-      tartozkodas1 += 31
-      tartozkodas1 += 30
-      tartozkodas1 += 31
-      tartozkodas1 += 30
-      tartozkodas1 += 31
+      tartozkodas1 += 304
       console.log("if 11")
       console.log(tartozkodas1)
     }
     if (honap1 == 12){
-      tartozkodas1 += 31
-      tartozkodas1 += 31
-      tartozkodas1 += 28
-      tartozkodas1 += 31
-      tartozkodas1 += 30
-      tartozkodas1 += 31
-      tartozkodas1 += 30
-      tartozkodas1 += 31
-      tartozkodas1 += 30
-      tartozkodas1 += 31
-      tartozkodas1 += 30
+      tartozkodas1 += 334
       console.log("if 12")
       console.log(tartozkodas1)
     }
@@ -399,107 +323,52 @@ function fizetes(){
       console.log(tartozkodas2)
     }
     if (honap2 == 3){
-      tartozkodas2 += 31
-      tartozkodas2 += 28
+      tartozkodas2 += 59
       console.log("if 3")
       console.log(tartozkodas2)
     }
     if (honap2 == 4){
-      tartozkodas2 += 31
-      tartozkodas2 += 28
-      tartozkodas2 += 31
+      tartozkodas2 += 90
       console.log("if 4")
       console.log(tartozkodas2)
     }
     if (honap2 == 5){
-      tartozkodas2 += 31
-      tartozkodas2 += 28
-      tartozkodas2 += 31
-      tartozkodas2 += 30
+      tartozkodas2 += 120
       console.log("if 5")
       console.log(tartozkodas2)
     }
     if (honap2 == 6){
-      tartozkodas2 += 31
-      tartozkodas2 += 28
-      tartozkodas2 += 31
-      tartozkodas2 += 30
-      tartozkodas2 += 31
+      tartozkodas2 += 151
       console.log("if 6")
       console.log(tartozkodas2)
     }
     if (honap2 == 7){
-      tartozkodas2 += 31
-      tartozkodas2 += 28
-      tartozkodas2 += 31
-      tartozkodas2 += 30
-      tartozkodas2 += 31
-      tartozkodas2 += 30
+      tartozkodas2 += 181
       console.log("if 7")
       console.log(tartozkodas2)
     }
     if (honap2 == 8){
-      tartozkodas2 += 31
-      tartozkodas2 += 28
-      tartozkodas2 += 31
-      tartozkodas2 += 30
-      tartozkodas2 += 31
-      tartozkodas2 += 30
-      tartozkodas2 += 31
+      tartozkodas2 += 212
       console.log("if 8")
       console.log(tartozkodas2)
     }
     if (honap2 == 9){
-      tartozkodas2 += 31
-      tartozkodas2 += 28
-      tartozkodas2 += 31
-      tartozkodas2 += 30
-      tartozkodas2 += 31
-      tartozkodas2 += 30
-      tartozkodas2 += 31
-      tartozkodas2 += 31
+      tartozkodas2 += 243
       console.log("if 9")
       console.log(tartozkodas2)
     }
     if (honap2 == 10){
-      tartozkodas2 += 31
-      tartozkodas2 += 28
-      tartozkodas2 += 31
-      tartozkodas2 += 30
-      tartozkodas2 += 31
-      tartozkodas2 += 30
-      tartozkodas2 += 31
-      tartozkodas2 += 31
-      tartozkodas2 += 30
+      tartozkodas2 +=273
       console.log("if 10")
       console.log(tartozkodas2)
     }
     if (honap2 == 11){
-      tartozkodas2 += 31
-      tartozkodas2 += 28
-      tartozkodas2 += 31
-      tartozkodas2 += 30
-      tartozkodas2 += 31
-      tartozkodas2 += 30
-      tartozkodas2 += 31
-      tartozkodas2 += 31
-      tartozkodas2 += 30
-      tartozkodas2 += 31
+      tartozkodas2 += 304
       console.log("if 11")
       console.log(tartozkodas2)
     }
     if (honap2 == 12){
-      tartozkodas2 += 31
-      tartozkodas2 += 28
-      tartozkodas2 += 31
-      tartozkodas2 += 30
-      tartozkodas2 += 31
-      tartozkodas2 += 30
-      tartozkodas2 += 31
-      tartozkodas2 += 31
-      tartozkodas2 += 30
-      tartozkodas2 += 31
-      tartozkodas2 += 30
+      tartozkodas2 += 334
       console.log("if 12")
       console.log(tartozkodas2)
     }
@@ -518,6 +387,7 @@ function fizetes(){
     if (check1 == 1){
       eltoltottnapok = tartozkodas2 -tartozkodas1
       //alert(eltoltottnapok) //eltöltött napok száma
+      console.log (eltoltottnapok + "ELTOLTOTTNAPOK")
   
       //let fizetendo = 30000
       fizetendo = fizetendo*eltoltottnapok*szemelyekszama*szobak
