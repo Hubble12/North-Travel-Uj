@@ -118,48 +118,62 @@ function fizetes(){
 
     if (honap1 < 1 || honap1 > 12 || honap2 < 1 || honap2 > 12){  //ELLENŐRIZNI ADATOK HELYESSÉGÉT, HELYES-E VÁLTOZÓ LÉTREHOZÁSA
       check1 = 0
+      console.log("Hibacheck0")
     }
 
     if (nap1 < 1 || nap1 > 31 || nap2 < 1 || nap2 > 31){
       check1 = 0
+      console.log("Hibacheck01")
     }
 
-    //hónapok napszámai
+    //hónapok napszámai  
     if (honap1 == 1 && nap1 > 31){
       check1 = 0
+      console.log("Hibacheck1")
     }
     if (honap1 == 2 && nap1 > 29){
       check1 = 0
+      console.log("Hibacheck2")
     }
     if (honap1 == 3 && nap1 > 31){
       check1 = 0
+      console.log("Hibacheck3")
     }
     if (honap1 == 4 && nap1 > 30){
       check1 = 0
+      console.log("Hibacheck4")
     }
     if (honap1 == 5 && nap1 > 31){
       check1 = 0
+      console.log("Hibacheck5")
     }
     if (honap1 == 6 && nap1 > 30){
       check1 = 0
+      console.log("Hibacheck6")
     }
     if (honap1 == 7 && nap1 > 31){
       check1 = 0
+      console.log("Hibacheck7")
     }
     if (honap1 == 8 && nap1 > 31){
       check1 = 0
+      console.log("Hibacheck8")
     }
     if (honap1 == 9 && nap1 > 30){
       check1 = 0
+      console.log("Hibacheck9")
     }
     if (honap1 == 10 && nap1 > 31){
       check1 = 0
+      console.log("Hibacheck10")
     }
     if (honap1 == 11 && nap1 > 30){
       check1 = 0
+      console.log("Hibacheck11")
     }
     if (honap1 == 12 && nap1 > 31){
       check1 = 0
+      console.log("Hibacheck12")
     }
 
 
@@ -167,56 +181,80 @@ function fizetes(){
 
     if (honap2 == 1 && nap2 > 31){
       check1 = 0
+      console.log("Hibacheck13")
     }
     if (honap2 == 2 && nap2 > 29){
       check1 = 0
+      console.log("Hibacheck14")
     }
     if (honap2 == 3 && nap2 > 31){
       check1 = 0
+      console.log("Hibacheck15")
     }
     if (honap2 == 4 && nap2 > 30){
       check1 = 0
+      console.log("Hibacheck16")
     }
     if (honap2 == 5 && nap2 > 31){
       check1 = 0
+      console.log("Hibacheck17")
     }
     if (honap2 == 6 && nap2 > 30){
       check1 = 0
+      console.log("Hibacheck18")
     }
     if (honap2 == 7 && nap2 > 31){
       check1 = 0
+      console.log("Hibacheck19")
     }
     if (honap2 == 8 && nap2 > 31){
       check1 = 0
+      console.log("Hibacheck20")
     }
     if (honap2 == 9 && nap2 > 30){
       check1 = 0
+      console.log("Hibacheck21")
     }
     if (honap2 == 10 && nap2 > 31){
       check1 = 0
+      console.log("Hibacheck22")
     }
     if (honap2 == 11 && nap2 > 30){
       check1 = 0
+      console.log("Hibacheck23")
     }
     if (honap2 == 12 && nap2 > 31){
       check1 = 0
+      console.log("Hibacheck24")
     }
 
 
+    nap1 = Number(nap1)
+    nap2 = Number(nap2)
+
     if (nap1 > nap2 || honap1 > honap2){
       check1 = 0
+      console.log("-----------------BugFix-------------------------")
+      console.log("Nap1: " + nap1)
+      console.log("Nap2: " + nap2)
+      console.log("Honap1: " + honap1)
+      console.log("Honap2: " + honap2)
+      console.log("Hibacheck25")
     }
 
     if (szemelyekszama == "" || szemelyekszama < 1){
       check1 = 0
+      console.log("Hibacheck26")
     }
 
     if (email == "" || email.includes("@") == false || email.substr(email.length - 1) == "@"){
       check1 = 0
+      console.log("Hibacheck27")
     }
 
     if (szobak < 1){
       check1 = 0
+      console.log("Hibacheck28")
     }
 
 
