@@ -6,6 +6,21 @@ body{
     margin: 0;
     padding: 0
 }
+.telefon-csoport {
+    display: flex;       /* Egymás mellé teszi az ikont és a számot */
+    align-items: center; /* Függőlegesen középre igazítja őket egymáshoz képest */
+    gap: 10px;           /* Fix távolság az ikon és a szám között */
+}
+
+/* Töröld ki a korábbi .telefonszam margin-left: 10px; részét, 
+   mert a 'gap' most már elvégzi ezt a munkát helyette! */
+.telefonszam {
+    color: white;                  
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;           /* Nullázzuk a margót */
+    white-space: nowrap; /* Biztosítja, hogy ne törjön új sorba a szám */
+}
 header{
     background-color: #3B3955;
     display: flex;
@@ -32,7 +47,7 @@ header{
     color: white;                  
     font-size: 16px;
     font-weight: bold;
-    margin-left: 10px;
+    
 
 }
 
@@ -378,26 +393,92 @@ header{
         align-items: center;
         gap: 10px;
     }
-}
 
-@media (max-width: 1200px){
-
-    .kepeklent{
-        grid-template-columns: 1fr;   /* egymás alatt */
-        justify-content: center;
+    header {
+        flex-direction: row; /* Egymás mellé teszi az elemeket */
+        justify-content: space-between; /* Széthúzza őket a szélekre */
+        align-items: center; /* Középre igazítja őket függőlegesen */
+        padding: 10px 15px; /* Kisebb belső margó, hogy beférjenek */
+        flex-wrap: nowrap; /* Megakadályozza, hogy új sorba ugorjanak */
     }
 
-    .card3kep,
-    .card4kep,
-    .card5kep,
-    .card6kep{
-        aspect-ratio: 16/9;   /* fekvő téglalap */
+    .logo {
+        width: 50px; /* Mobilon legyen kisebb a logó, hogy maradjon hely */
+    }
+
+    #rolunk {
+        width: auto; /* Ne legyen 100% széles */
+        height: auto;
+        padding: 8px 15px; /* Kisebb gomb */
+        margin: 0;
+        font-size: 14px;
+        border-radius: 5px; /* Kisebb lekerekítés mobilon szebb */
+    }
+
+    #telefon {
+        width: 20px; /* Kisebb telefon ikon */
+        margin: 0 5px;
+    }
+
+    .telefonszam {
+        font-size: 12px; /* Kisebb betűméret, hogy ne törjön meg a sor */
+        margin: 0;
+        white-space: nowrap; /* Ne törje ketté a telefonszámot */
+    }
+
+
+}
+
+@media (max-width:1200px){
+    .kepeklent {
+        grid-template-columns: repeat(2, 1fr); /* Két oszlop */
+        gap: 40px;
+    }
+
+    .card3kep, .card4kep, .card5kep, .card6kep {
+        aspect-ratio: 16 / 9; /* Itt válik téglalappá */
         object-fit: cover;
-    }
-    .kepeklent > div{
-        width: 100%;
-        max-width: 600px;
-    }
-
 }
+.felsoresz {
+    gap: 40px; /* Nagyobb képernyőn kicsit szellősebb */
+}
+}
+@media (min-width: 768px) {
+    .felsoresz {
+        display: grid;
+        /* Ez kényszeríti az 50-50%-os szélességet tartalomtól függetlenül */
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); 
+        gap: 24px;
+        align-items: stretch; /* Ez felel azért, hogy az aljuk egy vonalban legyen */
+    }
 
+    .card1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Mobilon/Tableten vedd lejjebb a paddingot, hogy ne tartsa fixen a magasságot */
+        padding: 5% 20px; 
+        height: auto;
+        min-height: 0;
+    }
+
+    .card2 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .slider {
+        width: 100%;
+        /* Ez a kulcs: a slider magassága a szélességéből következzen */
+        aspect-ratio: 16 / 9; 
+        height: auto;
+        overflow: hidden;
+    }
+
+    .slide {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Kitölti a téglalapot torzulás nélkül */
+    }
+}
