@@ -4,49 +4,64 @@ body{
     margin: auto;
     overflow-x: hidden;
     margin: 0;
-    padding: 0
+    padding: 0;
+    background-image: url(Képek/hatterkep.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 header{
     background-color: #3B3955;
+    height: 117px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 20px;
-    flex-wrap: wrap;
 
 }
 .logo{
-    width: 90px;
-    height: auto;
+    height: 100px;
+    width: auto;
     
 
 }
 #telefon
 {
-    width: 40px;
+    width: 70px;
     height: auto;
+    margin-right: 5px;
     
 
 }
 .telefonszam{
-    color: white;                  
-    font-size: 16px;
+    color: white;
+    font-size: 18px;
     font-weight: bold;
-    margin-left: 10px;
 
 }
+#phone
+{
+    display:flex;
+}
 
-#rolunk{
-    width: 200px;
-    height: 60px;
-    color: white;
+ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+   
     background-color: #3B3955;
-    border-bottom-right-radius: 20%;
-    float: left;
-    margin-top: 0px;
-    margin-bottom: 50px;
-    display: block;
-    margin-right: -10%;
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #28273b;
 }
 
 /*@media(max-width:768px){
