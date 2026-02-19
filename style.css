@@ -50,7 +50,7 @@ header{
     color: white;
     font-size: 18px;
     font-weight: bold;
-    margin-left: 10px;
+
 
 }
 #phone
@@ -496,5 +496,27 @@ ul li a:hover {
         width: 100%;
         height: 100%;
         object-fit: cover; /* Kitölti a téglalapot torzulás nélkül */
+    }
+}
+@media (max-width: 760px) {
+    .kepeklent {
+        /* Egyetlen oszlop kényszerítése */
+        grid-template-columns: 1fr; 
+        gap: 20px; /* Kicsit kisebb távolság a kártyák között mobilon */
+        padding: 0 10px; /* Oldalsó margó, hogy ne érjenek ki a széléig */
+    }
+
+    .card3, .card4, .card5, .card6 {
+        margin-left: 0; /* Megszüntetjük az asztali nézet baloldali margóját */
+        width: 100%;
+    }
+
+    .card3kep, .card4kep, .card5kep, .card6kep {
+        /* Mobilon érdemesebb a téglalap (16/9) arány, hogy ne legyen túl hosszú a görgetés */
+        aspect-ratio: 16 / 9; 
+    }
+
+    .szurkedoboz p {
+        font-size: 22px; /* Kicsit kisebb betűméret mobilon */
     }
 }
