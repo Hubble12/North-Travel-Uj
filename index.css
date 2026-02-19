@@ -10,47 +10,62 @@ body {
 
 header {
     background-color: #3B3955;
-    height: 100px;
+    height: 117px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   
 }
 
 .logo {
-    width: 100px;
-    height: auto;
+    height: 100px;
+    width: auto;
+}
+
+.jobb-oldal {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 #telefon {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: auto;
+    margin-right: 5px;
 }
 
 .telefonszam {
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    margin-left: 10px;
 }
-
-
-#fooldal, #rolunk, #vissza {
+#phone
+{
+    display:flex;
+}
+ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+   
     background-color: #3B3955;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-#fooldal:hover, #rolunk:hover, #vissza:hover {
-    background-color: #57547A;
+ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+    text-decoration: none;
 }
+
+ul li a:hover {
+    background-color: #28273b;
+}
+
+
 
 
 #cim {
