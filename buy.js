@@ -108,10 +108,21 @@ function fizetes(){
       console.log("Nap2:--- " + nap2)
     }
 
+    nap1 = Number(nap1)
+    nap2 = Number(nap2)
+    honap1 = Number(honap1)
+    honap2 = Number(honap2)
+
+
     console.log(honap1, nap1)
     console.log(honap2, nap2)
     console.log("-----------------------------------------")
     console.log("")
+
+    nap1 = Number(nap1)
+    nap2 = Number(nap2)
+    honap1 = Number(honap1)
+    honap2 = Number(honap2)
 
 
     let check1 = 1
@@ -231,6 +242,8 @@ function fizetes(){
 
     nap1 = Number(nap1)
     nap2 = Number(nap2)
+    honap1 = Number(honap1)
+    honap2 = Number(honap2)
 
     if (nap1 > nap2 || honap1 > honap2){
       check1 = 0
@@ -419,6 +432,9 @@ function fizetes(){
     console.log("tartózkodás2")
     console.log(tartozkodas2)
 
+    fizetendo = Number(fizetendo)
+
+
 
 
 
@@ -430,6 +446,11 @@ function fizetes(){
       //let fizetendo = 30000
       fizetendo = fizetendo*eltoltottnapok*szemelyekszama*szobak
       fizetendo = Number(fizetendo)
+
+      if (fizetendo == 0){
+        alert("Egynapos utat nem szervezünk!")  //Ezt tovább megcsinálni, egy változóval mérni az elifben
+      }
+ 
   
       alert("Fizetendő összeg: " + fizetendo + "Ft\nNapok száma: " + eltoltottnapok + "\nA megadott email címre küldtük a fizetési jóváhagyást. Ha nem érkezett email, ellenőrizze az email címét!")
     }
