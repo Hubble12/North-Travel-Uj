@@ -463,6 +463,9 @@ function fizetes(){
     else if (check1 == 5){
       alert("Legfeljebb 10 személyt és 5 szobát tudunk feldolgozni.")
     }
+    else if(eltoltottnapok == 0){
+      alert("Egy napra nem szervezünk utat!") 
+    }
     else{
       alert("Hibás adatok lettek megadva! (0)") 
     }
