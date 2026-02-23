@@ -438,18 +438,18 @@ function fizetes(){
 
 
 
-    if (check1 == 1){
-      eltoltottnapok = tartozkodas2 -tartozkodas1
-      //alert(eltoltottnapok) //eltöltött napok száma
-      console.log (eltoltottnapok + "ELTOLTOTTNAPOK")
-  
-      //let fizetendo = 30000
-      fizetendo = fizetendo*eltoltottnapok*szemelyekszama*szobak
-      fizetendo = Number(fizetendo)
+    eltoltottnapok = tartozkodas2 -tartozkodas1
+    //alert(eltoltottnapok) //eltöltött napok száma
+    console.log (eltoltottnapok + "ELTOLTOTTNAPOK")
 
-      if (fizetendo == 0){
-        alert("Egynapos utat nem szervezünk!")  //Ezt tovább megcsinálni, egy változóval mérni az elifben
-      }
+    //let fizetendo = 30000
+    fizetendo = fizetendo*eltoltottnapok*szemelyekszama*szobak
+    fizetendo = Number(fizetendo)
+
+
+    if (check1 == 1 && fizetendo > 0){
+
+
  
   
       alert("Fizetendő összeg: " + fizetendo + "Ft\nNapok száma: " + eltoltottnapok + "\nA megadott email címre küldtük a fizetési jóváhagyást. Ha nem érkezett email, ellenőrizze az email címét!")
@@ -464,7 +464,7 @@ function fizetes(){
       alert("Legfeljebb 10 személyt és 5 szobát tudunk feldolgozni.")
     }
     else{
-      alert("Hibás adatok lettek megadva!")
+      alert("Hibás adatok lettek megadva! (0)") 
     }
 
 
