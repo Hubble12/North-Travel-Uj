@@ -50,6 +50,7 @@ header{
     color: white;
     font-size: 18px;
     font-weight: bold;
+    margin-right: 20px;
 
 
 }
@@ -164,6 +165,9 @@ ul li a:hover {
 @media (max-width: 1200px){
     .kepeklent{
         grid-template-columns: repeat(3, 1fr);
+    }
+    .telefonszam{
+        margin-right: 20px;
     }
 }
 
@@ -440,6 +444,7 @@ ul li a:hover {
         font-size: 12px; /* Kisebb betűméret, hogy ne törjön meg a sor */
         margin: 0;
         white-space: nowrap; /* Ne törje ketté a telefonszámot */
+        margin-right: 20px;
     }
 
 
@@ -518,5 +523,8 @@ ul li a:hover {
 
     .szurkedoboz p {
         font-size: 22px; /* Kicsit kisebb betűméret mobilon */
+    }
+    .logo{
+        width: 100px;
     }
 }
