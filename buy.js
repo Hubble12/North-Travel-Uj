@@ -245,7 +245,17 @@ function fizetes(){
     honap1 = Number(honap1)
     honap2 = Number(honap2)
 
-    if (nap1 > nap2 || honap1 > honap2){
+    if (honap1 > honap2){
+      check1 = 0
+      console.log("-----------------BugFix-------------------------")
+      console.log("Nap1: " + nap1)
+      console.log("Nap2: " + nap2)
+      console.log("Honap1: " + honap1)
+      console.log("Honap2: " + honap2)
+      console.log("Hibacheck25")
+    }
+
+    if (honap1 == honap2 && nap1 >= nap2){
       check1 = 0
       console.log("-----------------BugFix-------------------------")
       console.log("Nap1: " + nap1)
@@ -260,10 +270,47 @@ function fizetes(){
       console.log("Hibacheck26")
     }
 
-    if (email == "" || email.includes("@") == false || email.substr(email.length - 1) == "@"){
-      check1 = 0
+    if (email.substr(email.length - 1) == "@"){
+      check1 = 6
       console.log("Hibacheck27")
     }
+
+    
+    if(email.charAt(0) == "@"){
+      check1 = 7
+    }
+    
+    if(email == ""){
+      check1 = 8
+    }
+
+
+    let szamlalo = 0
+    for (let i = 0; i <= email.length; i++){
+      if (email[i] == "@") {
+        szamlalo += 1
+      }
+    }
+
+    if(szamlalo == 0){
+      check1 = 9
+    }
+
+    if(szamlalo > 1){
+      check1 = 10
+    }
+
+    if (email.length == 0){
+      check1 = 11
+    }
+
+
+
+
+
+
+
+    
 
     if (szobak < 1){
       check1 = 0
@@ -462,6 +509,24 @@ function fizetes(){
     }
     else if (check1 == 5){
       alert("Legfeljebb 10 személyt és 5 szobát tudunk feldolgozni.")
+    }
+    else if(check1 == 6){
+      alert("Az email nem végzőthet @-ra!")
+    }
+    else if(check1 == 7){
+      alert("Az email nem kezdőthet @-al!")
+    }
+    else if(check1 == 8){
+      alert("Nem lett email megadva!")
+    }
+    else if(check1 == 9){
+      alert("Az email nem tartalmaz @-ot!")
+    }
+    else if(check1 == 10){
+      alert("Az email több mint egy @-ot tartalmaz!")
+    }
+    else if(check1 == 11){
+      alert("Nem lett email megadva!")
     }
     else if(eltoltottnapok == 0){
       alert("Egy napra nem szervezünk utat!") 
