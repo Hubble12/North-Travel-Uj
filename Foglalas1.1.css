@@ -134,9 +134,8 @@ color:black;
 #kepirat_bal, #kepirat_kozep, #kepirat_jobb {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    height: 20%;
+    height: auto;
     font-size: 16px;
-    position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
