@@ -11,15 +11,7 @@ body {
 }
 
 
-header {
-    background-color: #3B3955;
-    height: 117px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   
-}
+
 
 .logo {
     height: 100px;
@@ -30,6 +22,18 @@ header {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #3B3955;
+    height: 117px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
 }
 
 #telefon {
@@ -67,8 +71,6 @@ ul li a {
 ul li a:hover {
     background-color: #28273b;
 }
-
-
 
 
 #cim {
