@@ -146,7 +146,7 @@ function fizetes(){
       check1 = 0
       console.log("Hibacheck1")
     }
-    if (honap1 == 2 && nap1 > 29){
+    if (honap1 == 2 && nap1 > 28){  //szökőévente frissíteni
       check1 = 0
       console.log("Hibacheck2")
     }
@@ -198,7 +198,7 @@ function fizetes(){
       check1 = 0
       console.log("Hibacheck13")
     }
-    if (honap2 == 2 && nap2 > 29){
+    if (honap2 == 2 && nap2 > 28){  //szökőévente frissíteni
       check1 = 0
       console.log("Hibacheck14")
     }
