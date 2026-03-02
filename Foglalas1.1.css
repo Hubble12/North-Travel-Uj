@@ -305,7 +305,7 @@ ul li a {
 ul li a:hover {
     background-color: #28273b;
 }
-@media (max-width: 1600px) {
+@media (max-width: 2000px) {
     #oldal_bal{
         width: 45%;
         margin-left: 2%;
@@ -534,8 +534,8 @@ ul li a:hover {
             }
         }
         
-        /* 2. 1600px ÉS FELETTE - VISSZAÁLLÍTÁS AZ EREDETIHEZ */
-        @media screen and (min-width: 1600px) {
+        /* 2. 1800px ÉS FELETTE - VISSZAÁLLÍTÁS AZ EREDETIHEZ */
+        @media screen and (min-width: 2000px) {
             #oldal_bal {
                 width: 40% !important;
                 float: left !important;
@@ -572,7 +572,7 @@ ul li a:hover {
     
     
     /* 2. 1600px ÉS FELETTE - VISSZAÁLLÍTÁS AZ EREDETIHEZ */
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 2000px) {
         #oldal_bal {
             width: 40% !important;
             float: left !important;
