@@ -535,7 +535,7 @@ ul li a:hover {
         }
         
         /* 2. 1600px ÉS FELETTE - VISSZAÁLLÍTÁS AZ EREDETIHEZ */
-        @media screen and (min-width: 1600px) {
+        @media screen and (min-width: 1800px) {
             #oldal_bal {
                 width: 40% !important;
                 float: left !important;
