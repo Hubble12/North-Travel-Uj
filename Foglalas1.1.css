@@ -309,6 +309,7 @@ ul li a:hover {
     #oldal_bal{
         width: 45%;
         margin-left: 2%;
+        margin-bottom:2%;
     }
     #oldal_jobb{
         width: 40%;
@@ -394,7 +395,7 @@ ul li a:hover {
         #oldal_bal, 
         #oldal_jobb, 
         .oldalsavok {
-            width: 100% !important;
+            width: 70% !important;
             float: none !important;
             margin: 15px 0 !important;
             height: auto !important; /* A fix 700px törlése */
@@ -537,10 +538,10 @@ ul li a:hover {
         /* 2. 1800px ÉS FELETTE - VISSZAÁLLÍTÁS AZ EREDETIHEZ */
         @media screen and (min-width: 2000px) {
             #oldal_bal {
-                width: 40% !important;
+                width: 30% !important;
                 float: left !important;
                 margin-left: 3% !important;
-                height: 700px !important;
+                height: 600px !important;
             }
         
             #oldal_jobb {
@@ -574,10 +575,10 @@ ul li a:hover {
     /* 2. 1600px ÉS FELETTE - VISSZAÁLLÍTÁS AZ EREDETIHEZ */
     @media screen and (min-width: 2000px) {
         #oldal_bal {
-            width: 40% !important;
+            width: 30% !important;
             float: left !important;
             margin-left: 3% !important;
-            height: 700px !important;
+            height: 600px !important;
         }
     
         #oldal_jobb {
