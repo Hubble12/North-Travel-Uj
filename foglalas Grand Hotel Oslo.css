@@ -287,7 +287,6 @@ table{
 
 
 /*fejléc*/
-
 header {
     background-color: #3B3955;
     height: 117px;
@@ -296,17 +295,6 @@ header {
     align-items: center;
     justify-content: space-between;
    
-}
-
-.logo {
-    height: 100px;
-    width: auto;
-}
-
-.jobb-oldal {
-    display: flex;
-    align-items: center;
-    gap: 15px;
 }
 
 #telefon {
@@ -344,6 +332,7 @@ ul li a {
 ul li a:hover {
     background-color: #28273b;
 }
+
 
 
 
