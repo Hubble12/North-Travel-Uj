@@ -7,21 +7,21 @@ body {
     background-repeat: no-repeat;
     background-size: cover;      /* hogy kitöltse a teljes képernyőt */
     background-position: center; /* középre igazítás */
-}
-.tartalom{
+    }
+    .tartalom{
     
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
-
-}
-#cim
-{
-color:black;
-
-}
-#oldalterulet{
+    
+    
+    }
+    #cim
+    {
+    color:black;
+    
+    }
+    #oldalterulet{
     margin-top:50px;
     width: 100%;
     display: flex;
@@ -29,21 +29,21 @@ color:black;
     justify-content: center;
     height: auto;
     
-}
-#oldal_bal{
+    }
+    #oldal_bal{
     width: 50%;
     min-width: 300px;
     height: auto;
-}
-#oldal_jobb {
+    }
+    #oldal_jobb {
     background-color: transparent;
     width: 30%;
     min-width: 300px;
     height: auto;
-   
-   
-}
-#lablec{
+    
+    
+    }
+    #lablec{
     background-color: #3B3955;
     color: white;
     padding: 20px;
@@ -51,9 +51,9 @@ color:black;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-
-}
-.card1, .card2 {
+    
+    }
+    .card1, .card2 {
     margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -65,24 +65,24 @@ color:black;
     background-color: #3B3955;
     color: white;
     border-radius: 10px;
-}
-
-.card1:hover, .card2:hover {
+    }
+    
+    .card1:hover, .card2:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     color: #000;
-}
-.oldalsavok{
+    }
+    .oldalsavok{
     border-width: 2px;
     border: black;
     border-color: black;
     width: 200px;
     height: 700px;
     display: inline-block;
-}
-
-#oldal_bal{
-   
+    }
+    
+    #oldal_bal{
+    
     border-width: 2px;
     border: black;
     border-color: black;
@@ -91,12 +91,12 @@ color:black;
     float: left;
     margin-left: 3%;
     margin-top: 5%;
-}
-
-
-
-#oldal_jobb{
-   
+    }
+    
+    
+    
+    #oldal_jobb{
+    
     border-width: 2px;
     border: black;
     border-color: black;
@@ -107,12 +107,12 @@ color:black;
     position: relative;
     bottom: 0;
     margin-top: 5%;
-}
-
-
-
-
-#lablec_al {
+    }
+    
+    
+    
+    
+    #lablec_al {
     background-color: #3B3955;
     color: white;
     padding: 20px 0;
@@ -120,26 +120,26 @@ color:black;
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-#lablec_bal, #lablec_kozep, #lablec_jobb {
-   flex: 1;
-   min-width: 250px;
-   height: auto;
-}
-
-#lablec_bal:hover, #lablec_kozep:hover, #lablec_jobb:hover {
+    }
+    
+    #lablec_bal, #lablec_kozep, #lablec_jobb {
+    flex: 1;
+    min-width: 250px;
+    height: auto;
+    }
+    
+    #lablec_bal:hover, #lablec_kozep:hover, #lablec_jobb:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-#kep_bal, #kep_kozep, #kep_jobb {
+    }
+    
+    #kep_bal, #kep_kozep, #kep_jobb {
     width: 100%;
     height: 80%;
     object-fit: cover;
-}
-
-#kepirat_bal, #kepirat_kozep, #kepirat_jobb {
+    }
+    
+    #kepirat_bal, #kepirat_kozep, #kepirat_jobb {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     height: auto;
@@ -150,63 +150,63 @@ color:black;
     padding: 10px 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-}
-
-
-
-#oldal_bal_fenn{
+    }
+    
+    
+    
+    #oldal_bal_fenn{
     width: 100%;
     height: 20%;
-
-}
-
-#oldal_bal_lenn{
-   
-   
+    
+    }
+    
+    #oldal_bal_lenn{
+    
+    
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 7%;
-}
-.kep
-{
+    }
+    .kep
+    {
     max-width: 100%;
     height: auto;
     border-radius: 13px;
-}
-.kep1
-{
+    }
+    .kep1
+    {
     width: 100%;
     height: 224px;
     
     border-top-left-radius:13px ;
     border-top-right-radius:13px ;
-   
-}
-.kep2{
+    
+    }
+    .kep2{
     width: 100%;
     height: 224px;
     border-top-left-radius:13px ;
     border-top-right-radius:13px ;
-}
-.kep3
-{
+    }
+    .kep3
+    {
     width: 100%;
     height: 224px;
     border-top-left-radius:13px ;
     border-top-right-radius:13px ;
-}
-
-h1{
+    }
+    
+    h1{
     margin-left: 10%;
     margin-right: auto;
     text-align: center;
-}
-
-h2{
+    }
+    
+    h2{
     margin-right: 10px;
-}
-
-button{
+    }
+    
+    button{
     width: 200px;
     height: 60px;
     color: white;
@@ -215,42 +215,42 @@ button{
     border-radius: 20%;
     float: right;
     margin-top: 10px;
-}
-
-
-button:hover{
+    }
+    
+    
+    button:hover{
     background-color: #28273b;
-}
-
-input{
+    }
+    
+    input{
     background-color: #3B3955;
     color: white;
     height: 20px;
-}
-
-table{
+    }
+    
+    table{
     float: right;
-}
-
-
-
-
-#infobutton{
+    }
+    
+    
+    
+    
+    #infobutton{
     width: 50px;
     height: 50px;
     background-image: url(logokepek/infobutton.png);
     float: right;
-}
-
-#infoimage{
+    }
+    
+    #infoimage{
     width: 50px;
     height: 50px;
     margin-top: 5px;
     }
-
-/*fejléc*/
-
-header {
+    
+    /*fejléc*/
+    
+    header {
     background-color: #3B3955;
     min-height: 117px;
     width: 100%;
@@ -259,124 +259,126 @@ header {
     justify-content: space-around;
     padding: 10px;
     flex-wrap: wrap;
-   
-}
-
-.logo {
+    
+    }
+    
+    .logo {
     height: 100px;
     width: auto;
-}
-
-
-
-#telefon {
+    }
+    
+    
+    
+    #telefon {
     width: 70px;
     height: auto;
     margin-right: 5px;
-}
-
-.telefonszam {
+    }
+    
+    .telefonszam {
     color: white;
     font-size: 18px;
     font-weight: bold;
-}
-#phone
-{
+    }
+    #phone
+    {
     display:flex;
-}
-ul {
+    }
+    ul {
     display: flex;
     gap: 20px;
     padding: 0;
     justify-content: center;
     background-color: #3B3955;
     flex-wrap: wrap;
-}
-
-ul li a {
+    }
+    
+    ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
     
     color: white;
     text-decoration: none;
-}
-
-ul li a:hover {
-    background-color: #28273b;
-}
-@media (max-width: 1600px) {
-    #oldal_bal{
-        width: 45%;
-        margin-left: 2%;
-    }
-    #oldal_jobb{
-        width: 40%;
-        margin-right: 5%;
-    }
-    .card1,.card2{
-        width: 95%;
     }
     
-}
-@media (max-width: 1100px){
-    img.kep{
-        width: 80%;         
-        max-width: 600px;   
-        height: auto;       
-        display: block;     
-        margin: 0 auto;
+    ul li a:hover {
+    background-color: #28273b;
     }
-
-    #oldalterulet{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        gap: 10px;
-        margin-top: 50px;
-
-    }
-    #oldal_bal, #oldal_jobb{
-        width: 90%;
-        margin: 20px auto;
-        float: none;
-        height: auto;
+    
+    @media (max-width: 2000px) {
+    #oldal_bal{
+    width: 45%;
+    margin-left: 2%;
     }
     #oldal_jobb{
-        margin-right: 50px;
+    width: 40%;
+    margin-right: 5%;
+    }
+    .card1,.card2{
+    width: 95%;
+    }
+    
+    }
+    @media (max-width: 1100px){
+    img.kep{
+    width: 80%;         
+    max-width: 600px;   
+    height: auto;       
+    display: block;     
+    margin: 0 auto;
+    }
+    
+    #oldalterulet{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 50px;
+    
+    }
+    #oldal_bal, #oldal_jobb{
+    width: 90%;
+    margin: 20px auto;
+    float: none;
+    height: auto;
+    }
+    #oldal_jobb{
+    margin-right: 50px;
     }
     header{
-        height: auto;
-        padding: 20px;
-        flex-direction: row;
-        gap: 15px;
+    height: auto;
+    padding: 20px;
+    flex-direction: row;
+    gap: 15px;
     }
     ul{
-        gap: 20px;
+    gap: 20px;
     }
-}
-@media (max-width: 768px) {
+    }
+    @media (max-width: 768px) {
     #lablec_al {
-        flex-direction: column;
-        align-items: center;
+    flex-direction: column;
+    align-items: center;
     }
-
+    
     #lablec_bal, #lablec_kozep, #lablec_jobb {
-        width: 100%;
-        min-width: unset;
+    width: 100%;
+    min-width: unset;
     }
-
+    
     button {
-        float: none;
-        display: block;
-        margin: 10px auto;
+    float: none;
+    display: block;
+    margin: 10px auto;
     }
-
+    
     table {
-        float: none;
-        margin: 0 auto;
+    float: none;
+    margin: 0 auto;
     }
+<<<<<<< HEAD
 }
 
 @media screen and (max-width: 800px) {
@@ -599,28 +601,254 @@ ul li a:hover {
         #lablec_al {
             flex-direction: row !important;
         }
+=======
+>>>>>>> ba3dd0fa63fbe85018331992973359a028e025ec
     }
-
-/* Finomhangolás a legkisebb, 350px-es kijelzőkhöz */
-@media screen and (max-width: 400px) {
+    
+    @media screen and (max-width: 800px) {
+    
+    /* Fő tárolók elrendezése */
+    #oldalterulet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 10px;
+    }
+    
+    /* Oldalsávok és tartalom reset */
+    #oldal_bal, 
+    #oldal_jobb, 
+    .oldalsavok {
+    width: 100% !important;
+    float: none !important;
+    margin: 15px 0 !important;
+    height: auto !important; /* A fix 700px törlése */
+    min-width: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    position: static !important;
+    }
+    
+    /* Fejléc és Menü */
+    header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+    }
+    
+    ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding: 10px 0;
+    }
+    
+    #phone {
+    justify-content: center;
+    margin-bottom: 10px;
+    }
+    
+    /* SZEMÉLYEK SZÁMA (Táblázat) és GOMB KÖZÉPRE */
+    table, button {
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: table !important;
+    text-align: center;
+    border-collapse: collapse;
+    }
+    
+    /* KÉPEK ÉS FELIRATOK SZINKRONIZÁLÁSA */
+    #lablec_al {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    
+    }
+    
+    #lablec_bal, #lablec_kozep, #lablec_jobb {
+    width: 95% !important; /* Szélesség 800px alatt */
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    }
+    
+    #kep_bal, #kep_kozep, #kep_jobb,
+    #kepirat_bal, #kepirat_kozep, #kepirat_jobb {
+    width: 100% !important; /* A felirat és a kép széle együtt mozog */
+    display: block;
+    box-sizing: border-box;
+    height: auto;
+    }
+    
+    
+    /* Fő tárolók elrendezése */
+    #oldalterulet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 10px;
+    }
+    
+    /* Oldalsávok és tartalom reset */
+    #oldal_bal, 
+    #oldal_jobb, 
+    .oldalsavok {
+    width: 100% !important;
+    float: none !important;
+    margin: 15px 0 !important;
+    height: auto !important; /* A fix 700px törlése */
+    min-width: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    position: static !important;
+    }
+    
+    /* Fejléc és Menü */
+    header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+    }
+    
+    ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding: 10px 0;
+    }
+    
+    #phone {
+    justify-content: center;
+    margin-bottom: 10px;
+    }
+    
+    /* SZEMÉLYEK SZÁMA (Táblázat) és GOMB KÖZÉPRE */
+    table, button {
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
+    text-align: center;
+    }
+    
+    /* KÉPEK ÉS FELIRATOK SZINKRONIZÁLÁSA */
+    #lablec_al {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    }
+    
+    #lablec_bal, #lablec_kozep, #lablec_jobb {
+    width: 95% !important; /* Szélesség 800px alatt */
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    }
+    
+    
+    /* Kártyák igazítása */
+    .card1, .card2 {
+    width: 95%;
+    max-width: none;
+    }
+    }
+    
+           
+            /* 2. 2000px ÉS FELETTE - VISSZAÁLLÍTÁS AZ EREDETIHEZ */
+            @media screen and (min-width: 2000px) {
+    #oldal_bal {
+    width: 40% !important;
+    float: left !important;
+    margin-left: 3% !important;
+    height: 700px !important;
+    }
+    
+    #oldal_jobb {
+    width: 30% !important;
+    float: right !important;
+    margin-right: 10% !important;
+    height: 700px !important;
+    position: relative !important;
+    }
+    
+    #oldalterulet {
+    display: block !important;
+    }
+    
+    table, button {
+    float: right !important;
+    }
+    
+    #lablec_al {
+    flex-direction: row !important;
+    }
+    }
+    
+    /* Kártyák igazítása */
+    .card1, .card2 {
+    width: 95%;
+    max-width: none;
+    }
+    
+    
+    /* 2. 2000px ÉS FELETTE - VISSZAÁLLÍTÁS AZ EREDETIHEZ */
+       
+        @media screen and (min-width: 2000px) {
+    #oldal_bal {
+    width: 40% !important;
+    float: left !important;
+    margin-left: 3% !important;
+    height: 700px !important;
+    }
+    
+    #oldal_jobb {
+    width: 30% !important;
+    float: right !important;
+    margin-right: 10% !important;
+    height: 700px !important;
+    position: relative !important;
+    }
+    
+    #oldalterulet {
+    display: block !important;
+    }
+    
+    table, button {
+    float: right !important;
+    }
+    
+    #lablec_al {
+    flex-direction: row !important;
+    }
+    }
+    
+    /* Finomhangolás a legkisebb, 350px-es kijelzőkhöz */
+    @media screen and (max-width: 400px) {
     h1 {
-        font-size: 20px;
+    font-size: 20px;
     }
     
     .telefonszam {
-        font-size: 15px;
+    font-size: 15px;
     }
-
+    
     button {
-        width: 100%;
-        height: 50px;
+    width: 100%;
+    height: 50px;
     }
     table, button{
-        float: left !important;      /* Jobbra úsztatás kikapcsolása */
-        margin-left: 0px !important;
-        margin-right: auto !important;
-        display: block;             /* Blokk elemként már működik a margin: auto */
-        text-align: right;
-        font-size: 12px;
+    float: left !important;      /* Jobbra úsztatás kikapcsolása */
+    margin-left: 0px !important;
+    margin-right: auto !important;
+    display: block;             /* Blokk elemként már működik a margin: auto */
+    text-align: right;
+    font-size: 12px;
     }
-}
+    }
