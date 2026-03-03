@@ -3,6 +3,7 @@ body{
     overflow-x: hidden;
     margin: 0%;
     padding: 0%;
+    color: white;
 }
 
 #oldalterulet{
@@ -243,6 +244,7 @@ body{
 #oldal_bal_fenn{
     width: 100%;
     height: 20%;
+    color:white;
 }
 
 #oldal_bal_lenn{
