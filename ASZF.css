@@ -25,24 +25,56 @@ body{
     margin: 0;           /* Nullázzuk a margót */
     white-space: nowrap; /* Biztosítja, hogy ne törjön új sorba a szám */
 }
-header{
+header {
     background-color: #3B3955;
     height: 117px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+   
 }
-.logo{
+.logo {
     height: 100px;
     width: auto;
-}
-#telefon
-{
+    }
+#telefon {
     width: 70px;
     height: auto;
     margin-right: 5px;
 }
+
+.telefonszam {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+#phone
+{
+    display:flex;
+}
+ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+   
+    background-color: #3B3955;
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #28273b;
+}
+
+
 .alcim{
     text-align: center;
     color: white;
