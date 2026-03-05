@@ -9,16 +9,20 @@
 <body>
     
     <header class="header">
-        <a href="fooldal.html"><img src="képek/newlogo.png" alt="" class="logo"></a>
-        <div class="telefon-csoport">
-            <img id="telefon" src="Képek/telefon-removebg-preview.png" alt="">
-            <p class="telefonszam">+36304874715</p> 
-        </div>
-        
+        <img src="képek/newlogo.png" alt="" class="logo">
+        <ul>
+<li id="gomb"><a href="fooldal.html">Főoldal</a></li>
+<li id="gomb"><a href="registration.html">Regisztáció</a></li>
+<li id="gomb"><a href="login.html">Bejelentkezés</a></li>
+        </ul>
+        <div id="phone">
+        <img  id="telefon" src="Képek/telefon-removebg-preview.png" alt=""><br>
+        <p class="telefonszam">+36304874715</p> 
+    </div>
     </header>
 
-    <a href="fooldal.html">
-        <button id="fooldal">Főoldal</button>
+   
+       
     </a>
     <main class="tartalom">
          <h1 class="alcim">Rólunk</h1>
@@ -36,14 +40,30 @@
                         Ha valami problémát tapasztalsz az utazás során, kérjük, mielőbb jelezd nekünk, hogy segíthessünk. A személyes adataidat biztonságosan kezeljük, és csak az utazás intézéséhez használjuk fel.
                 </p>
             </div>
+
+            <div class="card3">
+                
+                <img src="Képek/repulő.webp" class="card3kep" alt="" srcset="">
+            </div>
             
 </main>  
-    <footer class="lablec">
-        <table id="logoktabla">
-            <tb id="tb1"><img src="logokepek/instalogo.png" alt="" class="logok" id="logoleft">Instagram</tb>
-            <tb id="tb2"><img src="logokepek/facebooklogo.png" alt="" class="logok" id="logocenter">Facebook</tb>
-            <tb id="tb3"><img src="logokepek/phonelogo.png" alt="" class="logok" id="telefon">06 30 487 4715</tb>
-        </table>
-    </footer>
+
+<footer class="lablec">
+    <div id="logok-container">
+        <div class="contact-item">
+            <img src="logokepek/instalogo.png" alt="" class="logok">
+            <span>Instagram</span>
+        </div>
+        <div class="contact-item">
+            <img src="logokepek/facebooklogo.png" alt="" class="logok">
+            <span>Facebook</span>
+        </div>
+        <div class="contact-item">
+            <img src="logokepek/phonelogo.png" alt="" class="logok">
+            <span>06 30 487 4715</span>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>

@@ -25,24 +25,56 @@ body{
     margin: 0;           /* Nullázzuk a margót */
     white-space: nowrap; /* Biztosítja, hogy ne törjön új sorba a szám */
 }
-header{
+header {
     background-color: #3B3955;
     height: 117px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+   
 }
-.logo{
+.logo {
     height: 100px;
     width: auto;
-}
-#telefon
-{
+    }
+#telefon {
     width: 70px;
     height: auto;
     margin-right: 5px;
 }
+
+.telefonszam {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+#phone
+{
+    display:flex;
+}
+ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+   
+    background-color: #3B3955;
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #28273b;
+}
+
+
 .alcim{
     text-align: center;
     color: white;
@@ -70,22 +102,40 @@ header{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.lablec {
-    background-color: #3B3955;
-    width: 100%; /* Hogy biztosan végigérjen az oldalon */
+.card3{
+    max-width: 800px;
+    max-height: 400px;
+    border-radius: 13px;
+    margin-top: 30px;
+    margin-left: 100px;
+    padding-bottom: 20px;
+}
+.card3kep{
+    max-width: 700px;
+    border-radius: 13px;
+    max-height: 400px;
+    
+}
+#logok-container {
     display: flex;
-    justify-content: center; /* Vízszintesen középre teszi a táblázatot */
-    padding: 20px 0;
+    justify-content: center; /* Vízszintesen középre rakja az egész blokkot */
+    gap: 30px;               /* Távolság az egyes elemek között */
+    padding: 20px;
+    background-color: #2e2e3e; /* Sötét háttér a kép alapján */
     color: white;
+    background-color: #3B3955;
 }
 
-/* Egy kis javítás a táblázathoz: */
-#logoktabla {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+/* Az ikon és a szöveg párosa */
+.contact-item {
+    display: flex;
+    align-items: center;     /* EZ IGAZÍTJA KÖZÉPRE A SZÖVEGET */
+    gap: 10px;               /* Távolság az ikon és a felirat között */
 }
-.logok{
-    max-width: 55px;
-    
+
+/* Az ikonok méretezése */
+.logok {
+    width: 30px;             /* Állítsd be a kívánt méretre */
+    height: 30px;
+
 }
