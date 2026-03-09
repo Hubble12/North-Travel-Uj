@@ -199,58 +199,16 @@ ul li a:hover {
 }
 .kepeklent > div{
     width: 100%;
-    min-width: 0;   /* EZ engedi összemenni */
-}
-/*@media(max-width:1600px) 
-{
-    .felsoresz{
-        display: grid;
-        grid-template-columns: repeat(20,4fr);
-        grid-template-rows: repeat(4,4vw);
-       flex-direction: row;
-       gap: 20px;
-        
-    }
-    .card1{
-        grid-column-start: 1;
-        grid-row-start:2 ;
-        grid-column-end:10 ;
-        grid-row-end:6 ;
-        font-size: smaller;
-    }
-    .card2 {
-        grid-column-start: 11;
-        grid-row-start:2 ;
-        grid-column-end:20   ;
-        grid-row-end:6 ;
-        height: auto;
-    }
-    .slider {
-        grid-column-start: 11;
-        grid-row-start:2 ;
-        grid-column-end:20   ;
-        grid-row-end:5 ;
-        height: auto;
-        width: auto ;
-    }
-    .szoveg{
-        font-size: 80px;
-    }
-    .alszoveg{
-        font-size: 50px;
-    }
-    
-}
-
-*/
+    min-width: 0;  
 .szurkedoboz{
     background-color: #bdbdbd;
-    width: 100%;            /* Fontos: 100% széles, így követi a képet! */
+    width: 100%;           
     height: auto;
     padding: 10px 0;
     font-size: x-large;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
 }
 .szurkedoboz p {
     margin: 0;
@@ -280,7 +238,7 @@ ul li a:hover {
 
   }
 
-  /* nyilak */
+ 
   .nav {
     position: absolute;
     top: 50%;
@@ -305,7 +263,30 @@ ul li a:hover {
     font-size: 24px;
     padding: 12px 0;
   }
+.hamburger{
+display:none;
+}
 
+@media (max-width:500px){
+
+.hamburger{
+display:block;
+font-size:30px;
+color:white;
+cursor:pointer;
+}
+
+.menu{
+display:none;
+flex-direction:column;
+width:100%;
+}
+
+.menu.active{
+display:flex;
+}
+
+}
   @media(max-width:768px)
   {
     .card1,
@@ -345,14 +326,14 @@ ul li a:hover {
 @media (max-width: 768px){
 
     .kepeklent{
-        grid-template-columns: 1fr;  /* egymás alatt */
+        grid-template-columns: 1fr;
     }
 
     .card3kep,
     .card4kep,
     .card5kep,
     .card6kep{
-        aspect-ratio: 16/9;   /* fekvő téglalap */
+        aspect-ratio: 16/9;   
     }
 
     .szurkedoboz p{
@@ -365,7 +346,7 @@ ul li a:hover {
         gap: 16px;
     }
 
-    /* Szöveges kártya */
+   
     .card1{
         padding: 30px 15px;
         text-align: center;
@@ -379,35 +360,35 @@ ul li a:hover {
         font-size: 18px;
     }
 
-    /* Slider kártya */
+    
     .card2{
         width: 100%;
     }
 
     .slider{
-        aspect-ratio: 16/9;  /* mobil fekvő téglalap */
+        aspect-ratio: 16/9; 
     }
 
-    /* Slider caption kisebb */
+  
     .caption{
         font-size: 18px;
         padding: 8px 0;
     }
 
-    /* Nyilak kisebbek mobilon */
+    
     .nav{
         font-size: 22px;
         padding: 6px 10px;
     }
 
-    /* Rólunk gomb ne lógjon ki */
+    
     #rolunk{
         width: 100%;
         margin: 10px 0;
         border-radius: 10px;
     }
 
-    /* Header szépen egymás alatt */
+   
     header{
         flex-direction: column;
         align-items: center;
@@ -415,35 +396,35 @@ ul li a:hover {
     }
 
     header {
-        flex-direction: row; /* Egymás mellé teszi az elemeket */
-        justify-content: space-between; /* Széthúzza őket a szélekre */
-        align-items: center; /* Középre igazítja őket függőlegesen */
-        padding: 10px 15px; /* Kisebb belső margó, hogy beférjenek */
-        flex-wrap: nowrap; /* Megakadályozza, hogy új sorba ugorjanak */
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+        padding: 10px 15px; 
+        flex-wrap: nowrap; 
     }
 
     .logo {
-        width: 50px; /* Mobilon legyen kisebb a logó, hogy maradjon hely */
+        width: 50px; 
     }
 
     #rolunk {
-        width: auto; /* Ne legyen 100% széles */
+        width: auto; 
         height: auto;
-        padding: 8px 15px; /* Kisebb gomb */
+        padding: 8px 15px; 
         margin: 0;
         font-size: 14px;
-        border-radius: 5px; /* Kisebb lekerekítés mobilon szebb */
+        border-radius: 5px; 
     }
 
     #telefon {
-        width: 20px; /* Kisebb telefon ikon */
+        width: 20px; 
         margin: 0 5px;
     }
 
     .telefonszam {
-        font-size: 12px; /* Kisebb betűméret, hogy ne törjön meg a sor */
+        font-size: 12px;
         margin: 0;
-        white-space: nowrap; /* Ne törje ketté a telefonszámot */
+        white-space: nowrap; 
         margin-right: 20px;
     }
 
@@ -452,32 +433,31 @@ ul li a:hover {
 
 @media (max-width:1200px){
     .kepeklent {
-        grid-template-columns: repeat(2, 1fr); /* Két oszlop */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 40px;
     }
 
     .card3kep, .card4kep, .card5kep, .card6kep {
-        aspect-ratio: 16 / 9; /* Itt válik téglalappá */
+        aspect-ratio: 16 / 9;
         object-fit: cover;
 }
 .felsoresz {
-    gap: 40px; /* Nagyobb képernyőn kicsit szellősebb */
+    gap: 40px; 
 }
 }
 @media (min-width: 768px) {
     .felsoresz {
         display: grid;
-        /* Ez kényszeríti az 50-50%-os szélességet tartalomtól függetlenül */
+       
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); 
         gap: 24px;
-        align-items: stretch; /* Ez felel azért, hogy az aljuk egy vonalban legyen */
-    }
+        align-items: stretch; 
 
     .card1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* Mobilon/Tableten vedd lejjebb a paddingot, hogy ne tartsa fixen a magasságot */
+      
         padding: 5% 20px; 
         height: auto;
         min-height: 0;
@@ -491,7 +471,7 @@ ul li a:hover {
 
     .slider {
         width: 100%;
-        /* Ez a kulcs: a slider magassága a szélességéből következzen */
+       
         aspect-ratio: 16 / 9; 
         height: auto;
         overflow: hidden;
@@ -500,31 +480,32 @@ ul li a:hover {
     .slide {
         width: 100%;
         height: 100%;
-        object-fit: cover; /* Kitölti a téglalapot torzulás nélkül */
+        object-fit: cover; 
     }
 }
 @media (max-width: 760px) {
     .kepeklent {
-        /* Egyetlen oszlop kényszerítése */
+      
         grid-template-columns: 1fr; 
-        gap: 20px; /* Kicsit kisebb távolság a kártyák között mobilon */
-        padding: 0 10px; /* Oldalsó margó, hogy ne érjenek ki a széléig */
+        gap: 20px; 
+        padding: 0 10px;
     }
 
     .card3, .card4, .card5, .card6 {
-        margin-left: 0; /* Megszüntetjük az asztali nézet baloldali margóját */
+        margin-left: 0; 
         width: 100%;
     }
 
     .card3kep, .card4kep, .card5kep, .card6kep {
-        /* Mobilon érdemesebb a téglalap (16/9) arány, hogy ne legyen túl hosszú a görgetés */
+        
         aspect-ratio: 16 / 9; 
     }
 
     .szurkedoboz p {
-        font-size: 22px; /* Kicsit kisebb betűméret mobilon */
+        font-size: 22px; 
     }
     .logo{
         width: 100px;
     }
+}
 }
