@@ -252,23 +252,25 @@ body {
     
     /*fejléc*/
     
-    header {
-    background-color: #3B3955;
-    min-height: 117px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-    flex-wrap: wrap;
-    
-    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #3B3955;
+        padding: 10px 20px;
+        }
     
     .logo {
     height: 100px;
     width: auto;
     }
-    
+    .menu{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+        }
     
     
     #telefon {
@@ -489,7 +491,7 @@ body {
     header {
     flex-direction: column;
     height: auto;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     }
     
@@ -505,7 +507,7 @@ body {
     margin-bottom: 10px;
     }
     
-    /* SZEMÉLYEK SZÁMA (Táblázat) és GOMB KÖZÉPRE */
+  
     table, button {
     float: none !important;
     margin-left: auto !important;
@@ -514,7 +516,7 @@ body {
     text-align: center;
     }
     
-    /* KÉPEK ÉS FELIRATOK SZINKRONIZÁLÁSA */
+   
     #lablec_al {
     flex-direction: column;
     align-items: center;
@@ -522,7 +524,7 @@ body {
     }
     
     #lablec_bal, #lablec_kozep, #lablec_jobb {
-    width: 95% !important; /* Szélesség 800px alatt */
+    width: 95% !important;
     max-width: 700px;
     margin: 0 auto;
     display: flex;
@@ -530,7 +532,7 @@ body {
     }
     
     
-    /* Kártyák igazítása */
+    
     .card1, .card2 {
     width: 95%;
     max-width: none;
@@ -538,7 +540,7 @@ body {
     }
     
            
-            /* 2. 2000px ÉS FELETTE - VISSZAÁLLÍTÁS AZ EREDETIHEZ */
+          
             @media screen and (min-width: 2000px) {
     #oldal_bal {
     width: 40% !important;
@@ -568,14 +570,14 @@ body {
     }
     }
     
-    /* Kártyák igazítása */
+   
     .card1, .card2 {
     width: 95%;
     max-width: none;
     }
     
     
-    /* 2. 2000px ÉS FELETTE - VISSZAÁLLÍTÁS AZ EREDETIHEZ */
+    
        
         @media screen and (min-width: 2000px) {
     #oldal_bal {
@@ -605,8 +607,32 @@ body {
     flex-direction: row !important;
     }
     }
+    .hamburger{
+        display:none;
+        font-size:30px;
+        color:white;
+        cursor:pointer;
+        }
+        
+        /* mobil */
+        @media (max-width:800px){
+        
+        .menu{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        }
+        
+        .menu.active{
+        display:flex;
+        }
+        
+        .hamburger{
+        display:block;
+        }
+        
+        }
     
-    /* Finomhangolás a legkisebb, 350px-es kijelzőkhöz */
     @media screen and (max-width: 400px) {
     h1 {
     font-size: 20px;
@@ -621,11 +647,12 @@ body {
     height: 50px;
     }
     table, button{
-    float: left !important;      /* Jobbra úsztatás kikapcsolása */
+    float: left !important;    
     margin-left: 0px !important;
     margin-right: auto !important;
-    display: block;             /* Blokk elemként már működik a margin: auto */
+    display: block;            
     text-align: right;
     font-size: 12px;
     }
     }
+   

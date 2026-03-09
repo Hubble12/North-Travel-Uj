@@ -294,20 +294,50 @@ table{
 
 /*fejléc*/
 
-header {
-    background-color: #3B3955;
-    height: 117px;
-    width: 100%;
+header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
-}
-
+    background-color: #3B3955;
+    padding: 10px 20px;
+    }
+    .hamburger{
+        display:none;
+        font-size:30px;
+        color:white;
+        cursor:pointer;
+        }
+        
+        /* mobil */
+        @media (max-width:800px){
+        
+        .menu{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        }
+        
+        .menu.active{
+        display:flex;
+        }
+        
+        .hamburger{
+        display:block;
+        }
+        
+        }
+    
 .logo {
-    height: 100px;
-    width: auto;
+height: 100px;
+width: auto;
 }
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    }
 
 .jobb-oldal {
     display: flex;
