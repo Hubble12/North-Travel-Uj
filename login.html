@@ -12,13 +12,20 @@
         <h1>Bejelentkezés</h1>
         <h3>Felhasználónév:</h3>
         <input type="text">
-        <h3>Jelszó::</h3>
+        <h3>Jelszó:</h3>
         <input type="password" id="passwordInput">
-        <a href="" id="elfelejtett">Elfelejtett jelszó</a>
+        <div id="jelszoMegjelenitesDiv">        
+            <input type="checkbox" onclick="passwordShow()" id="passwordShow">
+            <b id="jelszoText">Jelszó megjelenítése</b>
+            <a href="" id="elfelejtett">Elfelejtett jelszó</a>
+        </div>
         
         <button id="button1">Bejelentkezés</button>
+
+        <button id="vissza">Vissza</button>
         
-        <input type="checkbox" onclick="passwordShow()" id="passwordShow">
+
+
 
     </div>
 
@@ -28,5 +35,6 @@
 
 
     <script src="loginscript.js"></script>
+    <script src="accountScript.js"></script>
 </body>
 </html>

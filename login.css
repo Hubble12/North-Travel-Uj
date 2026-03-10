@@ -30,6 +30,8 @@ h1{
 h3{
     font-size: 200%;
     color: white;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 input{
@@ -50,14 +52,91 @@ input{
 }
 
 #elfelejtett{
-    color: blueviolet;
-    display: block;
-    margin-top: 10px;
+    color: white;
+    display: inline;
+    margin-top: 20px;
+    margin-left: 5%;
 }
 
 #passwordShow{
-    display: block;
-    margin-left: 0% !important;
-    margin-right: auto !important;
-    padding-left: 0% !important;
+    display: inline;
+    margin-top: 10px;
+    padding: 0;
+    width: 3%;
 }
+
+#jelszoText{
+    color: white;
+    display: inline;
+}
+
+#jelszoText{
+    display: inline;
+}
+
+#vissza{
+    float: right;
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-top: 30%;
+    width: 15%;
+    height: 5%;
+    border-bottom-right-radius: 25px;
+    background-color: rgb(68, 7, 126);
+    color: white;
+}
+
+
+
+
+#button1:hover {
+    background-color: rgb(6, 13, 121);
+  }
+
+#vissza:hover {
+    background-color: rgb(85, 8, 156);
+  }
+
+
+
+  @media only screen and (max-width: 1700px) {
+    #vissza{
+        border-bottom-right-radius: 0px;
+    }
+  }
+
+
+  @media only screen and (max-width: 1350px) {
+    #button1{
+        width: 20%;
+    }
+  }
+
+  @media only screen and (max-width: 820px) {
+    #button1{
+        width: 25%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #button1{
+        width: 30%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    #button1{
+        width: 35%;
+    }
+    #vissza{
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    h1{
+        font-size: 300%;
+        margin-left: 2%;
+    }
+  }
