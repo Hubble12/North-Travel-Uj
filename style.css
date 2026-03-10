@@ -267,7 +267,7 @@ ul li a:hover {
 display:none;
 }
 
-@media (max-width:500px){
+@media (max-width:600px){
 
 .hamburger{
 display:block;
@@ -403,9 +403,7 @@ display:flex;
         flex-wrap: nowrap; 
     }
 
-    .logo {
-        width: 50px; 
-    }
+   
 
     #rolunk {
         width: auto; 
@@ -422,7 +420,7 @@ display:flex;
     }
 
     .telefonszam {
-        font-size: 12px;
+        font-size: 20px;
         margin: 0;
         white-space: nowrap; 
         margin-right: 20px;
