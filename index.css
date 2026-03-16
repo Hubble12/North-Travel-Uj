@@ -110,9 +110,15 @@ ul li a:hover {
 .card1:hover, .card2:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    color: #000;
+    color: #ffdede;
 }
-
+.gif {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    width: 120px;
+    width: auto;
+}
 .alszoveg {
     font-size: 20px;
     margin-top: 10px;
