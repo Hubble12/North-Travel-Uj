@@ -9,28 +9,15 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.telefon-csoport {
-    display: flex;       /* Egymás mellé teszi az ikont és a számot */
-    align-items: center; /* Függőlegesen középre igazítja őket egymáshoz képest */
-    gap: 10px;           /* Fix távolság az ikon és a szám között */
-}
 
-/* Töröld ki a korábbi .telefonszam margin-left: 10px; részét, 
-   mert a 'gap' most már elvégzi ezt a munkát helyette! */
-.telefonszam {
-    color: white;                  
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0;           /* Nullázzuk a margót */
-    white-space: nowrap; /* Biztosítja, hogy ne törjön új sorba a szám */
-}
 header{
     background-color: #3B3955;
     height: 117px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+   justify-content: center;
+    
 }
 .logo{
     height: 100px;
@@ -38,33 +25,13 @@ header{
     
 
 }
-#telefon
-{
-    width: 70px;
-    height: auto;
-    margin-right: 5px;
-    
-
-}
-.telefonszam{
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    margin-right: 20px;
-
-
-}
-#phone
-{
-    display:flex;
-}
 
 
 ul {
     display: flex;
     gap: 40px;
     list-style: none;
-   
+  
     background-color: #3B3955;
 }
 
@@ -285,7 +252,13 @@ width:100%;
 .menu.active{
 display:flex;
 }
+.felsoresz{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
 
+}
 }
   @media(max-width:768px)
   {
@@ -300,6 +273,10 @@ display:flex;
     .alszoveg{
         font-size: 28px;
     }
+    .alsoresz{
+        width: 100%;
+        border-radius: 0;
+    }
   }
   .grid-container{
     display: flex;
@@ -308,9 +285,9 @@ display:flex;
   @media (max-width: 768px){
 
     header{
-        flex-direction: column;
+       justify-content: center;
         gap: 10px;
-        padding: 15px;
+       
     }
 
     #rolunk{
@@ -342,7 +319,7 @@ display:flex;
 
     .felsoresz{
         grid-template-columns: 1fr;
-        padding: 16px;
+      justify-items: center;
         gap: 16px;
     }
 
@@ -450,7 +427,7 @@ display:flex;
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); 
         gap: 24px;
         align-items: stretch; 
-
+    }
     .card1 {
         display: flex;
         flex-direction: column;
@@ -505,5 +482,4 @@ display:flex;
     .logo{
         width: 100px;
     }
-}
 }
