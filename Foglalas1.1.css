@@ -1,5 +1,5 @@
 body {
-    background-color: #D9D9D9;
+    background-color: #3B3955;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -443,7 +443,15 @@ body {
     float: none;
     margin: 0 auto;
     }
+
+
+    footer{
+        bottom: 0;
     }
+
+    }
+
+
     
     @media screen and (max-width: 800px) {
     
@@ -453,7 +461,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    padding: 0 10px;
+    padding: 10px;
     }
 
     .tablak{
@@ -470,23 +478,71 @@ body {
 
     .form_lefts{
         width: 30%;
+        padding-left: 20px;
     }
     
     /* Oldalsávok és tartalom reset */
-    #oldal_bal, 
+    /*#oldal_bal, 
     #oldal_jobb, 
     .oldalsavok {
     width: 100% !important;
     float: none !important;
     margin: 15px 0 !important;
     height: auto !important; /* A fix 700px törlése */
-    min-width: 0 !important;
+    /*min-width: 0 !important;
     left: 0 !important;
     right: 0 !important;
     position: static !important;
     }
+    .tablak{
+        width: 90svw;
+    }*/
     
     /* Fejléc és Menü */
+
+
+    #oldal_jobb{
+        display: block;
+        width: 100%;
+        height: 500px;
+    }
+    #oldal_bal{
+        display: block;
+        width: 100%;
+        height: 30%;
+    }
+
+    #hotelkep{
+        height: 30svh;
+        width: 60svw;
+    }
+
+    .formButtons{
+        width: 90px;
+        height: 50px;
+        margin: 0%;
+        display: inline;
+    }
+
+    #left6{
+        margin: 0;
+        width: 40%;
+        margin-top: 12%;
+    }
+    #right6{
+        margin: 0;
+        width: 40%;
+        margin-top: 7%;
+    }
+
+    .form_lefts{
+        float: left;
+        width: 70%;
+    }
+    .form_rights{
+        float: right;
+    }
+
     header {
     flex-direction: column;
     height: auto;
@@ -719,7 +775,7 @@ body {
     font-size: 15px;
     }
     
-    button {
+    /*button {
     width: 100%;
     height: 50px;
     }
@@ -730,6 +786,31 @@ body {
     display: block;            
     text-align: right;
     font-size: 12px;
-    }
+    }*/
     }
    
+
+    @media screen and (max-width: 550px){
+        #hotelkep{
+            height: 25svh;
+            width: 60svw;
+        }
+    }
+
+    @media screen and (max-width: 450px){
+        #left6{
+            margin-top: 13%;
+        }
+        #right6{
+            margin-top: 7%;
+        }
+    }
+
+    @media screen and (max-width: 375px){
+        #left6{
+            margin-top: 14%;
+        }
+        #right6{
+            margin-top: 7%;
+        }
+    }
