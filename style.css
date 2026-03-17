@@ -9,28 +9,15 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.telefon-csoport {
-    display: flex;       /* Egymás mellé teszi az ikont és a számot */
-    align-items: center; /* Függőlegesen középre igazítja őket egymáshoz képest */
-    gap: 10px;           /* Fix távolság az ikon és a szám között */
-}
 
-/* Töröld ki a korábbi .telefonszam margin-left: 10px; részét, 
-   mert a 'gap' most már elvégzi ezt a munkát helyette! */
-.telefonszam {
-    color: white;                  
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0;           /* Nullázzuk a margót */
-    white-space: nowrap; /* Biztosítja, hogy ne törjön új sorba a szám */
-}
 header{
     background-color: #3B3955;
     height: 117px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+   justify-content: center;
+    
 }
 .logo{
     height: 100px;
@@ -38,33 +25,13 @@ header{
     
 
 }
-#telefon
-{
-    width: 70px;
-    height: auto;
-    margin-right: 5px;
-    
-
-}
-.telefonszam{
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    margin-right: 20px;
-
-
-}
-#phone
-{
-    display:flex;
-}
 
 
 ul {
     display: flex;
     gap: 40px;
     list-style: none;
-   
+  
     background-color: #3B3955;
 }
 
@@ -269,23 +236,24 @@ display:none;
 
 @media (max-width:600px){
 
-.hamburger{
-display:block;
-font-size:30px;
-color:white;
-cursor:pointer;
-}
-
-.menu{
-display:none;
-flex-direction:column;
-width:100%;
-}
-
-.menu.active{
-display:flex;
-}
-
+    .hamburger{
+    display:block;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+    }
+    
+    .menu{
+    display:none;
+    flex-direction:column;
+    width:100%;
+    }
+    
+    .menu.active{
+    display:flex;
+    }
+    
+    
 }
   @media(max-width:768px)
   {
@@ -300,19 +268,11 @@ display:flex;
     .alszoveg{
         font-size: 28px;
     }
-  }
-  .grid-container{
-    display: flex;
-    flex-direction: column;
-  }
-  @media (max-width: 768px){
+    .alsoresz{
+        width: 100%;
 
-    header{
-        flex-direction: column;
-        gap: 10px;
-        padding: 15px;
     }
-
+    
     #rolunk{
         width: 100%;
         border-radius: 0;
@@ -322,135 +282,84 @@ display:flex;
     .alsoreszcim{
         font-size: 24px;
     }
-}
-@media (max-width: 768px){
-
-    .kepeklent{
-        grid-template-columns: 1fr;
-    }
-
-    .card3kep,
-    .card4kep,
-    .card5kep,
-    .card6kep{
-        aspect-ratio: 16/9;   
-    }
-
-    .szurkedoboz p{
-        font-size: 20px;
-    }
-
-    .felsoresz{
-        grid-template-columns: 1fr;
-        padding: 16px;
-        gap: 16px;
-    }
-
-   
-    .card1{
-        padding: 30px 15px;
-        text-align: center;
-    }
-
-    .szoveg{
-        font-size: 32px;
-    }
-
-    .alszoveg{
-        font-size: 18px;
-    }
-
-    
-    .card2{
-        width: 100%;
-    }
-
-    .slider{
-        aspect-ratio: 16/9; 
-    }
-
   
-    .caption{
-        font-size: 18px;
-        padding: 8px 0;
-    }
+  .grid-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .kepeklent{
+    grid-template-columns: 1fr;
+}
 
-    
-    .nav{
-        font-size: 22px;
-        padding: 6px 10px;
-    }
+.card3kep,
+.card4kep,
+.card5kep,
+.card6kep{
+    aspect-ratio: 16/9;   
+}
 
-    
-    #rolunk{
+.szurkedoboz p{
+    font-size: 20px;
+}
+
+
+
+
+
+
+.szoveg{
+    font-size: 32px;
+}
+
+.alszoveg{
+    font-size: 18px;
+}
+
+
+.card2{
+    width: 100%;
+}
+
+.slider{
+    aspect-ratio: 16/9; 
+}
+
+
+.caption{
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+
+.nav{
+    font-size: 22px;
+    padding: 6px 10px;
+}
+
+
+#rolunk {
+    width: auto; 
+    height: auto;
+    padding: 8px 15px; 
+    margin: 0;
+    font-size: 14px;
+    border-radius: 5px; 
+}
+#header
+    {
         width: 100%;
-        margin: 10px 0;
-        border-radius: 10px;
+        margin: auto;
     }
-
-   
-    header{
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    header {
-        flex-direction: row; 
-        justify-content: space-between; 
-        align-items: center;
-        padding: 10px 15px; 
-        flex-wrap: nowrap; 
-    }
-
-   
-
-    #rolunk {
-        width: auto; 
-        height: auto;
-        padding: 8px 15px; 
-        margin: 0;
-        font-size: 14px;
-        border-radius: 5px; 
-    }
-
-    #telefon {
-        width: 20px; 
-        margin: 0 5px;
-    }
-
-    .telefonszam {
-        font-size: 20px;
-        margin: 0;
-        white-space: nowrap; 
-        margin-right: 20px;
-    }
-
-
-}
-
-@media (max-width:1200px){
-    .kepeklent {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 40px;
-    }
-
-    .card3kep, .card4kep, .card5kep, .card6kep {
-        aspect-ratio: 16 / 9;
-        object-fit: cover;
-}
-.felsoresz {
-    gap: 40px; 
-}
-}
-@media (min-width: 768px) {
+    
+    
     .felsoresz {
         display: grid;
-       
+       width: 90%;
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); 
         gap: 24px;
         align-items: stretch; 
-
+        margin:10px;
+    }
     .card1 {
         display: flex;
         flex-direction: column;
@@ -480,7 +389,32 @@ display:flex;
         height: 100%;
         object-fit: cover; 
     }
+
+  }
+
+ 
+@media (max-width:510px){
+  #felsoresz{
+    width:50% ;
+  }
+    
 }
+
+@media (max-width:1200px){
+    .kepeklent {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 40px;
+    }
+
+    .card3kep, .card4kep, .card5kep, .card6kep {
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+}
+.felsoresz {
+    gap: 40px; 
+}
+}
+
 @media (max-width: 760px) {
     .kepeklent {
       
@@ -505,5 +439,4 @@ display:flex;
     .logo{
         width: 100px;
     }
-}
 }
