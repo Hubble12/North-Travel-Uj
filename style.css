@@ -236,29 +236,24 @@ display:none;
 
 @media (max-width:600px){
 
-.hamburger{
-display:block;
-font-size:30px;
-color:white;
-cursor:pointer;
-}
-
-.menu{
-display:none;
-flex-direction:column;
-width:100%;
-}
-
-.menu.active{
-display:flex;
-}
-.felsoresz{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-   
-
-}
+    .hamburger{
+    display:block;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+    }
+    
+    .menu{
+    display:none;
+    flex-direction:column;
+    width:100%;
+    }
+    
+    .menu.active{
+    display:flex;
+    }
+    
+    
 }
   @media(max-width:768px)
   {
@@ -275,21 +270,9 @@ display:flex;
     }
     .alsoresz{
         width: 100%;
-        border-radius: 0;
-    }
-  }
-  .grid-container{
-    display: flex;
-    flex-direction: column;
-  }
-  @media (max-width: 768px){
 
-    header{
-       justify-content: center;
-        gap: 10px;
-       
     }
-
+    
     #rolunk{
         width: 100%;
         border-radius: 0;
@@ -299,134 +282,83 @@ display:flex;
     .alsoreszcim{
         font-size: 24px;
     }
-}
-@media (max-width: 768px){
-
-    .kepeklent{
-        grid-template-columns: 1fr;
-    }
-
-    .card3kep,
-    .card4kep,
-    .card5kep,
-    .card6kep{
-        aspect-ratio: 16/9;   
-    }
-
-    .szurkedoboz p{
-        font-size: 20px;
-    }
-
-    .felsoresz{
-        grid-template-columns: 1fr;
-      justify-items: center;
-        gap: 16px;
-    }
-
-   
-    .card1{
-        padding: 30px 15px;
-        text-align: center;
-    }
-
-    .szoveg{
-        font-size: 32px;
-    }
-
-    .alszoveg{
-        font-size: 18px;
-    }
-
-    
-    .card2{
-        width: 100%;
-    }
-
-    .slider{
-        aspect-ratio: 16/9; 
-    }
-
   
-    .caption{
-        font-size: 18px;
-        padding: 8px 0;
-    }
+  .grid-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .kepeklent{
+    grid-template-columns: 1fr;
+}
 
-    
-    .nav{
-        font-size: 22px;
-        padding: 6px 10px;
-    }
+.card3kep,
+.card4kep,
+.card5kep,
+.card6kep{
+    aspect-ratio: 16/9;   
+}
 
-    
-    #rolunk{
+.szurkedoboz p{
+    font-size: 20px;
+}
+
+
+
+
+
+
+.szoveg{
+    font-size: 32px;
+}
+
+.alszoveg{
+    font-size: 18px;
+}
+
+
+.card2{
+    width: 100%;
+}
+
+.slider{
+    aspect-ratio: 16/9; 
+}
+
+
+.caption{
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+
+.nav{
+    font-size: 22px;
+    padding: 6px 10px;
+}
+
+
+#rolunk {
+    width: auto; 
+    height: auto;
+    padding: 8px 15px; 
+    margin: 0;
+    font-size: 14px;
+    border-radius: 5px; 
+}
+#header
+    {
         width: 100%;
-        margin: 10px 0;
-        border-radius: 10px;
+        margin: auto;
     }
-
-   
-    header{
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    header {
-        flex-direction: row; 
-        justify-content: space-between; 
-        align-items: center;
-        padding: 10px 15px; 
-        flex-wrap: nowrap; 
-    }
-
-   
-
-    #rolunk {
-        width: auto; 
-        height: auto;
-        padding: 8px 15px; 
-        margin: 0;
-        font-size: 14px;
-        border-radius: 5px; 
-    }
-
-    #telefon {
-        width: 20px; 
-        margin: 0 5px;
-    }
-
-    .telefonszam {
-        font-size: 20px;
-        margin: 0;
-        white-space: nowrap; 
-        margin-right: 20px;
-    }
-
-
-}
-
-@media (max-width:1200px){
-    .kepeklent {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 40px;
-    }
-
-    .card3kep, .card4kep, .card5kep, .card6kep {
-        aspect-ratio: 16 / 9;
-        object-fit: cover;
-}
-.felsoresz {
-    gap: 40px; 
-}
-}
-@media (min-width: 768px) {
+    
+    
     .felsoresz {
         display: grid;
-       
+       width: 90%;
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); 
         gap: 24px;
         align-items: stretch; 
+        margin:10px;
     }
     .card1 {
         display: flex;
@@ -457,7 +389,32 @@ display:flex;
         height: 100%;
         object-fit: cover; 
     }
+
+  }
+
+ 
+@media (max-width:510px){
+  #felsoresz{
+    width:50% ;
+  }
+    
 }
+
+@media (max-width:1200px){
+    .kepeklent {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 40px;
+    }
+
+    .card3kep, .card4kep, .card5kep, .card6kep {
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+}
+.felsoresz {
+    gap: 40px; 
+}
+}
+
 @media (max-width: 760px) {
     .kepeklent {
       

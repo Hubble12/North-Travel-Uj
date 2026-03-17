@@ -61,8 +61,7 @@ body {
         margin-left: 30%;
     }
 
-    #tabla6{
-    }
+  
 
     #fizetesButton{
         margin: 5px;
@@ -282,12 +281,14 @@ body {
     /*fejléc*/
     
     header{
+        background-color: #3B3955;
+        height: 117px;
+        width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        background-color: #3B3955;
-        padding: 10px 20px;
-        }
+       justify-content: center;
+        
+    }
     
     .logo {
     height: 100px;
