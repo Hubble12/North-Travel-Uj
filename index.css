@@ -94,9 +94,8 @@ ul li a:hover {
     display:none;
     }
 
-.card1, .card2 {
+.card1{
     margin: 20px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-size: 18px;
     width: 90%;
@@ -107,7 +106,17 @@ ul li a:hover {
     color: white;
     border-radius: 10px;
 }
-
+.card2{
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 18px;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
 .card1:hover, .card2:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -138,6 +147,7 @@ ul li a:hover {
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
+    
 }
 
 .slide {
