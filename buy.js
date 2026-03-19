@@ -4,9 +4,37 @@ let hazateres;
 let szobak;
 let email;
 let fizetendo;
+let isAlert = false;
+
+
+
+//document.getElementById("uzenetDiv").hidden = true;
+document.getElementById("uzenet").innerHTML=""
+document.getElementById("okButton").hidden = true;
+
+
+function okButton(){
+
+  document.getElementById("uzenet").innerHTML=""
+  document.getElementById("okButton").hidden = true;
+
+}
+
+
+
+
+
+
 
 function alertinfo (){
-  alert("Megadott adatok formátuma:\nSzemélyek száma: 1-10 személy között szervezünk utat.\n\nIndulás és hazatérés ugyan arra az évre vonatkoznak, formátumuk hónap nap\n\npl:  02 08, 2 8, 2 08 vagy 12 18\nLegfeljebb 5 szobát tudunk lefoglalni.\n email: @-ot tartalmazzon pontosan egyszer, első és utolsó karakter nem lehet")
+  if( isAlert == false){
+    document.getElementById("uzenet").innerHTML="Megadott adatok formátuma:\nSzemélyek száma: 1-10 személy között szervezünk utat.\n\nIndulás és hazatérés ugyan arra az évre vonatkoznak, formátumuk hónap nap\n\npl:  02 08, 2 8, 2 08 vagy 12 18\nLegfeljebb 5 szobát tudunk lefoglalni.\n email: @-ot tartalmazzon pontosan egyszer, első és utolsó karakter nem lehet"
+    isAlert = true
+  }
+  else{
+    document.getElementById("uzenet").innerHTML=""
+    isAlert = false
+  }
 }
 
 function GrandHotel(){  //Minden hotelra függvény
