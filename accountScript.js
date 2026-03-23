@@ -30,6 +30,10 @@ function loginFunction(){
         window.location.href = "index.html"
     }
     else{
-        
+        document.getElementById("uzenet").innerHTML="Hibás felhasználónév vagy jelszó."
     }
+}
+
+function elfelejtettJelszo(){
+    document.getElementById("uzenet").innerHTML="Elfelejtett jelszó funkció még nem elérhető."
 }
