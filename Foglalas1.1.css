@@ -501,7 +501,7 @@ body {
 
         #uzenetDiv{
             width: 80%;
-            height: 100px;
+            height: 250px;
             padding: 30px;
             padding-right: 50px;
         }
@@ -866,6 +866,12 @@ body {
             height: 25svh;
             width: 60svw;
         }
+        #uzenetDiv{
+            width: 80%;
+            height: 300px;
+            padding: 30px;
+            padding-right: 50px;
+        }
 
     }
 
@@ -876,9 +882,17 @@ body {
         #right6{
             margin-top: 7%;
         }
-
-
     }
+
+    @media screen and (max-width: 420px){
+        #uzenetDiv{
+            width: 80%;
+            height: 350px;
+            padding: 30px;
+            padding-right: 50px;
+        }
+    }
+
 
     @media screen and (max-width: 375px){
         #left6{
