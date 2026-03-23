@@ -5,6 +5,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0   ;
 }
 .telefon-csoport{
     display: flex;       
@@ -27,6 +28,7 @@ header{
     justify-content: space-between;
     background-color: #3B3955;
     padding: 15px 30px;
+    margin: 0;
     }
     .hamburger{
         display:none;
@@ -99,6 +101,7 @@ width: auto;
     align-items: center;
     color: white;
     text-align: center;
+    width: 100%;
 }
 .hero h1{
     font-size: 60px;
@@ -194,4 +197,81 @@ h2 {
     .hero h1 {
         font-size: 40px;
     }
+}
+@media (max-width:300px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px;
+    }
+    .logo{
+        height: 60px;
+    }
+    .hero{
+        height: auto;
+        padding: 40px 10px;
+    }
+    .hero h1{
+        font-size: 26px;
+    }
+    .hero p{
+        font-size: 14px;
+    }
+    .container{
+        padding: 30px 10px;
+    }
+    .menu{
+        font-size: 14px;
+        gap: 15px;
+    }
+    .telefonszam {
+        font-size: 14px;
+    }
+
+    #telefon {
+        width: 20px;
+    }
+
+    .telefon-csoport {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .feature > div {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+
+        .lablec {
+            
+            text-align: center;
+            margin: 0;
+        }
+    
+        #logok-container {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            
+        }
+    
+        .contact-item {
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+    
+        .logok {
+            width: 22px;
+        }
+    
+        .contact-item span {
+            font-size: 13px;
+        }
 }
