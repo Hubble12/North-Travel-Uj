@@ -113,6 +113,11 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     color: #000;
     }
+
+    #infobutton:hover{
+        opacity: 50%;
+    }
+
     .oldalsavok{
     border-width: 2px;
     border: black;
@@ -270,6 +275,7 @@ body {
     height: 50px;
     background-image: url(logokepek/infobutton.png);
     float: right;
+    margin-right: 7%;
     }
     
     #infoimage{
@@ -339,6 +345,41 @@ body {
     ul li a:hover {
     background-color: #28273b;
     }
+
+
+
+
+
+#uzenetDiv{
+    width: 50%;
+    height: 300px;
+    padding: 30px;
+    padding-right: 50px;
+}
+
+#okButton{
+    margin: 50px;
+}
+
+#uzenet{
+    color: white;
+    font-size: 150%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     @media (max-width: 2000px) {
     #oldal_bal{
@@ -403,6 +444,7 @@ body {
     justify-content: space-around;
     gap: 10px;
     margin-top: 50px;    
+    height: 600px;
     }
     #oldal_bal, #oldal_jobb{
     width: 90%;
@@ -455,6 +497,24 @@ body {
 
     
     @media screen and (max-width: 800px) {
+
+
+        #uzenetDiv{
+            width: 80%;
+            height: 100px;
+            padding: 30px;
+            padding-right: 50px;
+        }
+        
+        #okButton{
+            margin: 50px;
+            display: none !important;
+        }
+        
+        #uzenet{
+            color: white;
+            font-size: 150%;
+        }
     
     /* Fő tárolók elrendezése */
     #oldalterulet {
@@ -463,6 +523,7 @@ body {
     align-items: center;
     margin-top: 20px;
     padding: 10px;
+    height: 1000px;
     }
 
     .tablak{
@@ -539,9 +600,11 @@ body {
     .form_lefts{
         float: left;
         width: 70%;
+        height: 30px;
     }
     .form_rights{
         float: right;
+        height: 30px;
     }
 
     header {
@@ -764,6 +827,13 @@ body {
         .hamburger{
         display:block;
         }
+
+        #tabla7 {
+            display: block;
+        }
+        #infobutton{
+            margin: 30px;
+        }
         
         }
     
@@ -796,6 +866,7 @@ body {
             height: 25svh;
             width: 60svw;
         }
+
     }
 
     @media screen and (max-width: 450px){
@@ -805,6 +876,8 @@ body {
         #right6{
             margin-top: 7%;
         }
+
+
     }
 
     @media screen and (max-width: 375px){
