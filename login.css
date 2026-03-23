@@ -1,7 +1,5 @@
 body{
     background-image: linear-gradient(to top, blueviolet, midnightblue);
-    background-image: url(képek/purple\ grid.png);
-    background-size: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
@@ -20,7 +18,9 @@ body{
     background-color: blueviolet;
     border-radius: 25px;
     padding: 3%;
-    background-image: linear-gradient(to top, midnightblue, blueviolet);
+    background-image: url("Képek/scandinavia.jpg");
+    border-style: groove ;
+    border-collapse: collapse;
 }
 
 
@@ -86,7 +86,7 @@ input{
     width: 15%;
     height: 5%;
     border-bottom-right-radius: 25px;
-    background-color: rgb(68, 7, 126);
+    background-color: midnightblue;
     color: white;
 }
 
@@ -97,9 +97,7 @@ input{
     background-color: rgb(6, 13, 121);
   }
 
-#vissza:hover {
-    background-color: rgb(85, 8, 156);
-  }
+
 
 
 
