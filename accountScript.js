@@ -13,8 +13,8 @@ function read(){
 */
 
 
-let userNames = ["u1", "u2"]
-let passwords = ["p1", "p2"]
+let userNames = ["Sanyi90", "Attila5"]
+let passwords = ["1234", "tesztjelszo"]
 
 function loginFunction(){
     let inputName = document.getElementById("input1").value
