@@ -1,0 +1,162 @@
+body{
+    background-image: url("Képek/scandinavia.jpg");
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    height: 100svh;
+    width: 100%;
+    margin: auto;
+    padding: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#login_kulso{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: blueviolet;
+    border-radius: 25px;
+    padding:10%;
+    background-image: url("Képek/scandinavia.jpg");
+    border-style: groove ;
+    border-collapse: collapse;
+}
+
+#uzenet{
+    color: white;
+    margin-top: 5px;
+}
+
+
+
+h1{
+    font-size: 200%;
+    color: white;
+}
+
+h3{
+    font-size: 90%;
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+input{
+    height: 5%;
+    width: 80%;
+    font-size: 80%;
+    background-color: rgb(0, 5, 70);
+    color: white;
+}
+
+#button1{
+    display: block;
+    margin-top: 3%;
+    height: 7%;
+    width: 15%;
+    background-color: rgb(0, 5, 70);
+    color: white;
+}
+
+#elfelejtett{
+    color: white;
+    display: inline;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+#elfelejtett:hover{
+    color: blue;
+    display: inline;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+#passwordShow{
+    display: inline;
+    margin-top: 10px;
+    padding: 0;
+    width: 3%;
+}
+
+#jelszoText{
+    color: white;
+    display: inline;
+}
+
+#jelszoText{
+    display: inline;
+}
+
+#vissza{
+    float: right;
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-top: 30%;
+    width: 15%;
+    height: 5%;
+    border-bottom-right-radius: 25px;
+    background-color: midnightblue;
+    color: white;
+}
+
+
+
+
+#button1:hover {
+    background-color: rgb(6, 13, 121);
+  }
+
+
+
+
+
+  @media only screen and (max-width: 1700px) {
+    #vissza{
+        border-bottom-right-radius: 0px;
+    }
+  }
+
+
+  @media only screen and (max-width: 1350px) {
+    #button1{
+        width: 20%;
+    }
+  }
+
+  @media only screen and (max-width: 820px) {
+    #button1{
+        width: 25%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #button1{
+        width: 30%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    #button1{
+        width: 35%;
+    }
+    #vissza{
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    h1{
+        font-size: 300%;
+        margin-left: 2%;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    h1{
+        font-size: 250%;
+        margin-left: 2%;
+    }
+  }
