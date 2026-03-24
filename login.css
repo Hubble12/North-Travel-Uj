@@ -23,6 +23,11 @@ body{
     border-collapse: collapse;
 }
 
+#uzenet{
+    color: white;
+    margin-top: 5px;
+}
+
 
 
 h1{
@@ -58,6 +63,13 @@ input{
 
 #elfelejtett{
     color: white;
+    display: inline;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+#elfelejtett:hover{
+    color: blue;
     display: inline;
     margin-top: 20px;
     margin-left: 5%;
@@ -141,6 +153,13 @@ input{
   @media only screen and (max-width: 500px) {
     h1{
         font-size: 300%;
+        margin-left: 2%;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    h1{
+        font-size: 250%;
         margin-left: 2%;
     }
   }
