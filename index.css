@@ -2,13 +2,12 @@
 body {
     background-color: #f4f4f4;
     margin: 0;
-
     color: #333;
     overflow-x: hidden;
     background-image: url(Képek/hatterkep.png);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Oswald", sans-serif ;
+    font-family: "Oswald";
 }
 
 
@@ -26,7 +25,7 @@ body {
 }
 
 
-/* Header Styles */
+
 header{
     background-color: #3B3955;
     height: 117px;
@@ -34,7 +33,7 @@ header{
     display: flex;
     align-items: center;
    justify-content: center;
-   font-family: "Oswald",  ;
+   font-family: "Oswald"  ;
     
 }
 .logo{
@@ -107,6 +106,7 @@ ul li a:hover {
     background-color: #3B3955;
     color: white;
     border-radius: 10px;
+    
 }
 .card2{
     margin: 20px auto;
