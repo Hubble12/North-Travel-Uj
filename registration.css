@@ -46,7 +46,7 @@ input{
     height: 5%;
     width: 80%;
     font-size: 80%;
-    background-color: rgb(0, 5, 70);
+    background-color:#3B3955;
     color: white;
 }
 
@@ -55,7 +55,7 @@ input{
     margin-top: 3%;
     height: 7%;
     width: 15%;
-    background-color: rgb(0, 5, 70);
+    background-color: #3B3955;
     color: white;
 }
 
@@ -98,7 +98,7 @@ input{
     width: 15%;
     height: 5%;
     border-bottom-right-radius: 25px;
-    background-color: midnightblue;
+    background-color: #3B3955;
     color: white;
 }
 
