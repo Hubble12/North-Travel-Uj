@@ -12,6 +12,7 @@ function read(){
 }
 */
 
+let x= 1
 
 let userNames = ["Sanyi90", "Attila5"]
 let passwords = ["1234", "tesztjelszo"]
@@ -28,6 +29,8 @@ function loginFunction(){
     }
     if(result == true){
         window.location.href = "index.html"
+        let uName = inputName;
+        localStorage.setItem('sharedName', uName);
     }
     else{
         document.getElementById("uzenet").innerHTML="Hibás felhasználónév vagy jelszó."
@@ -37,3 +40,5 @@ function loginFunction(){
 function elfelejtettJelszo(){
     document.getElementById("uzenet").innerHTML="Elfelejtett jelszó funkció még nem elérhető."
 }
+
+

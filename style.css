@@ -12,7 +12,9 @@ body {
 }
 
 
-
+#userNameText{
+    color: white;
+}
 
 .logo {
     height: 100px;
