@@ -308,10 +308,6 @@ body {
     }
     
     
-    /*button:hover{
-    /*background-color: #28273b;*/
-   /* }
-    */
     input{
     background-color: #3B3955;
     color: white;
@@ -397,9 +393,7 @@ body {
     text-decoration: none;
     }
     
-    ul li a:hover {
-    /*background-color: #28273b;*/
-    }
+
 
 
 
