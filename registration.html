@@ -4,12 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regisztráció</title>
+    <link rel="stylesheet" href="registration.css">
 </head>
-
-
 <body>
-    
+
+    <div id="login_kulso">
+        <h1>Regisztráció</h1>
+
+        <h3>Vezetéknév:</h3>
+        <input type="text" id="input1">
+
+        <h3>Keresztnév:</h3>
+        <input type="text" id="input1">
+
+
+
+
+        <h3>Felhasználónév:</h3>
+        <input type="text" id="input1">
+        <h3>Jelszó:</h3>
+        <input type="password" id="passwordInput">
+        <h3>Jelszó megerősítése:</h3>
+        <input type="password" id="passwordInput">
+        <div id="jelszoMegjelenitesDiv">        
+            <input type="checkbox" onclick="passwordShow()" id="passwordShow">
+            <b id="jelszoText">Jelszó megjelenítése</b>
+            
+        </div>
+        <a href="index.html"><button id="vissza" >Főoldal</button></a>
+        <button id="button1" onclick="loginFunction()">Regisztráció</button>
+        
+
+        
+
+        <div id="uzenet"></div>
+        
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="loginscript.js"></script>
+    <script src="accountScript.js"></script>
 </body>
-
-
 </html>

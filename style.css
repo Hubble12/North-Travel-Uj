@@ -8,6 +8,7 @@ body {
     background-image: url(Képek/hatterkep.png);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "Oswald", sans-serif ;
 }
 
 
@@ -180,6 +181,9 @@ ul li a:hover {
     text-align: center;
     font-size: 18px;
     padding: 10px 0;
+    font-family: "Oswald", sans-serif ;
+    font-size: larger;
+    
 }
 
 /* Footer Section */
@@ -229,7 +233,6 @@ ul li a:hover {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     height: 50px;
-    font-size: 16px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -237,8 +240,14 @@ ul li a:hover {
     padding: 10px 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    font-family: "Oswald";
+    font-size: 20px;
 }
-
+.szurkedoboz p{
+    font-family: "Oswald";
+    font-size: 20px;
+    margin-top: 4px;
+}
 /* Responsive Design */
 @media (max-width: 1024px) {
     header {
