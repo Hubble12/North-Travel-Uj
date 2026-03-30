@@ -17,7 +17,7 @@ function registrationFunction(){
 
     console.log(inputName.length)
     console.log(inputPassword.length)
-    if(inputName.length == 0 || inputPassword.length == 0){
+    if(inputName.length == 0 || inputPassword.length == 0 || document.getElementById("input4").value != document.getElementById("input5").value){
         result = false
     }
     else{
