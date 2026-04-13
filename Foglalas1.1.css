@@ -7,12 +7,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;      /* hogy kitöltse a teljes képernyőt */
     background-position: center; /* középre igazítás */
+    font-family: "Oswald";
     }
     .tartalom{
     
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    font-family: Oswald;
     
     
     }
