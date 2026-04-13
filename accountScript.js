@@ -12,12 +12,20 @@ function read(){
 }
 */
 
-let x= 1
 
-let userNames = ["Sanyi90", "Attila5"]
-let passwords = ["1234", "tesztjelszo"]
+
+
+
 
 function loginFunction(){
+    let userNames = ["Sanyi90", "Attila5", localStorage.getItem('regName')]
+    let passwords = ["1234", "tesztjelszo", localStorage.getItem('regPass')]
+    console.log(userNames)
+    console.log(passwords)
+
+    
+
+
     let inputName = document.getElementById("input1").value
     let inputPassword = document.getElementById("passwordInput").value
     let result = false

@@ -91,6 +91,8 @@ function Arctic(){
 
 
 function fizetes(){
+  let savedName = localStorage.getItem('sharedName');
+
 
   if (fizetendo == ""){
     fizetendo = 30000
@@ -530,7 +532,7 @@ function fizetes(){
 
  
   
-      alert("Fizetendő összeg: " + fizetendo + "Ft\nNapok száma: " + eltoltottnapok + "\nA megadott email címre küldtük a fizetési jóváhagyást. Ha nem érkezett email, ellenőrizze az email címét!")
+      alert("Fizetendő összeg: " + fizetendo + "Ft\nNapok száma: " + eltoltottnapok + "\nA megadott email címre küldtük a fizetési jóváhagyást. Ha nem érkezett email, ellenőrizze az email címét!" + "\nKellemes utazást kívánunk " + savedName)
     }
     else if (check1 == 3){
       alert(szemelyekszama + " személyre nem tudunk utat szervezni. 10 főre tudunk legfeljebb foglalni.")
