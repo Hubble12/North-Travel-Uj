@@ -222,11 +222,13 @@ body {
     flex: 1;
     min-width: 250px;
     height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     
     #lablec_bal:hover, #lablec_kozep:hover, #lablec_jobb:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #000;
     }
     
     #kep_bal, #kep_kozep, #kep_jobb {
@@ -882,10 +884,42 @@ body {
         display:flex;
         }
         
-        .hamburger{
-        display:block;
+        .hamburger {
+            display: block;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            transition: color 0.3s ease;
         }
-
+    
+        .hamburger:hover {
+            color: #ffdede;
+        }
+    
+        .menu {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: #3B3955;
+            transition: max-height 0.3s ease;
+            overflow: hidden;
+        }
+    
+        .menu.active {
+            display: flex;
+        }
+    
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+    
+        .menu a:hover {
+            background-color: #28273b;
+        }
         #tabla7 {
             display: block;
         }

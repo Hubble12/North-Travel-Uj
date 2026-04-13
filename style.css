@@ -416,23 +416,40 @@ ul li a:hover {
  
 
 @media (max-width:600px){
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
 
-    .hamburger{
-    display:block;
-    font-size:30px;
-    color:white;
-    cursor:pointer;
+    .hamburger:hover {
+        color: #ffdede;
     }
-    
-    .menu{
-    display:none;
-    flex-direction:column;
-    width:100%;
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #3B3955;
+        transition: max-height 0.3s ease;
+        overflow: hidden;
     }
-    
-    .menu.active{
-    display:flex;
+
+    .menu.active {
+        display: flex;
     }
-    
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        text-align: center;
+        transition: background-color 0.3s ease;
     }
-   
+
+    .menu a:hover {
+        background-color: #28273b;
+    }
+}
