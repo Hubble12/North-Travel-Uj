@@ -545,10 +545,18 @@ function fizetes(){
 
     if (check1 == 1 && fizetendo > 0){
 
-
- 
+      let uzenetElement = document.getElementById("uzenet");
+      uzenetElement.innerHTML = "Fizetendő összeg: " + fizetendo + "Ft\nNapok száma: " + eltoltottnapok + "\nA megadott email címre küldtük a fizetési jóváhagyást. Ha nem érkezett email, ellenőrizze az email címét!" + "\nKellemes utazást kívánunk " + savedName + "!"
+      uzenetElement.style.backgroundColor = "#3B3956";
+      uzenetElement.style.borderRadius = "10px";
+      uzenetElement.style.color = "white";
+      uzenetElement.style.textAlign = "left"; 
+      uzenetElement.stylefontFamily = "Georgia,serif";
+      uzenetElement.style.padding = "10px";
+      uzenetElement.style.fontSize = "24px";
+      uzenetElement.style.display = "block"; 
   
-      alert("Fizetendő összeg: " + fizetendo + "Ft\nNapok száma: " + eltoltottnapok + "\nA megadott email címre küldtük a fizetési jóváhagyást. Ha nem érkezett email, ellenőrizze az email címét!" + "\nKellemes utazást kívánunk " + savedName)
+      //alert("Fizetendő összeg: " + fizetendo + "Ft\nNapok száma: " + eltoltottnapok + "\nA megadott email címre küldtük a fizetési jóváhagyást. Ha nem érkezett email, ellenőrizze az email címét!" + "\nKellemes utazást kívánunk " + savedName)
     }
     else if (check1 == 3){
       alert(szemelyekszama + " személyre nem tudunk utat szervezni. 10 főre tudunk legfeljebb foglalni.")
