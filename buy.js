@@ -27,13 +27,29 @@ function okButton(){
 
 
 function alertinfo (){
-  if( isAlert == false){
-    document.getElementById("uzenet").innerHTML="Megadott adatok formátuma:\nSzemélyek száma: 1-10 személy között szervezünk utat.\n\nIndulás és hazatérés ugyan arra az évre vonatkoznak, formátumuk hónap nap\n\npl:  02 08, 2 8, 2 08 vagy 12 18\nLegfeljebb 5 szobát tudunk lefoglalni.\n email: @-ot tartalmazzon pontosan egyszer, első és utolsó karakter nem lehet"
-    isAlert = true
-  }
-  else{
-    document.getElementById("uzenet").innerHTML=""
-    isAlert = false
+  if (isAlert == false) {
+    let uzenetElement = document.getElementById("uzenet");
+    uzenetElement.innerHTML = "Megadott adatok formátuma:<br>" +
+                  "Személyek száma: 1-10 személy között szervezünk utat.<br>" +
+                  "Indulás és hazatérés ugyan arra az évre vonatkoznak, formátumuk hónap nap<br>" +
+                  "pl:  02 08, 2 8, 2 08 vagy 12 18<br>" +
+                  "Legfeljebb 5 szobát tudunk lefoglalni.<br>" +
+                  "email: @-ot tartalmazzon pontosan egyszer, első és utolsó karakter nem lehet";
+    uzenetElement.style.backgroundColor = "#3B3956";
+    uzenetElement.style.borderRadius = "10px";
+    uzenetElement.style.color = "white";
+    uzenetElement.style.textAlign = "left"; 
+    uzenetElement.stylefontFamily = "Georgia,serif";
+    uzenetElement.style.padding = "10px";
+    uzenetElement.style.fontSize = "24px";
+    uzenetElement.style.display = "block"; 
+
+    isAlert = true;
+  } else {
+    let uzenetElement = document.getElementById("uzenet");
+    uzenetElement.innerHTML = "";
+    uzenetElement.style.display = "none"; 
+    isAlert = false;
   }
 }
 
