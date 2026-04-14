@@ -23,6 +23,9 @@ body {
     color:black;
     
     }
+    #userNameText{
+        color: white;
+    }
     #oldalterulet{
     margin-top:50px;
     width: 100%;
