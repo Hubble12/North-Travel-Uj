@@ -547,7 +547,7 @@ function fizetes(){
 
       let uzenetElement = document.getElementById("uzenet");
       uzenetElement.innerHTML = "Fizetendő összeg: " + fizetendo + "Ft\nNapok száma: " + eltoltottnapok + "\nA megadott email címre küldtük a fizetési jóváhagyást. Ha nem érkezett email, ellenőrizze az email címét!" + "\nKellemes utazást kívánunk " + savedName + "!"
-      uzenetElement.style.backgroundColor = "#3B3956";
+      uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,purple,#5cf7ce)";
       uzenetElement.style.borderRadius = "10px";
       uzenetElement.style.color = "white";
       uzenetElement.style.textAlign = "left"; 
@@ -559,37 +559,59 @@ function fizetes(){
       //alert("Fizetendő összeg: " + fizetendo + "Ft\nNapok száma: " + eltoltottnapok + "\nA megadott email címre küldtük a fizetési jóváhagyást. Ha nem érkezett email, ellenőrizze az email címét!" + "\nKellemes utazást kívánunk " + savedName)
     }
     else if (check1 == 3){
-      alert(szemelyekszama + " személyre nem tudunk utat szervezni. 10 főre tudunk legfeljebb foglalni.")
+      let uzenetElement = document.getElementById("uzenet")
+      //alert(szemelyekszama + " személyre nem tudunk utat szervezni. 10 főre tudunk legfeljebb foglalni.")
+      uzenetElement.innerHTML = szemelyekszama + " személyre nem tudunk utat szervezni. 10 főre tudunk legfeljebb foglalni."
     }
     else if (check1 == 4){
-      alert("Legfeljebb 5 szobát tudunk foglalni.")
+      let uzenetElement = document.getElementById("uzenet")
+      //alert("Legfeljebb 5 szobát tudunk foglalni.")
+      uzenetElement.innerHTML = "Legfeljebb 5 szobát tudunk foglalni."
     }
     else if (check1 == 5){
-      alert("Legfeljebb 10 személyt és 5 szobát tudunk feldolgozni.")
+      let uzenetElement = document.getElementById("uzenet")
+      //alert("Legfeljebb 10 személyt és 5 szobát tudunk feldolgozni.")
+      uzenetElement.innerHTML = "Legfeljebb 10 személyt és 5 szobát tudunk feldolgozni."
     }
     else if(check1 == 6){
-      alert("Az email nem végzőthet @-ra!")
+      let uzenetElement = document.getElementById("uzenet")
+      //alert("Az email nem végzőthet @-ra!")
+      uzenetElement.innerHTML = "Az email nem végzőthet @-ra!"
     }
     else if(check1 == 7){
-      alert("Az email nem kezdőthet @-al!")
+      let uzenetElement = document.getElementById("uzenet")
+      //alert("Az email nem kezdőthet @-al!")
+      uzenetElement.innerHTML = "Az email nem kezdőthet @-al!"
     }
     else if(check1 == 8){
-      alert("Nem lett email megadva!")
+      let uzenetElement = document.getElementById("uzenet")
+      //alert("Nem lett email megadva!")
+      uzenetElement.innerHTML = "Nem lett email megadva!"
     }
     else if(check1 == 9){
-      alert("Az email nem tartalmaz @-ot!")
+      let uzenetElement = document.getElementById("uzenet")
+      //alert("Az email nem tartalmaz @-ot!")
+      uzenetElement.innerHTML = "Az email nem tartalmaz @-ot!"
     }
     else if(check1 == 10){
-      alert("Az email több mint egy @-ot tartalmaz!")
+      let uzenetElement = document.getElementById("uzenet")
+      //alert("Az email több mint egy @-ot tartalmaz!")
+      uzenetElement.innerHTML = "Az email több mint egy @-ot tartalmaz!"
     }
     else if(check1 == 11){
-      alert("Nem lett email megadva!")
+      let uzenetElement = document.getElementById("uzenet")
+      //alert("Nem lett email megadva!")
+      uzenetElement.innerHTML = "Nem lett email megadva!"
     }
     else if(eltoltottnapok == 0){
-      alert("Egy napra nem szervezünk utat!") 
+      let uzenetElement = document.getElementById("uzenet")
+      //alert("Egy napra nem szervezünk utat!") 
+      uzenetElement.innerHTML = "Egy napra nem szervezünk utat!"
     }
     else{
-      alert("Hibás adatok lettek megadva! (0)") 
+      let uzenetElement = document.getElementById("uzenet")
+      //alert("Hibás adatok lettek megadva! (0)") 
+      uzenetElement.innerHTML = "Hibás adatok lettek megadva! (0)"
     }
 
 
