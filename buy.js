@@ -542,6 +542,8 @@ function fizetes(){
     fizetendo = fizetendo*eltoltottnapok*szemelyekszama*szobak
     fizetendo = Number(fizetendo)
 
+    
+
 
     if (check1 == 1 && fizetendo > 0){
 
@@ -562,60 +564,147 @@ function fizetes(){
       let uzenetElement = document.getElementById("uzenet")
       //alert(szemelyekszama + " személyre nem tudunk utat szervezni. 10 főre tudunk legfeljebb foglalni.")
       uzenetElement.innerHTML = szemelyekszama + " személyre nem tudunk utat szervezni. 10 főre tudunk legfeljebb foglalni."
+      uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,purple,#5cf7ce)";
+      uzenetElement.style.borderRadius = "10px";
+      uzenetElement.style.color = "white";
+      uzenetElement.style.textAlign = "left"; 
+      uzenetElement.stylefontFamily = "Georgia,serif";
+      uzenetElement.style.padding = "10px";
+      uzenetElement.style.fontSize = "24px";
+      uzenetElement.style.display = "block"; 
     }
     else if (check1 == 4){
       let uzenetElement = document.getElementById("uzenet")
       //alert("Legfeljebb 5 szobát tudunk foglalni.")
       uzenetElement.innerHTML = "Legfeljebb 5 szobát tudunk foglalni."
+      uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,purple,#5cf7ce)";
+      uzenetElement.style.borderRadius = "10px";
+      uzenetElement.style.color = "white";
+      uzenetElement.style.textAlign = "left"; 
+      uzenetElement.stylefontFamily = "Georgia,serif";
+      uzenetElement.style.padding = "10px";
+      uzenetElement.style.fontSize = "24px";
+      uzenetElement.style.display = "block"; 
     }
     else if (check1 == 5){
       let uzenetElement = document.getElementById("uzenet")
       //alert("Legfeljebb 10 személyt és 5 szobát tudunk feldolgozni.")
       uzenetElement.innerHTML = "Legfeljebb 10 személyt és 5 szobát tudunk feldolgozni."
+      uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,purple,#5cf7ce)";
+      uzenetElement.style.borderRadius = "10px";
+      uzenetElement.style.color = "white";
+      uzenetElement.style.textAlign = "left"; 
+      uzenetElement.stylefontFamily = "Georgia,serif";
+      uzenetElement.style.padding = "10px";
+      uzenetElement.style.fontSize = "24px";
+      uzenetElement.style.display = "block"; 
     }
     else if(check1 == 6){
       let uzenetElement = document.getElementById("uzenet")
       //alert("Az email nem végzőthet @-ra!")
       uzenetElement.innerHTML = "Az email nem végzőthet @-ra!"
+      uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,purple,#5cf7ce)";
+      uzenetElement.style.borderRadius = "10px";
+      uzenetElement.style.color = "white";
+      uzenetElement.style.textAlign = "left"; 
+      uzenetElement.stylefontFamily = "Georgia,serif";
+      uzenetElement.style.padding = "10px";
+      uzenetElement.style.fontSize = "24px";
+      uzenetElement.style.display = "block"; 
     }
     else if(check1 == 7){
       let uzenetElement = document.getElementById("uzenet")
       //alert("Az email nem kezdőthet @-al!")
       uzenetElement.innerHTML = "Az email nem kezdőthet @-al!"
+      uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,purple,#5cf7ce)";
+      uzenetElement.style.borderRadius = "10px";
+      uzenetElement.style.color = "white";
+      uzenetElement.style.textAlign = "left"; 
+      uzenetElement.stylefontFamily = "Georgia,serif";
+      uzenetElement.style.padding = "10px";
+      uzenetElement.style.fontSize = "24px";
+      uzenetElement.style.display = "block"; 
     }
     else if(check1 == 8){
       let uzenetElement = document.getElementById("uzenet")
       //alert("Nem lett email megadva!")
       uzenetElement.innerHTML = "Nem lett email megadva!"
+      uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,purple,#5cf7ce)";
+      uzenetElement.style.borderRadius = "10px";
+      uzenetElement.style.color = "white";
+      uzenetElement.style.textAlign = "left"; 
+      uzenetElement.stylefontFamily = "Georgia,serif";
+      uzenetElement.style.padding = "10px";
+      uzenetElement.style.fontSize = "24px";
+      uzenetElement.style.display = "block"; 
     }
     else if(check1 == 9){
       let uzenetElement = document.getElementById("uzenet")
       //alert("Az email nem tartalmaz @-ot!")
       uzenetElement.innerHTML = "Az email nem tartalmaz @-ot!"
+      uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,purple,#5cf7ce)";
+      uzenetElement.style.borderRadius = "10px";
+      uzenetElement.style.color = "white";
+      uzenetElement.style.textAlign = "left"; 
+      uzenetElement.stylefontFamily = "Georgia,serif";
+      uzenetElement.style.padding = "10px";
+      uzenetElement.style.fontSize = "24px";
+      uzenetElement.style.display = "block"; 
     }
     else if(check1 == 10){
       let uzenetElement = document.getElementById("uzenet")
       //alert("Az email több mint egy @-ot tartalmaz!")
       uzenetElement.innerHTML = "Az email több mint egy @-ot tartalmaz!"
+      uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,purple,#5cf7ce)";
+      uzenetElement.style.borderRadius = "10px";
+      uzenetElement.style.color = "white";
+      uzenetElement.style.textAlign = "left"; 
+      uzenetElement.stylefontFamily = "Georgia,serif";
+      uzenetElement.style.padding = "10px";
+      uzenetElement.style.fontSize = "24px";
+      uzenetElement.style.display = "block"; 
     }
     else if(check1 == 11){
       let uzenetElement = document.getElementById("uzenet")
       //alert("Nem lett email megadva!")
       uzenetElement.innerHTML = "Nem lett email megadva!"
+      uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,purple,#5cf7ce)";
+      uzenetElement.style.borderRadius = "10px";
+      uzenetElement.style.color = "white";
+      uzenetElement.style.textAlign = "left"; 
+      uzenetElement.stylefontFamily = "Georgia,serif";
+      uzenetElement.style.padding = "10px";
+      uzenetElement.style.fontSize = "24px";
+      uzenetElement.style.display = "block"; 
     }
     else if(eltoltottnapok == 0){
       let uzenetElement = document.getElementById("uzenet")
       //alert("Egy napra nem szervezünk utat!") 
       uzenetElement.innerHTML = "Egy napra nem szervezünk utat!"
+      uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,purple,#5cf7ce)";
+      uzenetElement.style.borderRadius = "10px";
+      uzenetElement.style.color = "white";
+      uzenetElement.style.textAlign = "left"; 
+      uzenetElement.stylefontFamily = "Georgia,serif";
+      uzenetElement.style.padding = "10px";
+      uzenetElement.style.fontSize = "24px";
+      uzenetElement.style.display = "block"; 
     }
     else{
       let uzenetElement = document.getElementById("uzenet")
       //alert("Hibás adatok lettek megadva! (0)") 
       uzenetElement.innerHTML = "Hibás adatok lettek megadva! (0)"
+      uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,purple,#5cf7ce)";
+      uzenetElement.style.borderRadius = "10px";
+      uzenetElement.style.color = "white";
+      uzenetElement.style.textAlign = "left"; 
+      uzenetElement.stylefontFamily = "Georgia,serif";
+      uzenetElement.style.padding = "10px";
+      uzenetElement.style.fontSize = "24px";
+      uzenetElement.style.display = "block"; 
     }
 
-
-
+    let uzenetHiany = document.getElementById("uzenet").innerHTML
 
 }
 
