@@ -560,7 +560,12 @@ body {
 
     }
 
-
+@media screen and (max-width: 1380px) 
+{
+#uzenet{
+    margin-bottom: 10%;
+}
+}
     
     @media screen and (max-width: 800px) {
 

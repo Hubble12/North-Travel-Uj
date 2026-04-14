@@ -35,7 +35,7 @@ function alertinfo (){
                   "pl:  02 08, 2 8, 2 08 vagy 12 18<br>" +
                   "Legfeljebb 5 szobát tudunk lefoglalni.<br>" +
                   "email: @-ot tartalmazzon pontosan egyszer, első és utolsó karakter nem lehet";
-    uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,purple,#5cf7ce)";
+    uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,#5cf7ce,#3B3955)";
     uzenetElement.style.borderRadius = "10px";
     uzenetElement.style.color = "white";
     uzenetElement.style.textAlign = "left"; 
@@ -549,6 +549,15 @@ function fizetes(){
 
       let uzenetElement = document.getElementById("uzenet");
       uzenetElement.innerHTML = "Fizetendő összeg: " + fizetendo + "Ft\nNapok száma: " + eltoltottnapok + "\nA megadott email címre küldtük a fizetési jóváhagyást. Ha nem érkezett email, ellenőrizze az email címét!" + "\nKellemes utazást kívánunk " + savedName + "!"
+      uzenetElement.style.backgroundImage = "linear-gradient(to right, #4b3d52,#3B3955,#5cf7ce)";
+    uzenetElement.style.borderRadius = "10px";
+    uzenetElement.style.color = "white";
+    uzenetElement.style.textAlign = "left"; 
+    uzenetElement.stylefontFamily = "Georgia,serif";
+    uzenetElement.style.padding = "10px";
+    uzenetElement.style.fontSize = "24px";
+    uzenetElement.style.display = "block"; 
+
       uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,purple,#5cf7ce)";
       uzenetElement.style.borderRadius = "10px";
       uzenetElement.style.color = "white";
