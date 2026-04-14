@@ -37,9 +37,10 @@ body {
     
     }
     #oldal_bal{
-    width: 50%;
-    min-width: 300px;
-    height: auto;
+        width: 45%; 
+        min-width: 350px;
+        margin-left: 3%;
+        margin-top: 5%;
     }
     #oldal_jobb {
     background-color: transparent;
