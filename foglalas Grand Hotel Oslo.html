@@ -40,7 +40,15 @@
 
     <div id="oldal_bal" class="oldalsavok">
         <div id="oldal_bal_fel"><h1>Grand Hotel</h1></div>
-        <div id="oldal_bal_lenn"><img class="kep" src="képek/Oslo hotelek/Grand Hotel Oslo.png" alt="" id="hotelkep"></div>
+        <div class="slider-container">
+            <img class="kep slide active" src="képek/Oslo hotelek/Grand Hotel Oslo.png" alt="Grand Hotel 1">
+            <img class="kep slide" src="képek/Oslo hotelek/amerikalinjen.png" alt="Grand Hotel 2">
+            <img class="kep slide" src="képek/Oslo hotelek/Holmenkollen Park Hotel.png" alt="Grand Hotel 3">
+            
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </div>
     </div>
 
 
@@ -157,6 +165,18 @@
             <div id="kepirat_jobb">Clarion-hotel</div>
         </div>
     </a>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove("active");
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add("active");
+        }
+    </script>
+
 
     <script src="buy.js"></script>
     <script src="loginScriptEffect.js"></script>
