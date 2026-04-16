@@ -140,7 +140,7 @@ body {
 }
 
     #lablec{
-    background-color: #3B3955;
+    
     color: white;
     padding: 20px;
     display: flex;
@@ -275,7 +275,7 @@ margin-right: 0;}
     display: flex;  
     justify-content: center;
     gap: 20px;
-    }
+}
     
     #lablec_bal, #lablec_kozep, #lablec_jobb {
     flex: 1;
