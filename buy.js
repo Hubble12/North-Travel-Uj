@@ -27,6 +27,13 @@ function okButton(){
 
 
 function alertinfo (){
+
+
+
+
+
+
+  
   if (isAlert == false) {
     let uzenetElement = document.getElementById("uzenet");
     uzenetElement.innerHTML = "Megadott adatok formátuma:<br>" +
@@ -107,6 +114,25 @@ function Arctic(){
 
 
 function fizetes(){
+
+
+  let uzenetElement = document.getElementById("uzenet")
+  //alert(szemelyekszama + " személyre nem tudunk utat szervezni. 10 főre tudunk legfeljebb foglalni.")
+  uzenetElement.innerHTML = "Hibás adatok!"
+  uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,purple,#5cf7ce)";
+  uzenetElement.style.borderRadius = "10px";
+  uzenetElement.style.color = "white";
+  uzenetElement.style.textAlign = "left"; 
+  uzenetElement.stylefontFamily = "Georgia,serif";
+  uzenetElement.style.padding = "10px";
+  uzenetElement.style.fontSize = "24px";
+  uzenetElement.style.display = "block"; 
+
+
+
+
+
+
   let savedName = localStorage.getItem('sharedName');
 
 
@@ -357,6 +383,10 @@ function fizetes(){
 
 
 
+    let userName = document.getElementById("userNameText").innerHTML
+    if(userName == ""){
+      check1 = 12
+    }
 
 
 
@@ -677,6 +707,19 @@ function fizetes(){
       let uzenetElement = document.getElementById("uzenet")
       //alert("Nem lett email megadva!")
       uzenetElement.innerHTML = "Nem lett email megadva!"
+      uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,purple,#5cf7ce)";
+      uzenetElement.style.borderRadius = "10px";
+      uzenetElement.style.color = "white";
+      uzenetElement.style.textAlign = "left"; 
+      uzenetElement.stylefontFamily = "Georgia,serif";
+      uzenetElement.style.padding = "10px";
+      uzenetElement.style.fontSize = "24px";
+      uzenetElement.style.display = "block"; 
+    }
+    else if(check1 == 12){
+      let uzenetElement = document.getElementById("uzenet")
+      //alert("Nem lett email megadva!")
+      uzenetElement.innerHTML = "Nincs bejelentkezve!"
       uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,purple,#5cf7ce)";
       uzenetElement.style.borderRadius = "10px";
       uzenetElement.style.color = "white";
