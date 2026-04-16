@@ -31,41 +31,41 @@ body {
     margin-top:50px;
     width: 100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     height: auto;
+    align-items: flex-start;
+    gap: 20px
+    ;
     
     }
     #oldal_bal{
         width: 45%; 
         min-width: 350px;
+        height: auto;
+        margin: 0;
+        display: block;
+        border: none;
         margin-left: 3%;
         margin-top: 5%;
     }
     #oldal_jobb {
     background-color: transparent;
-    
-    width: 30%;
-    min-width: 300px;
-    height: 500px;
+    width: 35%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 0;
 
-        
-    border-width: 2px;
-    border: black;
-    border-color: black;
-    float: right;
-    margin-right: 10%;
-    position: relative;
-    bottom: 0;
-    margin-top: 5%;
     }
 
     .tablak{
-        display: block;
-        width: 60%;
-        height: 20%;
-        padding-left: 10%;
-        margin-left: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
 
   
@@ -75,16 +75,52 @@ body {
     }
 
 
-    .form_lefts{
-        height: 100%;
-        width: 50%;
-        float: left;
+    .form_lefts {
+        flex: 1;
+        text-align: left;
     }
 
-    .form_rights{
-        height: 100%;
-        width: 50%;
-        float: right;
+    
+    .form_lefts h2{
+        margin: 0;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    }
+    .form_rights {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .form_rights input {
+        width: 150px; 
+        padding: 8px;
+        background-color: #3B3955;
+        border: 1px solid #ffffff44;
+        color: white;
+        border-radius: 5px;
+    }
+
+    #tabla6, #tabla7 {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .formButtons {
+        width: 180px;
+        height: 50px;
+        margin: 0;
+        float: none; 
+        border-radius: 15px;
+    }
+    #right7 {
+        display: flex;
+        align-items: center;
+    }
+    #infoimage {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
     }
 
 
@@ -92,9 +128,15 @@ body {
     
 #oldal_jobb
 {
-
+    background-color: rgba(59, 57, 85, 0.5); 
+    width: 35%;
+    min-width: 350px;
+    padding: 30px;
     border-radius: 30px;
-    margin-top:180px;;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    margin-top: 5%;
 }
 
     #lablec{
@@ -162,65 +204,75 @@ body {
         color: white;
         border-radius: 10px;
     }
-    .slider {
-        position: relative;
-        width: 100%;
-        max-width: 900px;
-        height: 400px;
-        margin: 20px auto;
-        overflow: hidden;
-        border-radius: 10px;
-        
-    }
-    .slide {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0;
-        transition: opacity 0.4s ease;
-    }
+   .slider{
+    position: relative;
+    width: 120%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 7%;
+    margin: 0 auto;
+   }
     
-    .slide.active {
-        opacity: 1;
-    }
-    .nav {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        color: white;
-        border: none;
-        font-size: 20px;
-        padding: 10px;
-        cursor: pointer;
-        border-radius: 50%;
-        background: none;
-        
-    }
+   .slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    
+   }
+   .slide.active{
+    opacity: 1;
+    
+   }
+   .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.3); /* Átlátszó háttér, hogy látszódjanak */
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 20px;
+    transition:  0.3s;
+    width: auto;            
+    height: auto;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
-    .prev {
-        left: 10px;
-        background: none;
-    }
-    
-    .next {
-        right: 10px;
-        
-        
-    }
+.prev { left: 0; border-radius: 0 5px 5px 0; }
+.next { right: 0; border-radius: 5px 0 0 5px; 
+margin-right: 0;}
 
-    
 
-    
-    
-    
+
     #lablec_al {
-    background-color: #3B3955;
+    background-color: #3B3955;      
     color: white;
     padding: 20px 0;
     text-align: center;
-    display: flex;
+    display: flex;  
     justify-content: center;
     gap: 20px;
     }
@@ -266,11 +318,14 @@ body {
     }
     
     #oldal_bal_lenn{
-    
-    
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border-radius: 7%;
+        position: relative;
+        width: 100%;            
+        max-width: 600px;      
+        height: 350px;          
+        margin: 20px auto;
+        border-radius: 30px;   
+        overflow: hidden;      
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
     }
     .kep
     {
