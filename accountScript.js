@@ -46,7 +46,7 @@ function loginFunction(){
 }
 
 function elfelejtettJelszo(){
-    document.getElementById("uzenet").innerHTML="Elfelejtett jelszó funkció még nem elérhető."
+    document.getElementById("uzenet").innerHTML="Elfelejtett jelszó funkció nem elérhető."
 }
 
 
