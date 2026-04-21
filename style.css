@@ -311,6 +311,7 @@ h1:hover {
     .card1,
     .card2{
         grid-column: span 12;
+        margin-left: 20px;
         
     }
   .felsoresz{
@@ -470,5 +471,17 @@ h1:hover {
 
     .menu a:hover {
         background-color: #28273b;
+    }
+    .card1{
+        width: 90%;
+    }
+    .card2{
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:500px){
+    .card1{
+        width: 80%;
     }
 }
