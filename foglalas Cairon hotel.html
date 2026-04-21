@@ -36,70 +36,90 @@
 
 
 
-<div id="oldalterulet">
+        <div id="oldalterulet">
 
-    <div id="oldal_bal" class="oldalsavok">
-        <div id="oldal_bal_fel"><h1>Clairon-Hotel</h1></div>
-        <div id="oldal_bal_lenn"><img class="kep" src="képek/Oslo hotelek/clarion-hotel.jpg" alt=""></div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    <div id="oldal_jobb" class="oldalsavok">
+            <div id="oldal_bal" class="oldalsavok">
+        
+                <div id="oldal_bal_fel"><h1>Clarion-hotel</h1></div>
+                <div  id="oldal_bal_lenn" class="slider">
+                    <img class="kep slide active" src="képek/Oslo hotelek/clarion-hotel.jpg" alt="Amerikalinjen1">
+                    <img class="kep slide" src="Képek/Oslo hotelek/Clarion/356688982.jpg" alt="Amerikalinjen2">
+                    <img class="kep slide" src="képek/Oslo hotelek/Clarion/Clarion_Hotel_The_Hub_-_Spa_-_H_original (1).jpg" alt="Amerikalinjen3">
+                    <img class="kep slide" src="képek/Oslo hotelek/Clarion/image_processing20230924-2-drdg8h.jpg" alt="Amerikalinjen4">
+                    <img class="kep slide" src="képek/Oslo hotelek/Clarion/twin_standard_room_clarion_hotel_oslo-15_16_9.jpg" alt="Amerikalinjen5">
+                
+        
+                    
+                    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
         
         
-        <div class="tablak" id="tabla1">
-            <div class="form_lefts" id="left1"><h2>Személyek száma:</h2></div>
-            <div class="form_rights" id="right1"><input type="number" id="input1"></div>
+                
+                    
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <div id="oldal_jobb" class="oldalsavok">
+                
+                
+                <div class="tablak" id="tabla1">
+                    <div class="form_lefts" id="left1"><h2>Személyek száma:</h2></div>
+                    <div class="form_rights" id="right1"><input type="number" id="input1"></div>
+                </div>
+        
+        
+                <div class="tablak" id="tabla2">
+                    <div class="form_lefts" id="left2"><h2>Indulás:</h2></div>
+                    <div class="form_rights" id="right2"><input type="text" id="input2"></div>
+                </div>
+        
+        
+                <div class="tablak" id="tabla3">
+                    <div class="form_lefts" id="left3"><h2>Hazatérés:</h2></div>
+                    <div class="form_rights" id="right3"><input type="text" id="input3"></div>
+                </div>
+        
+        
+                <div class="tablak" id="tabla4">
+                    <div class="form_lefts" id="left4"><h2>Szobák száma:</h2></div>
+                    <div class="form_rights" id="right4"><input type="number" id="input4"></div>
+                </div>
+        
+        
+                <div class="tablak" id="tabla5">
+                    <div class="form_lefts" id="left5"><h2>E-Mail:</h2></div>
+                    <div class="form_rights" id="right5"><input type="text" id="input5"></div>
+                </div>
+        
+        
+                <div class="tablak" id="tabla6">
+                    <div class="form_lefts" id="left6"><button onclick="GrandHotel();fizetes()" class="formButtons">Tovább a fizetéshez</button></div>
+                    <div class="form_rights" id="right6"><a href="index.html"><button class="formButtons">Vissza</button></a></div>
+                </div>
+        
+                <div class="tablak" id="tabla7">
+                    <div class="form_lefts" id="left7"></div>
+                    <div class="form_rights" id="right7"><div id="infobutton"> <img src="logokepek/infobutton.png" alt="infobutton" id="infoimage" onclick="alertinfo()"></div></div>
+                </div>
+        
+                
+                
+                
+                
+                
+            </div>
+        
         </div>
-
-
-        <div class="tablak" id="tabla2">
-            <div class="form_lefts" id="left2"><h2>Indulás:</h2></div>
-            <div class="form_rights" id="right2"><input type="text" id="input2"></div>
-        </div>
-
-
-        <div class="tablak" id="tabla3">
-            <div class="form_lefts" id="left3"><h2>Hazatérés:</h2></div>
-            <div class="form_rights" id="right3"><input type="text" id="input3"></div>
-        </div>
-
-
-        <div class="tablak" id="tabla4">
-            <div class="form_lefts" id="left4"><h2>Szobák száma:</h2></div>
-            <div class="form_rights" id="right4"><input type="number" id="input4"></div>
-        </div>
-
-
-        <div class="tablak" id="tabla5">
-            <div class="form_lefts" id="left5"><h2>E-Mail:</h2></div>
-            <div class="form_rights" id="right5"><input type="text" id="input5"></div>
-        </div>
-
-
-        <div class="tablak" id="tabla6">
-            <div class="form_lefts" id="left6"><button onclick="GrandHotel();fizetes()" class="formButtons">Tovább a fizetéshez</button></div>
-            <div class="form_rights" id="right6"><a href="index.html"><button class="formButtons">Vissza</button></a></div>
-        </div>
-
-        <div class="tablak" id="tabla7">
-            <div class="form_lefts" id="left7"></div>
-            <div class="form_rights" id="right7"><div id="infobutton"> <img src="logokepek/infobutton.png" alt="infobutton" id="infoimage" onclick="alertinfo()"></div></div>
-        </div>
-
-
-
-</div>
 
 
 
@@ -137,6 +157,18 @@
             <div id="kepirat_jobb">Amerikalinjen</div>
         </div>
     </a>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove("active");
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add("active");
+        }
+    </script>
+
 
     <script src="buy.js"></script>
     <script src="loginScriptEffect.js"></script>
