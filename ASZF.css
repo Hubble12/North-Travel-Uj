@@ -198,6 +198,13 @@ h2 {
     .hero h1 {
         font-size: 40px;
     }
+    .contact-item{
+        width: 80%;
+        display: block;
+    }
+    span{
+        display: none;
+    }
 }
 @media (max-width:300px) {
     .header {
