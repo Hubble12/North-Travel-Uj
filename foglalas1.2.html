@@ -40,8 +40,24 @@
         <div id="oldalterulet">
 
             <div id="oldal_bal" class="oldalsavok">
-                <div id="oldal_bal_fel"><h1>Ett hem</h1></div>
-                <div id="oldal_bal_lenn"> <img class="kep" src="képek/Stockholm hotelek/ettHem.png" alt=""></div>
+        
+                <div id="oldal_bal_fel"><h1>Ett Hem</h1></div>
+                <div  id="oldal_bal_lenn" class="slider">
+                    <img class="kep slide active" src="képek/Stockholm hotelek/ettHem.png" alt="ettHem1">
+                    <img class="kep slide" src="Képek/Stockholm hotelek/ett hem/ett-hem-attic-suite.jpg" alt="ettHem2">
+                    <img class="kep slide" src="képek/Stockholm hotelek/ett hem/ett_hem.jpg" alt="ettHem3">
+                    <img class="kep slide" src="képek/Stockholm hotelek/ett hem/kitchen-2.jpg" alt="ettHem4">
+                    <img class="kep slide" src="képek/Stockholm hotelek/ett hem/marding3740-1-1024x683.png" alt="ettHem5">
+                
+        
+                    
+                    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+        
+        
+                
+                    
             </div>
         
            
@@ -150,6 +166,16 @@
             
         </div>
     </footer>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove("active");
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add("active");
+        }
+    </script>
     <script src="buy.js"></script>
     <script src="loginScriptEffect.js"></script>
 </body>
