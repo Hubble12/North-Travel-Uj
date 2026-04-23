@@ -108,34 +108,10 @@
             <div class="form_lefts" id="left7"></div>
             <div class="form_rights" id="right7"><div id="infobutton"> <img src="logokepek/infobutton.png" alt="infobutton" id="infoimage" onclick="alertinfo()"></div></div>
         </div>
-
-        
-        
-        
-        
-        <!--
-        <table>
-            <tr><td><h2>Személyek száma:</h2></td><td><input type="number" id="input1"></td></tr>
-            <tr><td><h2>Indulás:</h2></td><td><input type="text" id="input2"></td></tr>
-            <tr><td><h2>Hazatérés:</h2></td><td><input type="text" id="input3"></td></tr>
-            <tr><td><h2>Szobák száma:</h2></td><td><input type="number" id="input4"></td></tr>
-            <tr><td><h2>E-Mail:</h2></td><td><input type="text" id="input5"></td></tr> 
-            <tr><td></td><td><button onclick="GrandHotel();fizetes()">Tovább a fizetéshez</button></td></tr>
-            <tr><td></td><td><a href="fooldal.html"><button>Vissza</button></a></td></tr>
-            <tr><td></td><td><div id="infobutton"> <img src="logokepek/infobutton.png" alt="infobutton" id="infoimage" onclick="alertinfo()"></div></td></tr>
-        </table>
-    -->
     </div>
 
 
 </div>
-
-
-
-
-
-
-
 
 <div id="uzenetDiv">
     <p id="uzenet"></p>
@@ -170,6 +146,8 @@
         </div>
     </a>
 
+    
+
     <script>
         let currentSlide = 0;
         const slides = document.querySelectorAll(".slide");
@@ -179,7 +157,7 @@
             currentSlide = (currentSlide + direction + slides.length) % slides.length;
             slides[currentSlide].classList.add("active");
         }
-    </script>
+    </script> 
 
 
     <script src="buy.js"></script>
