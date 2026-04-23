@@ -33,13 +33,30 @@
 
 
 
-
+        
 
 <div id="oldalterulet">
 
     <div id="oldal_bal" class="oldalsavok">
+        
         <div id="oldal_bal_fel"><h1>Den Röda Båten</h1></div>
-        <div id="oldal_bal_lenn"> <img class="kep" src="képek/Stockholm hotelek/Den Röda Båten.jpg" alt=""></div>
+        <div  id="oldal_bal_lenn" class="slider">
+            <img class="kep slide active" src="képek/Stockholm hotelek/Den Röda Båten.jpg" alt="roda1">
+        <img class="kep slide" src="képek/Stockholm hotelek/DenRodaBaten/den-roda-baten.jpg" alt="roda2">
+        <img class="kep slide" src="képek/Stockholm hotelek/DenRodaBaten/den-roda-baten-malaren.jpg" alt="roda3">
+        <img class="kep slide" src="képek/Stockholm hotelek/DenRodaBaten/532287931.jpg" alt="roda4">
+        <img class="kep slide" src="képek/Stockholm hotelek/DenRodaBaten/expedia_group-673596-75b83cf9-155561.jpg" alt="roda5">
+
+        
+
+            
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+
+        
+            
     </div>
 
    
@@ -138,6 +155,17 @@
             
         </div>
     </footer>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove("active");
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add("active");
+        }
+    </script>
+
     <script src="buy.js"></script>
     <script src="loginScriptEffect.js"></script>
 </body>
