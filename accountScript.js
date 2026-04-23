@@ -45,8 +45,6 @@ function loginFunction(){
     }
 }
 
-function elfelejtettJelszo(){
-    document.getElementById("uzenet").innerHTML="Elfelejtett jelszó funkció nem elérhető."
-}
+
 
 
