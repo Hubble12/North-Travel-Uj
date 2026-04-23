@@ -24,6 +24,7 @@ body{
 }
 
 #uzenet{
+    background-color: rgba(59, 57, 85, 0.5);
     color: white;
     margin-top: 5px;
 }
