@@ -460,9 +460,20 @@ body {
     background-color: rgba(0,0,0,0.5);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 16px;
+    border-radius: 15%;
+    width: 30px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    
 }
 
 .prev {
@@ -473,19 +484,6 @@ body {
     right: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-    
-=======
- 
->>>>>>> 100367b9dae1960897d114b0ee3e42f2c6508dee
     @media (max-width: 2000px) {
     #oldal_bal{
     width: 45%;
