@@ -331,9 +331,7 @@ body {
     float: right;
     }
     
-    
-    
-    
+ 
     #infobutton{
     width: 50px;
     height: 50px;
@@ -407,11 +405,6 @@ body {
     }
     
 
-
-
-
-
-
 #uzenetDiv{
     width: 50%;
     height: 300px;
@@ -427,22 +420,7 @@ body {
     color: white;
     font-size: 150%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+ 
     @media (max-width: 2000px) {
     #oldal_bal{
     width: 45%;
