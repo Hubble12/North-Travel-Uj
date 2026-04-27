@@ -40,9 +40,20 @@
 
     <div id="oldal_bal" class="oldalsavok">
         <div id="oldal_bal_fel"><h1>Villa Coppenhagen</h1></div>
-        <div id="oldal_bal_lenn"> <img class="kep" src="képek/hotelek koppenhaga/villacoppenhagen.jpg" alt=""></div>
-    </div>
+        <div  id="oldal_bal_lenn" class="slider">
+            <img class="kep slide active" src="képek/koppenhaga villa/eloter.jpg" alt="Grand Hotel 1">
+            <img class="kep slide" src="Képek/koppenhaga villa/belso.avif" alt="Grand Hotel 2">
+            <img class="kep slide" src="képek/koppenhaga villa/szoba.jpg" alt="Grand Hotel 3">
+            <img class="kep slide" src="képek/koppenhaga villa/belso2.webp" alt="Grand Hotel 4">
+            <img class="kep slide" src="képek/koppenhaga villa/medence.jpg" alt="Grand Hotel 5">
+        
 
+            
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+            
+    </div>
 
 
 
@@ -138,7 +149,16 @@
         </a>
 
 
-
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll(".slide");
+    
+            function changeSlide(direction) {
+                slides[currentSlide].classList.remove("active");
+                currentSlide = (currentSlide + direction + slides.length) % slides.length;
+                slides[currentSlide].classList.add("active");
+            }
+        </script> 
             
         </div>
     </footer>
