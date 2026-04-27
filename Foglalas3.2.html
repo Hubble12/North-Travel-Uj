@@ -37,8 +37,25 @@
 <div id="oldalterulet">
 
     <div id="oldal_bal" class="oldalsavok">
+        
         <div id="oldal_bal_fel"><h1>Santa Hotel</h1></div>
-        <div id="oldal_bal_lenn"> <img class="kep" src="képek/hotelek koppenhaga/santahotel.jpg" alt=""></div>
+        <div  id="oldal_bal_lenn" class="slider">
+            <img class="kep slide active" src="képek/hotelek koppenhaga/santahotel.jpg" alt="roda1">
+        <img class="kep slide" src="képek/finn hotelek/santa/santa-s-igloos-arctic.jpg" alt="roda2">
+        <img class="kep slide" src="képek/finn hotelek/santa/f37a5770-d4c1-11eb-a8b5-0d99be0b7375-SantasIgloosArcticCircleBlueMoment.jpg" alt="roda3">
+        <img class="kep slide" src="képek/finn hotelek/santa/99929423.jpg" alt="roda4">
+        <img class="kep slide" src="képek/finn hotelek/santa/Artikkelikuvat-27-1-1000x800.jpg" alt="roda5">
+
+        
+
+            
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+
+        
+            
     </div>
 
 
@@ -141,5 +158,18 @@
     </footer>
     <script src="buy.js"></script>
     <script src="loginScriptEffect.js"></script>
+
+
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove("active");
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add("active");
+        }
+    </script>
 </body>
 </html>
