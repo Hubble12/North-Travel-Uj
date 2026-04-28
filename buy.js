@@ -42,7 +42,7 @@ function alertinfo (){
                   "pl:  02 08, 2 8, 2 08 vagy 12 18<br>" +
                   "Legfeljebb 5 szobát tudunk lefoglalni.<br>" +
                   "email: @-ot tartalmazzon pontosan egyszer, első és utolsó karakter nem lehet";
-    uzenetElement.style.backgroundImage = "linear-gradient(to right, #3B3955,#5cf7ce,#3B3955)";
+    uzenetElement.style.backgroundImage = "linear-gradient(to right,rgb(91, 202, 156),#3B3955,#3B3955, rgb(91, 202, 156))";
     uzenetElement.style.borderRadius = "10px";
     uzenetElement.style.color = "white";
     uzenetElement.style.textAlign = "left"; 
