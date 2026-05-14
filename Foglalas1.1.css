@@ -514,6 +514,20 @@ body {
     }
     @media (max-width: 1100px){
 
+        
+
+        .slides-container{
+            /*height: 280px !important;*/
+            display: none;
+        }
+        #oldal_bal_lenn{
+            /*height: 280px !important;*/
+            display: none;
+        }
+
+        #oldal_bal{
+            display: block;
+        }
 
         h2{
             font-size: 100%;
@@ -607,7 +621,29 @@ body {
 }
 }
     
-    @media screen and (max-width: 920px) {
+    @media screen and (max-width: 1100px) {
+
+        .tablak{
+            margin-left: 0;
+            margin-right: 40%;
+
+        }
+
+        h2{
+            margin-left: 0;
+            margin-right: 40%;
+
+        }
+
+        .form_lefts{
+            margin-left: 0;
+            margin-right: 40%;
+
+        }
+        input{
+            margin-left: 0;
+            margin-right: 40%;
+        }
 
         footer{
             margin-top: 200px;
@@ -850,7 +886,7 @@ body {
     width: 40% !important;
     float: left !important;
     margin-left: 3% !important;
-    height: 700px !important;
+    height: 700px;
     }
     
     /*#oldal_jobb {
